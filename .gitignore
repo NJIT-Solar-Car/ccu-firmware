@@ -1,0 +1,37 @@
+# Build output
+Debug/
+Release/
+build/
+cmake-build-*/
+
+# CubeIDE / Eclipse noise
+.metadata/
+.recommenders/
+.settings/
+*.launch
+
+# Object / binary artifacts
+*.o
+*.d
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.su
+*.cyclo
+*.lst
+*.srec
+
+# Logs / temp
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
