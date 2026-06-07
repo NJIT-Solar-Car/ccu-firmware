@@ -20,6 +20,14 @@ Put all software notes/changelog stuff here. Try to format something like below 
 
 This format is adopted from [keepachangelog.com](https://keepachangelog.com).
 
+## 80da62c
+
+### Added
+
+- Added this changelog, and an initial Doxygen doxyfile
+- Also added the initial Doxygen generated docs
+    - Haven't yet looked at all the generated stuff, but HAL functions for CAN, GPIO, I2C, SPI, and DMA all look fine.
+
 ## 2e22da2
 
 ### Added
