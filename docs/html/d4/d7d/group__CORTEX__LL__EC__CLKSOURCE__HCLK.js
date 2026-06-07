@@ -1,0 +1,5 @@
+var group__CORTEX__LL__EC__CLKSOURCE__HCLK =
+[
+    [ "LL_SYSTICK_CLKSOURCE_HCLK", "d4/d7d/group__CORTEX__LL__EC__CLKSOURCE__HCLK.html#gaa92530d2f2cd8ce785297e4aed960ff0", null ],
+    [ "LL_SYSTICK_CLKSOURCE_HCLK_DIV8", "d4/d7d/group__CORTEX__LL__EC__CLKSOURCE__HCLK.html#gab13c4588c1b1a8b867541a4ad928d205", null ]
+];

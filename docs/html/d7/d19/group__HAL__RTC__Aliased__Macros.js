@@ -1,0 +1,27 @@
+var group__HAL__RTC__Aliased__Macros =
+[
+    [ "__HAL_RTC_CLEAR_FLAG", "d7/d19/group__HAL__RTC__Aliased__Macros.html#gaf8b41c0f2f096d2e71f304c00d183e4d", null ],
+    [ "__HAL_RTC_DISABLE_IT", "d7/d19/group__HAL__RTC__Aliased__Macros.html#gae758f64dcd336b7e63308d205cd92697", null ],
+    [ "__HAL_RTC_ENABLE_IT", "d7/d19/group__HAL__RTC__Aliased__Macros.html#ga530c1a5aba6a657bf37fbfb6fb6c4ebc", null ],
+    [ "__HAL_RTC_EXTI_CLEAR_FLAG", "d7/d19/group__HAL__RTC__Aliased__Macros.html#ga70c16094f7c10e5991b608df36ce41f8", null ],
+    [ "__HAL_RTC_EXTI_DISABLE_IT", "d7/d19/group__HAL__RTC__Aliased__Macros.html#ga9b18753e4b04bf550e36d81a6064ba36", null ],
+    [ "__HAL_RTC_EXTI_ENABLE_IT", "d7/d19/group__HAL__RTC__Aliased__Macros.html#ga16764e0df245c740813dbeb302e67da5", null ],
+    [ "__HAL_RTC_EXTI_GENERATE_SWIT", "d7/d19/group__HAL__RTC__Aliased__Macros.html#ga757e6b82b6c280b6a924c0d8ac4bfef7", null ],
+    [ "__HAL_RTC_EXTI_GET_FLAG", "d7/d19/group__HAL__RTC__Aliased__Macros.html#ga7ff2ab63c65042a0a9ef683d345abf49", null ],
+    [ "__RTC_WRITEPROTECTION_DISABLE", "d7/d19/group__HAL__RTC__Aliased__Macros.html#ga50e1d57530318f33dfa59d44c3f086ce", null ],
+    [ "__RTC_WRITEPROTECTION_ENABLE", "d7/d19/group__HAL__RTC__Aliased__Macros.html#gad93d3e4b8add5593e8a4c0ee4b60c659", null ],
+    [ "IS_ALARM", "d7/d19/group__HAL__RTC__Aliased__Macros.html#ga7e6a2b69bd0cb85a1d44801ccb116e38", null ],
+    [ "IS_ALARM_MASK", "d7/d19/group__HAL__RTC__Aliased__Macros.html#ga927c5de67a80c6ea175db864959df3e0", null ],
+    [ "IS_TAMPER", "d7/d19/group__HAL__RTC__Aliased__Macros.html#ga720879737ff77db80e800545672cdb72", null ],
+    [ "IS_TAMPER_ERASE_MODE", "d7/d19/group__HAL__RTC__Aliased__Macros.html#ga49cab06ba96add6f8dddac75414b468f", null ],
+    [ "IS_TAMPER_FILTER", "d7/d19/group__HAL__RTC__Aliased__Macros.html#ga96d532a9a8a0b283f2fd289355001233", null ],
+    [ "IS_TAMPER_INTERRUPT", "d7/d19/group__HAL__RTC__Aliased__Macros.html#gaa441c6cceeee673784fd5f9dcd1a0334", null ],
+    [ "IS_TAMPER_MASKFLAG_STATE", "d7/d19/group__HAL__RTC__Aliased__Macros.html#ga936b760d07038d51cd9a72f1f0456711", null ],
+    [ "IS_TAMPER_PRECHARGE_DURATION", "d7/d19/group__HAL__RTC__Aliased__Macros.html#gacaaf7b6159a85289691dea9b0d3a6195", null ],
+    [ "IS_TAMPER_PULLUP_STATE", "d7/d19/group__HAL__RTC__Aliased__Macros.html#gaf061929111a6987f8a74e09e239d686b", null ],
+    [ "IS_TAMPER_SAMPLING_FREQ", "d7/d19/group__HAL__RTC__Aliased__Macros.html#ga534eeb558f5ddd78594acc82dbc56b9d", null ],
+    [ "IS_TAMPER_TIMESTAMPONTAMPER_DETECTION", "d7/d19/group__HAL__RTC__Aliased__Macros.html#ga7da808c5448f1ebf7f29c44dee830446", null ],
+    [ "IS_TAMPER_TRIGGER", "d7/d19/group__HAL__RTC__Aliased__Macros.html#gaa0fe0373701cfd583ae46173a60248b2", null ],
+    [ "IS_WAKEUP_CLOCK", "d7/d19/group__HAL__RTC__Aliased__Macros.html#ga85becc3221346e2b872ca8f205776a47", null ],
+    [ "IS_WAKEUP_COUNTER", "d7/d19/group__HAL__RTC__Aliased__Macros.html#ga806f88006a410ad9a990d4b1dff449f4", null ]
+];

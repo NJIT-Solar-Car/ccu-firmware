@@ -1,0 +1,27 @@
+var structUSB__OTG__GlobalTypeDef =
+[
+    [ "CID", "d1/da3/structUSB__OTG__GlobalTypeDef.html#ad73e58d2e4d2bf8b83e8cbd67d492efa", null ],
+    [ "DIEPTXF", "d1/da3/structUSB__OTG__GlobalTypeDef.html#a5aa233528bbbdd349160117d9660d0c7", null ],
+    [ "DIEPTXF0_HNPTXFSIZ", "d1/da3/structUSB__OTG__GlobalTypeDef.html#a514d48aa03f20c7fd21b0224cc488f8c", null ],
+    [ "GAHBCFG", "d1/da3/structUSB__OTG__GlobalTypeDef.html#a07e38df245f84f1c50725f0a6bbcf8de", null ],
+    [ "GCCFG", "d1/da3/structUSB__OTG__GlobalTypeDef.html#a87ad7cb1a16b368871472288c2cb7621", null ],
+    [ "GDFIFOCFG", "d1/da3/structUSB__OTG__GlobalTypeDef.html#a897095924486a5d27a887bea7ef34233", null ],
+    [ "GHWCFG3", "d1/da3/structUSB__OTG__GlobalTypeDef.html#a79adce6fce5708517a449fc68a0be9be", null ],
+    [ "GINTMSK", "d1/da3/structUSB__OTG__GlobalTypeDef.html#a256462ec30c5ed880bb160352f3b3b5c", null ],
+    [ "GINTSTS", "d1/da3/structUSB__OTG__GlobalTypeDef.html#a16c9098f151c443a72e74e8869761fe3", null ],
+    [ "GLPMCFG", "d1/da3/structUSB__OTG__GlobalTypeDef.html#a50a3cb6f8f3787f949fc8a254c944006", null ],
+    [ "GOTGCTL", "d1/da3/structUSB__OTG__GlobalTypeDef.html#a371ce16ae0de7fef7076c74eaea8bfde", null ],
+    [ "GOTGINT", "d1/da3/structUSB__OTG__GlobalTypeDef.html#a6b94c50cc54c7f32aa6ad8b52d22bedd", null ],
+    [ "GRSTCTL", "d1/da3/structUSB__OTG__GlobalTypeDef.html#afcac9b3feb4a49be33b2ae2d6c4254ed", null ],
+    [ "GRXFSIZ", "d1/da3/structUSB__OTG__GlobalTypeDef.html#a186349bc8a995affdeb86df6f5457002", null ],
+    [ "GRXSTSP", "d1/da3/structUSB__OTG__GlobalTypeDef.html#abd3fb48a94c256135b1efe4cb0b17624", null ],
+    [ "GRXSTSR", "d1/da3/structUSB__OTG__GlobalTypeDef.html#a9655a7e95ac99087c428823a8ad14fd3", null ],
+    [ "GUSBCFG", "d1/da3/structUSB__OTG__GlobalTypeDef.html#a19f47187b350f788d47d3d0a15ed1203", null ],
+    [ "HNPTXSTS", "d1/da3/structUSB__OTG__GlobalTypeDef.html#adaa51935c6ea0a065d3251166db0fbdc", null ],
+    [ "HPTXFSIZ", "d1/da3/structUSB__OTG__GlobalTypeDef.html#aaee124bd14e52406424e5733156fec00", null ],
+    [ "Reserved", "d1/da3/structUSB__OTG__GlobalTypeDef.html#a9632dbb92ab83379d6f1c0a9044a9ef0", null ],
+    [ "Reserved30", "d1/da3/structUSB__OTG__GlobalTypeDef.html#a978a73c27d2afe65def81f28b881e138", null ],
+    [ "Reserved43", "d1/da3/structUSB__OTG__GlobalTypeDef.html#ac9f08b9c782116b581bfbd4b93867b91", null ],
+    [ "Reserved5", "d1/da3/structUSB__OTG__GlobalTypeDef.html#a09a6f110e580becd4050cf67f93c4908", null ],
+    [ "Reserved6", "d1/da3/structUSB__OTG__GlobalTypeDef.html#a4a273db791acbfdf89594c9d4005e7e1", null ]
+];

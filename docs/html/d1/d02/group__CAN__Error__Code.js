@@ -1,0 +1,27 @@
+var group__CAN__Error__Code =
+[
+    [ "HAL_CAN_ERROR_ACK", "d1/d02/group__CAN__Error__Code.html#gafce2fa09d92f7e331a0168b945fe0b05", null ],
+    [ "HAL_CAN_ERROR_BD", "d1/d02/group__CAN__Error__Code.html#ga39f73758a4dd73142576fdea99a538b3", null ],
+    [ "HAL_CAN_ERROR_BOF", "d1/d02/group__CAN__Error__Code.html#gaee83da74ef42658f7e62b55f87823b68", null ],
+    [ "HAL_CAN_ERROR_BR", "d1/d02/group__CAN__Error__Code.html#gaca59a16a4c41752028b0cf7c0518cd6a", null ],
+    [ "HAL_CAN_ERROR_CRC", "d1/d02/group__CAN__Error__Code.html#ga86b08fd56c215d791a3bcdaa0e45b49a", null ],
+    [ "HAL_CAN_ERROR_EPV", "d1/d02/group__CAN__Error__Code.html#gada937744445b42f38617586a5b222cc1", null ],
+    [ "HAL_CAN_ERROR_EWG", "d1/d02/group__CAN__Error__Code.html#ga7c30552d9aa3b6ca6361ead7737ca90c", null ],
+    [ "HAL_CAN_ERROR_FOR", "d1/d02/group__CAN__Error__Code.html#ga133d8ff2db13c6aefec41b118bf5fecf", null ],
+    [ "HAL_CAN_ERROR_INTERNAL", "d1/d02/group__CAN__Error__Code.html#ga6c9f18ee84db0016adf40191f59be8d4", null ],
+    [ "HAL_CAN_ERROR_NONE", "d1/d02/group__CAN__Error__Code.html#ga78f3c84fd00a15c6b77208ba60c39afb", null ],
+    [ "HAL_CAN_ERROR_NOT_INITIALIZED", "d1/d02/group__CAN__Error__Code.html#ga7895d0fd9bc1d8fb77b370ac4d3be19e", null ],
+    [ "HAL_CAN_ERROR_NOT_READY", "d1/d02/group__CAN__Error__Code.html#ga5f2d11fe43a6d2b9ced16e813310ba5c", null ],
+    [ "HAL_CAN_ERROR_NOT_STARTED", "d1/d02/group__CAN__Error__Code.html#gaa41338169e6457543dab211e7db41e2f", null ],
+    [ "HAL_CAN_ERROR_PARAM", "d1/d02/group__CAN__Error__Code.html#gad08a02cb365d3bd5eeb2eb41db0935a1", null ],
+    [ "HAL_CAN_ERROR_RX_FOV0", "d1/d02/group__CAN__Error__Code.html#gae807af74f03698954d1362da7d92aa22", null ],
+    [ "HAL_CAN_ERROR_RX_FOV1", "d1/d02/group__CAN__Error__Code.html#ga41082ee902e90e56e4efae9b2b900105", null ],
+    [ "HAL_CAN_ERROR_STF", "d1/d02/group__CAN__Error__Code.html#ga493bcee57042490d8b99650c5435369b", null ],
+    [ "HAL_CAN_ERROR_TIMEOUT", "d1/d02/group__CAN__Error__Code.html#ga3ac059c22d780a48560bb30d5cd0e592", null ],
+    [ "HAL_CAN_ERROR_TX_ALST0", "d1/d02/group__CAN__Error__Code.html#ga54151e06bbdfdd037b53a99b26040fa2", null ],
+    [ "HAL_CAN_ERROR_TX_ALST1", "d1/d02/group__CAN__Error__Code.html#ga49b8296e21031684e17ac9e63c9b05af", null ],
+    [ "HAL_CAN_ERROR_TX_ALST2", "d1/d02/group__CAN__Error__Code.html#ga2301a97cc4e95052fea18fdde5937674", null ],
+    [ "HAL_CAN_ERROR_TX_TERR0", "d1/d02/group__CAN__Error__Code.html#ga810880e480fdd5b50e5860ab4f7ae132", null ],
+    [ "HAL_CAN_ERROR_TX_TERR1", "d1/d02/group__CAN__Error__Code.html#ga07543068b76a12ab28bba30ce39b761a", null ],
+    [ "HAL_CAN_ERROR_TX_TERR2", "d1/d02/group__CAN__Error__Code.html#ga5218d82f7e0aff18e45710f230685f12", null ]
+];

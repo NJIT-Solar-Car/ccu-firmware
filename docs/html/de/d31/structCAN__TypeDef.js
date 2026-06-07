@@ -1,0 +1,25 @@
+var structCAN__TypeDef =
+[
+    [ "BTR", "de/d31/structCAN__TypeDef.html#a606234e02f5015cce7dfb6654491cd33", null ],
+    [ "ESR", "de/d31/structCAN__TypeDef.html#a2adff9dc78394c18209fedfac4c1b2eb", null ],
+    [ "FA1R", "de/d31/structCAN__TypeDef.html#a91623920e150cef68945bffe79468164", null ],
+    [ "FFA1R", "de/d31/structCAN__TypeDef.html#a49f0fdec135351d036da129d674d9e6e", null ],
+    [ "FM1R", "de/d31/structCAN__TypeDef.html#a2110d24a5ecac1a7a34d264061804bc4", null ],
+    [ "FMR", "de/d31/structCAN__TypeDef.html#a9d7ffd2c7dcd8c614806d5ab6d4e3800", null ],
+    [ "FS1R", "de/d31/structCAN__TypeDef.html#af8cf5e5b00260f46456acace80901436", null ],
+    [ "IER", "de/d31/structCAN__TypeDef.html#ae56661234fcf3cb648d04da19eeb38f3", null ],
+    [ "MCR", "de/d31/structCAN__TypeDef.html#a1a1cf5f86c602453267407178f3b047b", null ],
+    [ "MSR", "de/d31/structCAN__TypeDef.html#a2e54cb00059a691c925427c23071f13b", null ],
+    [ "RESERVED0", "de/d31/structCAN__TypeDef.html#ad0cc7fb26376c435bbf148e962739337", null ],
+    [ "RESERVED1", "de/d31/structCAN__TypeDef.html#a046ef464378aaaaafaf999c23a4dc55e", null ],
+    [ "RESERVED2", "de/d31/structCAN__TypeDef.html#ab29069c9fd10eeec47414abd8d06822f", null ],
+    [ "RESERVED3", "de/d31/structCAN__TypeDef.html#af730af32307f845895465e8ead57d20c", null ],
+    [ "RESERVED4", "de/d31/structCAN__TypeDef.html#a51c408c7c352b8080f0c6d42bf811d43", null ],
+    [ "RESERVED5", "de/d31/structCAN__TypeDef.html#ad4339975b6064cfe2aaeb642f916d6e0", null ],
+    [ "RF0R", "de/d31/structCAN__TypeDef.html#a34eda67aa51d84902cbe3bc5cc439146", null ],
+    [ "RF1R", "de/d31/structCAN__TypeDef.html#a95e8aa548bc4a5cd7dfdbb383c4c5a2a", null ],
+    [ "sFIFOMailBox", "de/d31/structCAN__TypeDef.html#aa6053bc607535d9ecf7a3d887c0cc053", null ],
+    [ "sFilterRegister", "de/d31/structCAN__TypeDef.html#a23a22b903fdc909ac9f61edd68029f35", null ],
+    [ "sTxMailBox", "de/d31/structCAN__TypeDef.html#a328925e230f68a775f6f4ad1076c27ce", null ],
+    [ "TSR", "de/d31/structCAN__TypeDef.html#adbc5eb570c76a7a30a6c61a51e756013", null ]
+];
