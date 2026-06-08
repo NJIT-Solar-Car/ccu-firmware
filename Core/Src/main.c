@@ -28,6 +28,18 @@
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 
+//Messages coming into bus
+typedef struct {
+uint32_t id;
+uint8_t data[8];
+} CAN_RxMessage_t;
+
+//Messages going out of bus
+typedef struct {
+uint32_t id;
+uint8_t data[8];
+} CAN_TxMessage_t;
+
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
