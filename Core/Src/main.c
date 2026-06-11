@@ -15,29 +15,48 @@
   *
   ******************************************************************************
   */
+
+/**
+ * @defgroup CCU_Firmware
+ * @brief All code for the Solar Car CCU *written by us*. Make sure all written
+ * files, modules, etc are added to this group.
+ *
+ * @{
+ */
+
+/**
+ * @defgroup Main
+ * @brief Main file \ref Core/Src/main.c
+ *
+ * @{
+ */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
-#include "can_dictionary.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "can_dictionary.h"
 
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 
-//Messages coming into bus
+/**
+ * @brief Messages coming into bus
+ */
 typedef struct {
-uint32_t id;
-uint8_t data[8];
+	uint32_t id;		/**< CAN ID of recipient */
+	uint8_t data[8];	/**< Data to send */
 } CAN_RxMessage_t;
 
-//Messages going out of bus
+/**
+ * @brief Messages going out of bus
+ */
 typedef struct {
-uint32_t id;
-uint8_t data[8];
+	uint32_t id;		/**< CAN ID of recipient */
+	uint8_t data[8];	/**< Data to send */
 } CAN_TxMessage_t;
 
 /* USER CODE END PTD */
@@ -522,6 +541,13 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+/**
+ * @}
+ */
+
+/**
+ * @}
+ */
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_StartDefaultTask */
