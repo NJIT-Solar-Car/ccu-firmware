@@ -169,11 +169,18 @@ int main(void)
 
   HAL_CAN_ConfigFilter(&hcan1, &sFilterConfig);
   
-  /*Kelly Motor Controller Filter Bank*/
+  /*Kelly Dual Motor Controller Filter Bank*/
   sFilterConfig.FilterBank = 1;
 
-  sFilterConfig.FilterIdHigh = (0x073 << 5);
-  sFilterConfig.FilterMaskIdHigh = (0x7FF << 5);
+  sFilterConfig.FilterMode = CAN_FILTERMODE_IDLIST; //Strict
+  sFilterConfig.FilterScale = CAN_FILTERSCALE_32BIT;
+  
+  sFilterConfig.FilterIdHigh = (0x73 << 5); //Motor 1
+  sFilterConfig.FilterIdLow = 0x0000;
+  sFilterConfig.FilterMaskIdHigh = (0x74 << 5); //Moter 2
+  sFilterConfig.FilterMaskIdLow = 0x0000;
+  sFilterConfig.FilterFIFOAssignment = CAN_RX_FIFO0;
+  sFilterConfig.FilterActivation = ENABLE;
 
   HAL_CAN_ConfigFilter(&hcan1, &sFilterConfig);
 
