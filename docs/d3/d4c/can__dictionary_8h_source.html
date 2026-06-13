@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NJIT Solar Car CCU Firmware: Core/Inc/can_dictionary.h Source File</title>
+<title>NJIT Solar Car CCU Firmware: Core/Src/CAN/Inc/can_dictionary.h Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -98,24 +98,40 @@ $(document).ready(function(){initNavTree('d3/d4c/can__dictionary_8h_source.html'
   <div class="headertitle"><div class="title">can_dictionary.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d3/d4c/can__dictionary_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CAN_DICTIONARY_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CAN_DICTIONARY_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//Kelly Motor Controller Base IDs</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="../../d3/d4c/can__dictionary_8h.html#a0a17f25a971ec8e9af06a17a17631c8f">    5</a></span><span class="preprocessor">#define CAN_ID_MOTOR_CMD  0x6B  </span><span class="comment">//Command RX</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="../../d3/d4c/can__dictionary_8h.html#adf803c8982547cb7bb51495216a98e10">    6</a></span><span class="preprocessor">#define CAN_ID_MOTOR_RSP  0x73  </span><span class="comment">//Response TX</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">//Command IDs</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d3/d4c/can__dictionary_8h.html#a4d4bacb53761c3615a6a7de96b0f0003">    9</a></span><span class="preprocessor">#define MOTOR_CMD_ANALOG1  0x1B  </span><span class="comment">//Request analog data: Brake_AD, TPS_AD, OpVoltage_AD, Vs_AD, Bplus_AD, uint8</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../d3/d4c/can__dictionary_8h.html#a18a428545af4d128e2c0fd9bc40713b9">   10</a></span><span class="preprocessor">#define MOTOR_CMD_ANALOG2  0x1A  </span><span class="comment">//Request phase data: Ia_AD, Ib_AD, Ic_AD, Va_AD, Vb_AD, Vc_AD, uint8</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../d3/d4c/can__dictionary_8h.html#a14248cac0d2bfe42aa07a320226e30a9">   11</a></span><span class="preprocessor">#define MOTOR_CMD_PWM      0x33  </span><span class="comment">//Request PWM, enable status, motor temp, controller/FET temperatures, uint8</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define </span></div>
+<a href="../../d3/d4c/can__dictionary_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#ifndef CAN_DICTIONARY_H</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#define CAN_DICTIONARY_H</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/*Kelly Motor Controller Base IDs*/</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d7/d9d/group__CAN__Addresses.html#ga0a17f25a971ec8e9af06a17a17631c8f">   30</a></span><span class="preprocessor">#define CAN_ID_MOTOR_CMD                0x6B    </span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d7/d9d/group__CAN__Addresses.html#gadf803c8982547cb7bb51495216a98e10">   31</a></span><span class="preprocessor">#define CAN_ID_MOTOR_RSP                0x73    </span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">/*Kelly Motor Command IDs*/</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../da/df1/group__Motor__IDs.html#ga4d4bacb53761c3615a6a7de96b0f0003">   43</a></span><span class="preprocessor">#define MOTOR_CMD_ANALOG1               0x1B    </span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../da/df1/group__Motor__IDs.html#ga18a428545af4d128e2c0fd9bc40713b9">   44</a></span><span class="preprocessor">#define MOTOR_CMD_ANALOG2               0x1A    </span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../da/df1/group__Motor__IDs.html#gaf229f25a050f6373ec6f774d6c99b026">   45</a></span><span class="preprocessor">#define MOTOR_CMD_READ_PWM              0x33    </span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../da/df1/group__Motor__IDs.html#ga4eade67ead1fa0a8c061bb9690d21934">   46</a></span><span class="preprocessor">#define MOTOR_CMD_READ_RPM              0x37    </span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../da/df1/group__Motor__IDs.html#ga60c69e0e0e47d9f4786f55a5f68a065f">   47</a></span><span class="preprocessor">#define MOTOR_CMD_THROTTLE              0x42    </span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../da/df1/group__Motor__IDs.html#ga76d65fbf9ca11a776bc0f62b3ee4c159">   48</a></span><span class="preprocessor">#define MOTOR_CMD_BRAKE                 0x43    </span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../da/df1/group__Motor__IDs.html#gac91cb5dc6c5f83ed6e68540285cd78d4">   49</a></span><span class="preprocessor">#define MOTOR_CMD_REVERSE               0x44    </span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">/*Elmar MPPT1 Base IDs*/</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../d4/d57/group__MPPT1__IDs.html#gae50a5a06bb3d55bc4ae3a9e04355cf6d">   61</a></span><span class="preprocessor">#define CAN_ID_MPPT1_INPUTMEAS          0x600   </span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d4/d57/group__MPPT1__IDs.html#ga62369be937b2ad312f3f073cffb620f4">   62</a></span><span class="preprocessor">#define CAN_ID_MPPT1_OUTPUTMEAS         0x601   </span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d4/d57/group__MPPT1__IDs.html#gaf8eea15b3db65088f51ceba0b320e694">   63</a></span><span class="preprocessor">#define CAN_ID_MPPT1_TEMP               0x602   </span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../d4/d57/group__MPPT1__IDs.html#ga1196d238d657d2ccb7a059d6d3060b92">   64</a></span><span class="preprocessor">#define CAN_ID_MPPT1_AUXPSU             0x603   </span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="../../d4/d57/group__MPPT1__IDs.html#gad20e35c334cf0eb2020e791fc61cc8e1">   65</a></span><span class="preprocessor">#define CAN_ID_MPPT1_LIMITS             0x604   </span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../d4/d57/group__MPPT1__IDs.html#ga7001f947ee3863f36bd542455be9c974">   66</a></span><span class="preprocessor">#define CAN_ID_MPPT1_STATUS             0x605   </span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../d4/d57/group__MPPT1__IDs.html#gaa586e2e706cea09589d6fc61fd41be65">   67</a></span><span class="preprocessor">#define CAN_ID_MPPT1_POWER_CONN         0x606   </span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../d4/d57/group__MPPT1__IDs.html#ga130f4f4d16e4aa1b04287cc2ec6a12ca">   68</a></span><span class="preprocessor">#define CAN_ID_CCU_MPPT1_MODE           0x608   </span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../d4/d57/group__MPPT1__IDs.html#ga118d881d890b23a040aac61d940a70b0">   69</a></span><span class="preprocessor">#define CAN_ID_CCU_MPPT1_VMAX           0x60A   </span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../d4/d57/group__MPPT1__IDs.html#ga6287072dab194d9b53c807b5e981daa7">   70</a></span><span class="preprocessor">#define CAN_ID_CCU_MPPT1_IMAX           0x60B   </span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#endif </span><span class="comment">/*CAN_DICTIONARY_H*/</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="../../dir_e2489e887f17afa3cbc07a4ec152cdd2.html">Inc</a></li><li class="navelem"><a class="el" href="../../d3/d4c/can__dictionary_8h.html">can_dictionary.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="../../dir_b596f468b52957496e4f78b80e029268.html">Src</a></li><li class="navelem"><a class="el" href="../../dir_66e520da85b0ebb94492e71a29ec8bf8.html">CAN</a></li><li class="navelem"><a class="el" href="../../dir_d3aaf3041a62cfa9aec4290cac5f4743.html">Inc</a></li><li class="navelem"><a class="el" href="../../d3/d4c/can__dictionary_8h.html">can_dictionary.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

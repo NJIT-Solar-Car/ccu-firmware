@@ -11,7 +11,7 @@
  */
 
 /**
- * @defgroup CAN_Dictionary
+ * @defgroup CAN_Firmware
  * @brief Holds the addresses of the Kelly KBL controller, as well as motor commands
  *
  * @{
@@ -20,10 +20,25 @@
 #ifndef CAN_DICTIONARY_H
 #define CAN_DICTIONARY_H
 
+/**
+ * @defgroup CAN_Addresses
+ * @brief Addresses of CAN devices (controller and CCU).
+ *
+ * @{
+ */
 /*Kelly Motor Controller Base IDs*/
 #define CAN_ID_MOTOR_CMD                0x6B    /**< Command RX*/
 #define CAN_ID_MOTOR_RSP                0x73    /**< Response TX*/
+/**
+ * @}
+ */
 
+/**
+ * @defgroup Motor_IDs
+ * @brief Command IDs for the various commands
+ *
+ * @{
+ */
 /*Kelly Motor Command IDs*/
 #define MOTOR_CMD_ANALOG1               0x1B    /**< Request analog data: Brake_AD, TPS_AD, OpVoltage_AD, Vs_AD, Bplus_AD, uint8*/
 #define MOTOR_CMD_ANALOG2               0x1A    /**< Request phase data: Ia_AD, Ib_AD, Ic_AD, Va_AD, Vb_AD, Vc_AD, uint8*/
@@ -32,7 +47,16 @@
 #define MOTOR_CMD_THROTTLE              0x42    /**< Request throttle switch status, uint8*/
 #define MOTOR_CMD_BRAKE                 0x43    /**< Request brake switch status, uint8*/
 #define MOTOR_CMD_REVERSE               0x44    /**< Request reverse switch status, uint8*/
+/**
+ * @}
+ */
 
+/**
+ * @defgroup MPPT1_IDs
+ * @brief Base IDs for the Elmar MPPT1 controller
+ *
+ * @{
+ */
 /*Elmar MPPT1 Base IDs*/
 #define CAN_ID_MPPT1_INPUTMEAS          0x600   /**< Bytes 0-3: input_voltage; Bytes 4-7: input_current, float32, tx*/
 #define CAN_ID_MPPT1_OUTPUTMEAS         0x601   /**< Bytes 0-3: output_voltage; Bytes 4-7: output_current, float32, tx*/
@@ -44,6 +68,9 @@
 #define CAN_ID_CCU_MPPT1_MODE           0x608   /**< mode_cmd, 0 = standby, 1 = on, uint8, rx*/
 #define CAN_ID_CCU_MPPT1_VMAX           0x60A   /**< Bytes 0-3: max_out_volt_cmd, float32, rx*/
 #define CAN_ID_CCU_MPPT1_IMAX           0x60B   /**< Bytes 0-3: max_out_current_cmd, float32, rx*/
+/**
+ * @}
+ */
 
 #endif /*CAN_DICTIONARY_H*/
 

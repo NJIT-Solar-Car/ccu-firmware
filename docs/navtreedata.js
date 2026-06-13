@@ -53,19 +53,19 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d0/dd1/group__TIMEx__Exported__Functions.html",
-"d1/dc5/group__TIM__Exported__Functions__Group7.html#ga2dc3ef34340412aa8a01d734d2ff8f88",
-"d3/d4c/can__dictionary_8h_source.html",
-"d4/df4/group__RCC__BitAddress__AliasRegion.html#ga37c353c62ad303e661e99f20dcc6d1f0",
-"d6/d27/group__DMA__FIFO__threshold__level.html#ga4debbd5733190b61b2115613d4b3658b",
-"d7/d74/stm32f4xx__hal__conf_8h.html#a0390418ff6315463b6ef161c63a69d43",
-"d8/da3/group__CAN__Private__Macros.html",
-"d9/dc9/group__CORTEX__LL__EF__MCU__INFO.html#gac98fd56ad9162c3f372004bd07038bdb",
-"db/d8c/group__CAN__flags.html#ga65f20612d0bf1692003882c0cdbadb1c",
-"dc/d31/group__TIM__Exported__Macros.html#gaa5c4053e8e57dc234efecbb698287b55",
-"dd/d69/group__TIM__Exported__Functions__Group6.html#ga12ea48505e269532feff5b64f605b56f",
-"de/db0/group__SPI__Private__Macros.html#gae54950bcff11d9165b99957cf8746ae4",
-"df/da6/group__RCC__APB1__APB2__Clock__Source.html#gadb18bc60e2c639cb59244bedb54f7bb3"
+"d0/dd6/group__DMA__Exported__Types.html#gga9c012af359987a240826f29073bbe463ad497944e6e72bc3ca904694b1098105a",
+"d1/de5/group__UTILS__LL__Private__Constants.html#ga29a1b776c24b7c32f30fcd6851ddd028",
+"d3/d6c/group__RCC__Exported__Functions__Group1.html#ga064f7d9878ecdc1d4852cba2b9e6a52e",
+"d4/df4/group__RCC__BitAddress__AliasRegion.html#ga577ffeb20561aa8395fe5327807b5709",
+"d6/d27/group__DMA__FIFO__threshold__level.html#ga5de463bb24dc12fe7bbb300e1e4493f7",
+"d7/d74/stm32f4xx__hal__conf_8h.html#a057b4d3fb66548d65c291a5b41611be2",
+"d8/d5c/group__SPI__Direction.html#gaa7cb7f4bf4eebbf91bcfaeb17ebba7f3",
+"d9/d8f/group__TIM__Trigger__Selection.html#gad90fbca297153ca9c0112a67ea2c6cb3",
+"db/d76/group__TIM__Output__Fast__State.html",
+"dc/d30/group__RCC__AHB1__Clock__Enable__Disable.html#ga569dc8b9e178a8afab2664fdf87f46c5",
+"dd/d59/group__CORTEX__LL__EF__HANDLER.html#ga904eb6ce46a723dd47b468241c6b0a2c",
+"de/daa/group__RCC__AHB1__LowPower__Enable__Disable.html#ga293f9870ba631d23f8011bad12420f83",
+"df/da1/stm32f4xx__it_8h.html#a850cefb17a977292ae5eb4cafa9976c3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

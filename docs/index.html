@@ -109,12 +109,36 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="line">...</div>
 </div><!-- fragment --><p>This format is adopted from <a href="https://keepachangelog.com">keepachangelog.com</a>.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
-2e22da2</h1>
+28696b2</h1>
 <h2><a class="anchor" id="autotoc_md2"></a>
 Added</h2>
 <ul>
+<li>As of commit 54235db, JP added the CAN_Dictionary, which holds all the motor controller and MPPT charge controller addresses and IDs.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Changed</h2>
+<ul>
+<li>Moved Doxygen output to docs folder. This will allow a gh pages deployment. Possibly implement the doxygen running thing with gh actions in the future.</li>
+<li>Moved the CAN_Dictionary.h file to <code>Core/Src/CAN/Inc</code>. Other CAN .h files can go in the same place, and .c files can go in <code>Core/Src/CAN/</code>.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md4"></a>
+80da62c</h1>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Added</h2>
+<ul>
+<li>Added this changelog, and an initial Doxygen doxyfile</li>
+<li>Also added the initial Doxygen generated docs<ul>
+<li>Haven't yet looked at all the generated stuff, but HAL functions for CAN, GPIO, I2C, SPI, and DMA all look fine.</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md6"></a>
+2e22da2</h1>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Added</h2>
+<ul>
 <li>Created the initial CubeMX configuration. Not complete! It's a temporary configuration that will change once the CCU is finalized.</li>
-<li>Added an initial <code><a class="el" href="d3/d4c/can__dictionary_8h.html">can_dictionary.h</a></code> file, which will house all the CAN commands, mainly going to/from the CCU and motor controller. </li>
+<li>Added an initial <code><a class="el" href="d3/d4c/can__dictionary_8h.html" title="Holds the addresses of the Kelly KBL controller, as well as motor commands.">can_dictionary.h</a></code> file, which will house all the CAN commands, mainly going to/from the CCU and motor controller. </li>
 </ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->

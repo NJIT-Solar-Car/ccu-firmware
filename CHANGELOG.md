@@ -20,6 +20,17 @@ Put all software notes/changelog stuff here. Try to format something like below 
 
 This format is adopted from [keepachangelog.com](https://keepachangelog.com).
 
+## 28696b2
+
+### Added
+
+- As of commit 54235db, JP added the CAN\_Dictionary, which holds all the motor controller and MPPT charge controller addresses and IDs.
+
+### Changed
+
+- Moved Doxygen output to docs folder. This will allow a gh pages deployment. Possibly implement the doxygen running thing with gh actions in the future.
+- Moved the CAN\_Dictionary.h file to `Core/Src/CAN/Inc`. Other CAN .h files can go in the same place, and .c files can go in `Core/Src/CAN/`.
+
 ## 80da62c
 
 ### Added
