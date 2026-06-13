@@ -37,6 +37,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "can_dictionary.h"
+#include "can_motor.h"
 
 /* USER CODE END Includes */
 
