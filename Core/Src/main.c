@@ -155,22 +155,9 @@ int main(void)
   
  CAN_FilterTypeDef sFilterConfig;
   /*MPPT Filter Bank*/
-  sFilterConfig.FilterBank = 0;
-  sFilterConfig.FilterMode = CAN_FILTERMODE_IDMASK;
-  sFilterConfig.FilterScale = CAN_FILTERSCALE_32BIT;
-  
-  sFilterConfig.FilterIdHigh = (0x600 << 5);
-  sFilterConfig.FilterMaskIdHigh = (0x7F0 << 5);
-  sFilterConfig.FilterIdLow = 0x0000;
-  sFilterConfig.FilterMaskIdLow = 0x0000;
-  sFilterConfig.FilterFIFOAssignment = CAN_RX_FIFO0;
-  sFilterConfig.FilterActivation = ENABLE;
-  sFilterConfig.SlaveStartFilterBank = 14;
-
-  HAL_CAN_ConfigFilter(&hcan1, &sFilterConfig);
   
   /*Kelly Dual Motor Controller Filter Bank*/
-  sFilterConfig.FilterBank = 1;
+  sFilterConfig.FilterBank = 0;
 
   sFilterConfig.FilterMode = CAN_FILTERMODE_IDLIST; //Strict
   sFilterConfig.FilterScale = CAN_FILTERSCALE_32BIT;
@@ -181,12 +168,29 @@ int main(void)
   sFilterConfig.FilterMaskIdLow = 0x0000;
   sFilterConfig.FilterFIFOAssignment = CAN_RX_FIFO0;
   sFilterConfig.FilterActivation = ENABLE;
-
+  sFilterConfig.SlaveStartFilterBank = 14;
   HAL_CAN_ConfigFilter(&hcan1, &sFilterConfig);
+  /*MPPT Filter Bank*/
+  sFilterConfig.FilterBank = 14;
+  
+  sFilterConfig.FilterMode = CAN_FILTERMODE_IDMASK;
+  sFilterConfig.FilterScale = CAN_FILTERSCALE_32BIT;
+  
+  sFilterConfig.FilterIdHigh = (0x600 << 5);
+  sFilterConfig.FilterMaskIdHigh = (0x7F0 << 5);
+  sFilterConfig.FilterIdLow = 0x0000;
+  sFilterConfig.FilterMaskIdLow = 0x0000;
+  sFilterConfig.FilterFIFOAssignment = CAN_RX_FIFO0;
+  sFilterConfig.FilterActivation = ENABLE;
+ 
+
+  HAL_CAN_ConfigFilter(&hcan2, &sFilterConfig);
 
   /*CAN Bus1 Initialization*/
   HAL_CAN_Start(&hcan1);
   HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
+  HAL_CAN_Start(&hcan2);
+  HAL_CAN_ActivateNotification(&hcan2, CAN_IT_RX_FIFO0_MSG_PENDING);
   
   /* USER CODE END 2 */
 
