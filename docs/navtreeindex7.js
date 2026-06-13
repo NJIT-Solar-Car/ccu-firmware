@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"d8/d5c/group__SPI__Direction.html#ga444826cf94667f75503f54704b2fb391":[1,2,15,4,2,2],
 "d8/d5c/group__SPI__Direction.html#gaa7cb7f4bf4eebbf91bcfaeb17ebba7f3":[1,2,15,4,2,1],
 "d8/d5c/group__SPI__Direction.html#gab0f684caf5f1d6ac1e73d90a4778ab93":[1,2,15,4,2,0],
 "d8/d68/group__I2C__Interrupt__configuration__definition.html":[1,2,9,4,8],
@@ -135,6 +136,12 @@ var NAVTREEINDEX7 =
 "d8/df7/stm32f4xx__hal__msp_8c.html#ae4fb8e66865c87d0ebab74a726a6891f":[3,0,0,1,3,4],
 "d9/d01/group__GPIO__Exported__Functions.html":[1,2,8,0],
 "d9/d03/group__EXTI__Exported__Constants.html":[1,2,19,2],
+"d9/d04/group__CAN__Structs.html":[1,0,0,3],
+"d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352":[1,0,0,3,4],
+"d9/d04/group__CAN__Structs.html#ga44639ecc24a17157a56d5f189239095c":[1,0,0,3,5],
+"d9/d04/group__CAN__Structs.html#ga5e507f3828f12cac6119e6c1c98d6849":[1,0,0,3,6],
+"d9/d04/group__CAN__Structs.html#ga88e51faec9b102961f1310b6dcb8870d":[1,0,0,3,3],
+"d9/d04/group__CAN__Structs.html#gac52caddfa83873c8a5d76019720f853b":[1,0,0,3,2],
 "d9/d0b/group__DMA__Handle__index.html":[1,2,16,3,48],
 "d9/d0b/group__DMA__Handle__index.html#ga15f38cee11f8b2b5a85cbf4552ba140d":[1,2,16,3,48,6],
 "d9/d0b/group__DMA__Handle__index.html#ga1860c00b370435ff40d9e65f14a61706":[1,2,16,3,48,3],
@@ -242,12 +249,5 @@ var NAVTREEINDEX7 =
 "d9/d8f/group__SPI__Slave__Select__management.html#ga0bf14691b9d03eb158f190cefa7ab8fc":[1,2,15,4,6,2],
 "d9/d8f/group__SPI__Slave__Select__management.html#ga62c42a5e28ce3b0dc92c5186c10accf8":[1,2,15,4,6,0],
 "d9/d8f/group__SPI__Slave__Select__management.html#gab7f2da432661406a37fa2afe4efacd87":[1,2,15,4,6,1],
-"d9/d8f/group__TIM__Trigger__Selection.html":[1,2,16,3,43],
-"d9/d8f/group__TIM__Trigger__Selection.html#ga0ed58a269bccd3f22d19cc9a2ba3123f":[1,2,16,3,43,8],
-"d9/d8f/group__TIM__Trigger__Selection.html#ga257bee9dc9f2f71a73124dd8c2329480":[1,2,16,3,43,5],
-"d9/d8f/group__TIM__Trigger__Selection.html#ga38d3514d54bcdb0ea8ac8bd91c5832b5":[1,2,16,3,43,7],
-"d9/d8f/group__TIM__Trigger__Selection.html#ga63183e611b91c5847040172c0069514d":[1,2,16,3,43,4],
-"d9/d8f/group__TIM__Trigger__Selection.html#ga8599ba58a5f911d648503c7ac55d4320":[1,2,16,3,43,3],
-"d9/d8f/group__TIM__Trigger__Selection.html#ga8c89554efc693e679c94b5a749af123c":[1,2,16,3,43,6],
-"d9/d8f/group__TIM__Trigger__Selection.html#gab7cf2b7db3956d4fd1e5a5d84f4891e7":[1,2,16,3,43,1]
+"d9/d8f/group__TIM__Trigger__Selection.html":[1,2,16,3,43]
 };

@@ -161,6 +161,7 @@ var NAVTREEINDEX6 =
 "d7/dbd/group__Main.html#gab77168d14df04ccca5d48612ee21ced8":[1,0,1,8],
 "d7/dbd/group__Main.html#gab9da65f935e805137e2eb4e18c5ab224":[1,0,1,11],
 "d7/dbd/group__Main.html#gaf7b2c26e44dadaaa798a5c3d82914ba7":[1,0,1,9],
+"d7/dc5/group__CAN__Funcs.html":[1,0,0,4],
 "d7/dc5/group__FLASHEx__Banks.html":[1,2,6,2,11],
 "d7/dcd/group__RCC__PLL__Configuration.html":[1,2,13,4,17],
 "d7/dcd/group__RCC__PLL__Configuration.html#ga718a6afcb1492cc2796be78445a7d5ab":[1,2,13,4,17,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "d8/d56/group__TIM__Exported__Functions__Group3.html#gad77367f9b8d8d17842a913f7d6ce274b":[1,2,16,0,2,8],
 "d8/d56/group__TIM__Exported__Functions__Group3.html#gae087011858379feeb770ecb4568829d3":[1,2,16,0,2,7],
 "d8/d56/group__TIM__Exported__Functions__Group3.html#gaf94d3d2003a4eebed73744ccd5c85974":[1,2,16,0,2,3],
-"d8/d5c/group__SPI__Direction.html":[1,2,15,4,2],
-"d8/d5c/group__SPI__Direction.html#ga444826cf94667f75503f54704b2fb391":[1,2,15,4,2,2]
+"d8/d5c/group__SPI__Direction.html":[1,2,15,4,2]
 };

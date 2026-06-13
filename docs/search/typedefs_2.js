@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['spi_5fhandletypedef_0',['SPI_HandleTypeDef',['../d5/dfb/group__SPI__Exported__Types.html#gab633e49dd034de2f3a1fe79853d78d18',1,'stm32f4xx_hal_spi.h']]]
+  ['motorcontrollerinfo_0',['MotorControllerInfo',['../d9/d04/group__CAN__Structs.html#gac52caddfa83873c8a5d76019720f853b',1,'can_motor.h']]],
+  ['motorpacketinfo_1',['MotorPacketInfo',['../d9/d04/group__CAN__Structs.html#ga88e51faec9b102961f1310b6dcb8870d',1,'can_motor.h']]]
 ];

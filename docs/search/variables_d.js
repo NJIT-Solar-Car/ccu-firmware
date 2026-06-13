@@ -25,5 +25,6 @@ var searchData=
   ['ptxbuffptr_22',['ptxbuffptr',['../d0/d3e/struct____SPI__HandleTypeDef.html#aacb6c3c55011b1b4d2a2ee1b4c012984',1,'__SPI_HandleTypeDef::pTxBuffPtr'],['../df/da4/struct____UART__HandleTypeDef.html#ac997bb43410d347931f519a745a6e75f',1,'__UART_HandleTypeDef::pTxBuffPtr']]],
   ['pull_23',['Pull',['../db/d19/structGPIO__InitTypeDef.html#aa2d3a6b0c4e10ac20882b4a37799ced1',1,'GPIO_InitTypeDef']]],
   ['pulse_24',['pulse',['../d9/d4a/structTIM__OC__InitTypeDef.html#a61fb5b9ef4154de67620ac81085a0e39',1,'TIM_OC_InitTypeDef::Pulse'],['../df/d94/structTIM__OnePulse__InitTypeDef.html#a4f1fbf6d60812c3194e9ee8a05f5cfa6',1,'TIM_OnePulse_InitTypeDef::Pulse']]],
-  ['pvdlevel_25',['PVDLevel',['../d8/d48/structPWR__PVDTypeDef.html#a540471bc6ac947fd8bc2c87f61d9faab',1,'PWR_PVDTypeDef']]]
+  ['pvdlevel_25',['PVDLevel',['../d8/d48/structPWR__PVDTypeDef.html#a540471bc6ac947fd8bc2c87f61d9faab',1,'PWR_PVDTypeDef']]],
+  ['pwm_26',['PWM',['../da/ddc/structMotorPacketInfo.html#a5d0e4dc24e6cb30d2a8c64345caf42fe',1,'MotorPacketInfo']]]
 ];

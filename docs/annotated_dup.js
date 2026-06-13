@@ -22,6 +22,8 @@ var annotated_dup =
     [ "I2C_InitTypeDef", "da/d51/structI2C__InitTypeDef.html", "da/d51/structI2C__InitTypeDef" ],
     [ "LL_UTILS_ClkInitTypeDef", "d5/d71/structLL__UTILS__ClkInitTypeDef.html", "d5/d71/structLL__UTILS__ClkInitTypeDef" ],
     [ "LL_UTILS_PLLInitTypeDef", "d1/d4b/structLL__UTILS__PLLInitTypeDef.html", "d1/d4b/structLL__UTILS__PLLInitTypeDef" ],
+    [ "MotorControllerInfo", "dd/dd2/structMotorControllerInfo.html", "dd/dd2/structMotorControllerInfo" ],
+    [ "MotorPacketInfo", "da/ddc/structMotorPacketInfo.html", "da/ddc/structMotorPacketInfo" ],
     [ "PWR_PVDTypeDef", "d8/d48/structPWR__PVDTypeDef.html", "d8/d48/structPWR__PVDTypeDef" ],
     [ "RCC_ClkInitTypeDef", "dc/d1e/structRCC__ClkInitTypeDef.html", "dc/d1e/structRCC__ClkInitTypeDef" ],
     [ "RCC_OscInitTypeDef", "d0/d1e/structRCC__OscInitTypeDef.html", "d0/d1e/structRCC__OscInitTypeDef" ],

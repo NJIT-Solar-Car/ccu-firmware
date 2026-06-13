@@ -24,6 +24,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
    <div id="projectname">NJIT Solar Car CCU Firmware<span id="projectnumber">&#160;1.0</span>
    </div>
@@ -109,21 +110,31 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="line">...</div>
 </div><!-- fragment --><p>This format is adopted from <a href="https://keepachangelog.com">keepachangelog.com</a>.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
-28696b2</h1>
+98df7c9</h1>
 <h2><a class="anchor" id="autotoc_md2"></a>
+Added</h2>
+<ul>
+<li>Kelly KBL controller datasheet</li>
+<li>Added <a class="el" href="dd/dd2/structMotorControllerInfo.html" title="Struct holding general, static info about a motor controller. Order is optimized for struct size whic...">MotorControllerInfo</a> and <a class="el" href="da/ddc/structMotorPacketInfo.html" title="Struct holding information about a received packet. By default, this has all the data you can acquire...">MotorPacketInfo</a> structs, which will hold static information about the motor controllers, and live status info about the motors/motor controllers respectively.</li>
+<li>Yet to add functions which will communicate with the controllers over CAN bus</li>
+<li>Once functions are written, they can most likely be called periodically using a timer, and have the outputs fill up a buffer which the LoRA code will pop from.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md3"></a>
+28696b2</h1>
+<h2><a class="anchor" id="autotoc_md4"></a>
 Added</h2>
 <ul>
 <li>As of commit 54235db, JP added the CAN_Dictionary, which holds all the motor controller and MPPT charge controller addresses and IDs.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 Changed</h2>
 <ul>
 <li>Moved Doxygen output to docs folder. This will allow a gh pages deployment. Possibly implement the doxygen running thing with gh actions in the future.</li>
 <li>Moved the CAN_Dictionary.h file to <code>Core/Src/CAN/Inc</code>. Other CAN .h files can go in the same place, and .c files can go in <code>Core/Src/CAN/</code>.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md4"></a>
+<h1><a class="anchor" id="autotoc_md6"></a>
 80da62c</h1>
-<h2><a class="anchor" id="autotoc_md5"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 Added</h2>
 <ul>
 <li>Added this changelog, and an initial Doxygen doxyfile</li>
@@ -132,9 +143,9 @@ Added</h2>
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md6"></a>
+<h1><a class="anchor" id="autotoc_md8"></a>
 2e22da2</h1>
-<h2><a class="anchor" id="autotoc_md7"></a>
+<h2><a class="anchor" id="autotoc_md9"></a>
 Added</h2>
 <ul>
 <li>Created the initial CubeMX configuration. Not complete! It's a temporary configuration that will change once the CCU is finalized.</li>

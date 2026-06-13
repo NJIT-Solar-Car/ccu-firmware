@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['pwr_5fpvdtypedef_0',['PWR_PVDTypeDef',['../d8/d48/structPWR__PVDTypeDef.html',1,'']]]
+  ['motorcontrollerinfo_0',['MotorControllerInfo',['../dd/dd2/structMotorControllerInfo.html',1,'']]],
+  ['motorpacketinfo_1',['MotorPacketInfo',['../da/ddc/structMotorPacketInfo.html',1,'']]]
 ];

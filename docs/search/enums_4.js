@@ -1,4 +1,19 @@
 var searchData=
 [
-  ['irqn_5ftype_0',['IRQn_Type',['../dc/d1a/group__Peripheral__interrupt__number__definition.html#ga7e1129cd8a196f4284d41db3e82ad5c8',1,'stm32f413xx.h']]]
+  ['hal_5fcan_5fstatetypedef_0',['HAL_CAN_StateTypeDef',['../da/d66/group__CAN__Exported__Types.html#ga264af82e7978f32e1d75a21ce46fade4',1,'stm32f4xx_hal_can.h']]],
+  ['hal_5fdma_5fcallbackidtypedef_1',['HAL_DMA_CallbackIDTypeDef',['../d0/dd6/group__DMA__Exported__Types.html#gafbe8b2bd9ce2128de6cdc08ccde7e8ad',1,'stm32f4xx_hal_dma.h']]],
+  ['hal_5fdma_5flevelcompletetypedef_2',['HAL_DMA_LevelCompleteTypeDef',['../d0/dd6/group__DMA__Exported__Types.html#gaee3245eea8fa938edeb35a6c9596fd86',1,'stm32f4xx_hal_dma.h']]],
+  ['hal_5fdma_5fmemorytypedef_3',['HAL_DMA_MemoryTypeDef',['../de/d2f/group__DMAEx__Exported__Types.html#ga9cec283a461e47eda968838c35fd6eed',1,'stm32f4xx_hal_dma_ex.h']]],
+  ['hal_5fdma_5fstatetypedef_4',['HAL_DMA_StateTypeDef',['../d0/dd6/group__DMA__Exported__Types.html#ga9c012af359987a240826f29073bbe463',1,'stm32f4xx_hal_dma.h']]],
+  ['hal_5fi2c_5fmodetypedef_5',['HAL_I2C_ModeTypeDef',['../d2/d17/group__HAL__mode__structure__definition.html#gabcbb7b844f2ffd63c4e530c117882062',1,'stm32f4xx_hal_i2c.h']]],
+  ['hal_5fi2c_5fstatetypedef_6',['HAL_I2C_StateTypeDef',['../d0/d6e/group__HAL__state__structure__definition.html#gaef355af8eab251ae2a19ee164ad81c37',1,'stm32f4xx_hal_i2c.h']]],
+  ['hal_5flocktypedef_7',['HAL_LockTypeDef',['../d8/d04/stm32f4xx__hal__def_8h.html#ab367482e943333a1299294eadaad284b',1,'stm32f4xx_hal_def.h']]],
+  ['hal_5fspi_5fstatetypedef_8',['HAL_SPI_StateTypeDef',['../d5/dfb/group__SPI__Exported__Types.html#ga8891cb64e76198a860172d94c638c9b4',1,'stm32f4xx_hal_spi.h']]],
+  ['hal_5fstatustypedef_9',['HAL_StatusTypeDef',['../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f',1,'stm32f4xx_hal_def.h']]],
+  ['hal_5ftickfreqtypedef_10',['HAL_TickFreqTypeDef',['../db/df5/group__HAL__TICK__FREQ.html#gab36ec81674817249c46734772ff3b73a',1,'stm32f4xx_hal.h']]],
+  ['hal_5ftim_5factivechannel_11',['HAL_TIM_ActiveChannel',['../d6/d18/group__TIM__Exported__Types.html#gaa3fa7bcbb4707f1151ccfc90a8cf9706',1,'stm32f4xx_hal_tim.h']]],
+  ['hal_5ftim_5fchannelstatetypedef_12',['HAL_TIM_ChannelStateTypeDef',['../d6/d18/group__TIM__Exported__Types.html#ga1a70fcbe9952e18af5c890e216a15f34',1,'stm32f4xx_hal_tim.h']]],
+  ['hal_5ftim_5fdmaburststatetypedef_13',['HAL_TIM_DMABurstStateTypeDef',['../d6/d18/group__TIM__Exported__Types.html#ga9b87df539778a60ea940a9d5ba793f7c',1,'stm32f4xx_hal_tim.h']]],
+  ['hal_5ftim_5fstatetypedef_14',['HAL_TIM_StateTypeDef',['../d6/d18/group__TIM__Exported__Types.html#gae0994cf5970e56ca4903e9151f40010c',1,'stm32f4xx_hal_tim.h']]],
+  ['hal_5fuart_5fstatetypedef_15',['HAL_UART_StateTypeDef',['../df/d66/group__UART__Exported__Types.html#gaf55d844a35379c204c90be5d1e8e50ba',1,'stm32f4xx_hal_uart.h']]]
 ];

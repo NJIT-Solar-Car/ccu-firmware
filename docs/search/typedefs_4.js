@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['tz_5fmemoryid_5ft_0',['TZ_MemoryId_t',['../d6/d3d/tz__context_8h.html#a7acd18a8eb2350fe7ad5715fdbfa8f8c',1,'tz_context.h']]],
-  ['tz_5fmoduleid_5ft_1',['TZ_ModuleId_t',['../d6/d3d/tz__context_8h.html#ad5ef21485fe5f60263bc0b48006202cb',1,'tz_context.h']]]
+  ['uart_5fhandletypedef_0',['UART_HandleTypeDef',['../df/d66/group__UART__Exported__Types.html#ga5de4a49eb132735325e706f406c69d6e',1,'stm32f4xx_hal_uart.h']]]
 ];

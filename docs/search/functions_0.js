@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['_5f_5fattribute_5f_5f_0',['__attribute__',['../d5/d87/syscalls_8c.html#af9aace1b44b73111e15aa39f06f43456',1,'syscalls.c']]],
+  ['_5f_5fattribute_5f_5f_0',['__attribute__',['../d5/d87/syscalls_8c.html#af9aace1b44b73111e15aa39f06f43456',1,'__attribute__((weak)):&#160;syscalls.c'],['../d9/d04/group__CAN__Structs.html#ga5e507f3828f12cac6119e6c1c98d6849',1,'__attribute__((packed)) CommandType:&#160;can_motor.h']]],
   ['_5f_5fio_5fgetchar_1',['__io_getchar',['../d5/d87/syscalls_8c.html#ad0122671640a3af49792ddaa59e8294e',1,'syscalls.c']]],
   ['_5f_5fio_5fputchar_2',['__io_putchar',['../d5/d87/syscalls_8c.html#aa53ed4b191897a1bfc205aa1da005d24',1,'syscalls.c']]],
   ['_5fclose_3',['_close',['../d5/d87/syscalls_8c.html#a5aab5e2acfd600e3667dc915a2bbc7cb',1,'syscalls.c']]],

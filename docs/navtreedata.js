@@ -59,13 +59,14 @@ var NAVTREEINDEX =
 "d4/df4/group__RCC__BitAddress__AliasRegion.html#ga577ffeb20561aa8395fe5327807b5709",
 "d6/d27/group__DMA__FIFO__threshold__level.html#ga5de463bb24dc12fe7bbb300e1e4493f7",
 "d7/d74/stm32f4xx__hal__conf_8h.html#a057b4d3fb66548d65c291a5b41611be2",
-"d8/d5c/group__SPI__Direction.html#gaa7cb7f4bf4eebbf91bcfaeb17ebba7f3",
-"d9/d8f/group__TIM__Trigger__Selection.html#gad90fbca297153ca9c0112a67ea2c6cb3",
-"db/d76/group__TIM__Output__Fast__State.html",
-"dc/d30/group__RCC__AHB1__Clock__Enable__Disable.html#ga569dc8b9e178a8afab2664fdf87f46c5",
-"dd/d59/group__CORTEX__LL__EF__HANDLER.html#ga904eb6ce46a723dd47b468241c6b0a2c",
-"de/daa/group__RCC__AHB1__LowPower__Enable__Disable.html#ga293f9870ba631d23f8011bad12420f83",
-"df/da1/stm32f4xx__it_8h.html#a850cefb17a977292ae5eb4cafa9976c3"
+"d8/d5c/group__SPI__Direction.html#ga444826cf94667f75503f54704b2fb391",
+"d9/d8f/group__TIM__Trigger__Selection.html#ga0ed58a269bccd3f22d19cc9a2ba3123f",
+"db/d6c/group__PWR__PVD__detection__level.html#ga5dda7d0ac3fd3d606666455ca3c8f537",
+"dc/d2e/group__HAL__Exported__Functions__Group2.html#ga803cdbcc0883bcf5f5c98c50024c97e6",
+"dd/d39/structI2C__HandleTypeDef.html#af28a07c34f97e2b2ade505357a467a50",
+"de/d58/group__CORTEX__Preemption__Priority__Group.html#gae6eab9140204bc938255aa148e597c45",
+"df/d8c/group__I2C__IRQ__Handler__and__Callbacks.html",
+"globals_l.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

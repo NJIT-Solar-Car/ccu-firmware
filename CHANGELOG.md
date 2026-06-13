@@ -20,6 +20,15 @@ Put all software notes/changelog stuff here. Try to format something like below 
 
 This format is adopted from [keepachangelog.com](https://keepachangelog.com).
 
+## 98df7c9
+
+### Added
+
+- Kelly KBL controller datasheet
+- Added MotorControllerInfo and MotorPacketInfo structs, which will hold static information about the motor controllers, and live status info about the motors/motor controllers respectively.
+- Yet to add functions which will communicate with the controllers over CAN bus
+- Once functions are written, they can most likely be called periodically using a timer, and have the outputs fill up a buffer which the LoRA code will pop from.
+
 ## 28696b2
 
 ### Added

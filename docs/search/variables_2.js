@@ -17,8 +17,11 @@ var searchData=
   ['clocksource_14',['ClockSource',['../d4/d28/structTIM__ClockConfigTypeDef.html#a54c329013b5f6f87d1c3d2495fca84d2',1,'TIM_ClockConfigTypeDef']]],
   ['clockspeed_15',['ClockSpeed',['../da/d51/structI2C__InitTypeDef.html#a45f1209e7e43e55f055bd9ead064230a',1,'I2C_InitTypeDef']]],
   ['clocktype_16',['ClockType',['../dc/d1e/structRCC__ClkInitTypeDef.html#a93a53676a1cfc5b55b8b990e7ff4dac5',1,'RCC_ClkInitTypeDef']]],
-  ['commutation_5fdelay_17',['Commutation_Delay',['../db/d52/structTIM__HallSensor__InitTypeDef.html#a822efefca8a13af284e84070bd19bb91',1,'TIM_HallSensor_InitTypeDef']]],
-  ['countermode_18',['CounterMode',['../d3/d2d/structTIM__Base__InitTypeDef.html#a16d0c02a8f35426360a64c0706656e35',1,'TIM_Base_InitTypeDef']]],
-  ['crccalculation_19',['CRCCalculation',['../d2/dc3/structSPI__InitTypeDef.html#a3472de9bd9247c1d97312aff7e58e385',1,'SPI_InitTypeDef']]],
-  ['crcpolynomial_20',['CRCPolynomial',['../d2/dc3/structSPI__InitTypeDef.html#abdaf3ccbfa4ef68cc81fd32f29baa678',1,'SPI_InitTypeDef']]]
+  ['command_17',['Command',['../da/ddc/structMotorPacketInfo.html#a8cf8337e81985739f9da1ec99a6d69e2',1,'MotorPacketInfo']]],
+  ['commutation_5fdelay_18',['Commutation_Delay',['../db/d52/structTIM__HallSensor__InitTypeDef.html#a822efefca8a13af284e84070bd19bb91',1,'TIM_HallSensor_InitTypeDef']]],
+  ['controllerinfo_19',['ControllerInfo',['../da/ddc/structMotorPacketInfo.html#a0d0dd68c549cea254e32dd9e78eae4f3',1,'MotorPacketInfo']]],
+  ['controllertemp_20',['ControllerTemp',['../da/ddc/structMotorPacketInfo.html#a28a1d8c33352959805c20b473db8107b',1,'MotorPacketInfo']]],
+  ['countermode_21',['CounterMode',['../d3/d2d/structTIM__Base__InitTypeDef.html#a16d0c02a8f35426360a64c0706656e35',1,'TIM_Base_InitTypeDef']]],
+  ['crccalculation_22',['CRCCalculation',['../d2/dc3/structSPI__InitTypeDef.html#a3472de9bd9247c1d97312aff7e58e385',1,'SPI_InitTypeDef']]],
+  ['crcpolynomial_23',['CRCPolynomial',['../d2/dc3/structSPI__InitTypeDef.html#abdaf3ccbfa4ef68cc81fd32f29baa678',1,'SPI_InitTypeDef']]]
 ];
