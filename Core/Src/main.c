@@ -123,10 +123,10 @@ static void MX_GPIO_Init(void);
 static void MX_CAN1_Init(void);
 static void MX_CAN2_Init(void);
 static void MX_I2C1_Init(void);
+static void MX_USART1_UART_Init(void);
 static void MX_I2C3_Init(void);
 static void MX_SPI2_Init(void);
 static void MX_TIM1_Init(void);
-static void MX_USART1_UART_Init(void);
 static void MX_USART2_UART_Init(void);
 void StartDefaultTask(void *argument);
 
@@ -171,10 +171,10 @@ int main(void)
   MX_CAN1_Init();
   MX_CAN2_Init();
   MX_I2C1_Init();
+  MX_USART1_UART_Init();
   MX_I2C3_Init();
   MX_SPI2_Init();
   MX_TIM1_Init();
-  MX_USART1_UART_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
   
@@ -756,8 +756,25 @@ void StartDefaultTask(void *argument)
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 5 */
   /* Infinite loop */
-  for(;;)
-  {
+  for(;;) {
+    switch (CurrentVehicleState) {
+	case Vehicle_Boot:
+	  	HAL_GPIO_WritePin(GPIOC, LED_Heartbeat_Pin, GPIO_PIN_SET);
+		//add code dealing with charging (relays)
+	  	CurrentVehicleState = Vehicle_Neutral;
+	  	break;
+	case Vehicle_Neutral:
+	  	//add code: motors are at 0 rpm.
+	  	CurrentVehicleState = Vehicle_Drive;
+	  	break;
+	case Vehicle_Drive:
+	  	//add code
+	  	CurrentVehicleState = Vehicle_Fault;
+	  	break;
+	case Vehicle_Fault:
+	  	//if the fault counter reaches certain value, end up here.
+	  	break;
+	}
     osDelay(1);
   }
   /* USER CODE END 5 */
