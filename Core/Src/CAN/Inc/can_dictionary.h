@@ -68,6 +68,36 @@
 #define CAN_ID_CCU_MPPT1_MODE           0x608   /**< mode_cmd, 0 = standby, 1 = on, uint8, rx*/
 #define CAN_ID_CCU_MPPT1_VMAX           0x60A   /**< Bytes 0-3: max_out_volt_cmd, float32, rx*/
 #define CAN_ID_CCU_MPPT1_IMAX           0x60B   /**< Bytes 0-3: max_out_current_cmd, float32, rx*/
+
+/*Elmar MPPT1 Data*/
+
+typedef struct {
+//0x600 Inputs
+float InputVoltage;
+float InputCurrent;
+//0x601 Outputs
+float OutputVoltage;
+float OutputCurrent;
+//0x602 Temps
+float MosfetTemp;
+float CtrlTemp;
+// 0x603 - Aux Power Supply
+float Rail12V;
+float Rail3V3;
+// 0x604 Limits
+float MaxOutVolt;
+float MaxInCurrent;
+// 0x605 Status & Flags
+uint8_t ErrorFlags;  
+uint8_t LimitFlags;
+uint8_t Mode;  
+// 0x606 Power Connector Safety
+float VoutFuse;
+float PowerConnTemp;   
+} MPPT1_Data_t;
+
+
+
 /**
  * @}
  */
