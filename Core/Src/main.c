@@ -35,6 +35,7 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "usb_device.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "can_dictionary.h"
@@ -177,41 +178,10 @@ int main(void)
   MX_TIM1_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-  
- CAN_FilterTypeDef sFilterConfig;
-  /*MPPT Filter Bank*/
-  
-  /*Kelly Dual Motor Controller Filter Bank*/
-  sFilterConfig.FilterBank = 0;
 
-  sFilterConfig.FilterMode = CAN_FILTERMODE_IDLIST; //Strict
-  sFilterConfig.FilterScale = CAN_FILTERSCALE_32BIT;
-  
-  sFilterConfig.FilterIdHigh = (0x73 << 5); //Motor 1
-  sFilterConfig.FilterIdLow = 0x0000;
-  sFilterConfig.FilterMaskIdHigh = (0x74 << 5); //Moter 2
-  sFilterConfig.FilterMaskIdLow = 0x0000;
-  sFilterConfig.FilterFIFOAssignment = CAN_RX_FIFO0;
-  sFilterConfig.FilterActivation = ENABLE;
-  sFilterConfig.SlaveStartFilterBank = 14;
-  HAL_CAN_ConfigFilter(&hcan1, &sFilterConfig);
-  /*MPPT Filter Bank*/
-  sFilterConfig.FilterBank = 14;
-  
-  sFilterConfig.FilterMode = CAN_FILTERMODE_IDMASK;
-  sFilterConfig.FilterScale = CAN_FILTERSCALE_32BIT;
-  
-  sFilterConfig.FilterIdHigh = (0x600 << 5);
-  sFilterConfig.FilterMaskIdHigh = (0x7F0 << 5);
-  sFilterConfig.FilterIdLow = 0x0000;
-  sFilterConfig.FilterMaskIdLow = 0x0000;
-  sFilterConfig.FilterFIFOAssignment = CAN_RX_FIFO0;
-  sFilterConfig.FilterActivation = ENABLE;
- 
+  /* Setup CAN filters for kelly controllers and MPPT controllers. */
+  CCU_CAN_FilterConfig(&hcan1, &hcan2);
 
-  HAL_CAN_ConfigFilter(&hcan2, &sFilterConfig);
-
-  /*CAN Bus1 Initialization*/
   HAL_CAN_Start(&hcan1);
   HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
   HAL_CAN_Start(&hcan2);

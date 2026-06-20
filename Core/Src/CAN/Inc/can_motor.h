@@ -1,6 +1,6 @@
 /**
  * @file can_motor.h
- * @brief Holds function and struct definitions which pertain to the Kelly KBL motor controller.
+ * @brief Holds function and struct definitions which pertain to the Kelly KBL motor controller *and* CAN bus functions in general.
  * @author Arnav Revankar
  */
 
@@ -100,7 +100,42 @@ typedef enum MotorStatus {
 
 /**
  * @defgroup CAN_Funcs
- * @brief Functions for interacting with CAN bus
+ * @brief *User defined* functions for interacting with CAN bus. These effectively wrap the HAL functions and use FreeRTOS mutexes
+ * to guarantee no race conditions. **CAN Function docs begin on page 87 of UM1725!!**
+ *
+ * @{
+ */
+
+/**
+ * @brief Initializes the global CAN mutex variable (in \ref CCU_CAN.c)
+ * @retval BaseType_t pdPASS if successful, pdFAIL if mutex creation failed.
+ */
+BaseType_t CCU_CAN_Init(void);
+
+/**
+ * @brief Initialize the filters for the CAN peripheral. Assumes that \ref MX_CAN1_Init() has been called. Ideally place 
+ * after USER CODE BEGIN 2.
+ */
+void CCU_CAN_FilterConfig(CAN_FilterTypeDef *phcan1, CAN_FilterTypeDef *phcan2);
+
+/**
+ * @brief  Thread-safe wrapper for HAL_CAN_AddTxMessage. Blocks until a hardware mailbox is available and transmits safely.
+ * @param  hcan: pointer to a CAN_HandleTypeDef structure
+ * @param  pHeader: pointer to a CAN_TxHeaderTypeDef structure
+ * @param  aData: array containing the data payload
+ * @param  pTxMailbox: pointer to a variable where the assigned mailbox will be stored
+ * @param  xTicksToWait: Maximum FreeRTOS ticks to wait to acquire the mutex. Optimal value TBD.
+ * @retval HAL_StatusTypeDef: HAL_OK, HAL_ERROR, or HAL_TIMEOUT (if mutex couldn't be acquired)
+ */
+HAL_StatusTypeDef CCU_CAN_Tx(CAN_HandleTypeDef *hcan, CAN_TxHeaderTypeDef *pHeader, uint8_t aData[], uint32_t *pTxMailbox, TickType_t xTicksToWait);
+
+/**
+ * @}
+ */
+
+/**
+ * @defgroup CAN_Motor_Funcs
+ * @brief Functions for interacting with motor controllers via the CAN bus
  *
  * @{
  */

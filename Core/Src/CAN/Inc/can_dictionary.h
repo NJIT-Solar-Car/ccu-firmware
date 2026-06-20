@@ -57,6 +57,7 @@
  *
  * @{
  */
+
 /*Elmar MPPT1 Base IDs*/
 #define CAN_ID_MPPT1_INPUTMEAS          0x600   /**< Bytes 0-3: input_voltage; Bytes 4-7: input_current, float32, tx*/
 #define CAN_ID_MPPT1_OUTPUTMEAS         0x601   /**< Bytes 0-3: output_voltage; Bytes 4-7: output_current, float32, tx*/
@@ -70,33 +71,30 @@
 #define CAN_ID_CCU_MPPT1_IMAX           0x60B   /**< Bytes 0-3: max_out_current_cmd, float32, rx*/
 
 /*Elmar MPPT1 Data*/
-
 typedef struct {
-//0x600 Inputs
-float InputVoltage;
-float InputCurrent;
-//0x601 Outputs
-float OutputVoltage;
-float OutputCurrent;
-//0x602 Temps
-float MosfetTemp;
-float CtrlTemp;
-// 0x603 - Aux Power Supply
-float Rail12V;
-float Rail3V3;
-// 0x604 Limits
-float MaxOutVolt;
-float MaxInCurrent;
-// 0x605 Status & Flags
-uint8_t ErrorFlags;  
-uint8_t LimitFlags;
-uint8_t Mode;  
-// 0x606 Power Connector Safety
-float VoutFuse;
-float PowerConnTemp;   
+	// 0x600 Inputs
+	float InputVoltage;
+	float InputCurrent;
+	// 0x601 Outputs
+	float OutputVoltage;
+	float OutputCurrent;
+	// 0x602 Temps
+	float MosfetTemp;
+	float CtrlTemp;
+	// 0x603 - Aux Power Supply
+	float Rail12V;
+	float Rail3V3;
+	// 0x604 Limits
+	float MaxOutVolt;
+	float MaxInCurrent;
+	// 0x605 Status & Flags
+	uint8_t ErrorFlags;  
+	uint8_t LimitFlags;
+	uint8_t Mode;  
+	// 0x606 Power Connector Safety
+	float VoutFuse;
+	float PowerConnTemp;   
 } MPPT1_Data_t;
-
-
 
 /**
  * @}
