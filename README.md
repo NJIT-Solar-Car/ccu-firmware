@@ -21,6 +21,31 @@ Strong projects must always have good documentation, for ease of maintenance and
 
 On that last point, you can view the generated docs by opening [./docs/html/index.html][04] in a browser (especially if you regenerate on-the-fly), and the committed version is also available at [njit-solar-car.github.io/ccu-firmware][05]. This documents the entirety of the HAL (and eventually FreeRTOS, still have to figure that out) as it exists *within this repo*, as well as our own code, in the CCU\_Firmware group; best to look to there first when stuck.
 
+## Docker stuff
+
+Optionally, you can use docker to do quick build testing, and also doxygen docs regeneration. To build the image (for the first time only), install Docker Desktop (best on windows) or the Docker Engine, restart ur PC, and run the command below in a terminal. The ccu-build name can be replaced with whatever you want.
+
+*Note!* The built image will take up ~800MB to 1GB on your PC, and building will likely take a few minutes too.
+
+```bash
+docker build -t ccu-build ./
+```
+
+The image runs alpine linux to be lightweight, and comes with Doxygen 1.9.8 and the GNU ARM build tools. To run a container, use:
+
+```bash
+docker run -it --rm -v %CD%:/project ccu-build # For windows
+docker run -it --rm -v $PWD:/project ccu-build # For linux/mac
+```
+
+This will:
+
+- `-it` opens an interactive terminal. Exit any time by typing the command `exit`.
+- `--rm` deletes the container when you're done with it.
+- `-v` links your current directory (CD or PWD) to the `/project` directory in the container.
+
+Then run `make -j$(nproc)` to build the code into binaries, or `doxygen Doxyfile` to regenerate the docs.
+
 <!-- Links -->
 [01]: https://git-scm.com/install/
 [02]: ./CHANGELOG.md
