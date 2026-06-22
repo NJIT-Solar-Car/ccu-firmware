@@ -14,7 +14,7 @@ BaseType_t CCU_CAN_Init() {
   return (xCanTxMutex != NULL) ? pdPASS : pdFAIL;
 }
 
-void CCU_CAN_FilterConfig(CAN_FilterTypeDef *phcan1, CAN_FilterTypeDef *phcan2) {
+void CCU_CAN_FilterConfig(CAN_HandleTypeDef *phcan1, CAN_HandleTypeDef *phcan2) {
   CAN_FilterTypeDef sFilterConfig;
 
   sFilterConfig.FilterMode  = CAN_FILTERMODE_IDLIST;

@@ -118,7 +118,7 @@ BaseType_t CCU_CAN_Init(void);
  * @brief Initialize the filters for the CAN peripheral. Assumes that \ref MX_CAN1_Init() has been called. Ideally place 
  * after USER CODE BEGIN 2.
  */
-void CCU_CAN_FilterConfig(CAN_FilterTypeDef *phcan1, CAN_FilterTypeDef *phcan2);
+void CCU_CAN_FilterConfig(CAN_HandleTypeDef *phcan1, CAN_HandleTypeDef *phcan2);
 
 /**
  * @brief  Thread-safe wrapper for HAL_CAN_AddTxMessage. Blocks until a hardware mailbox is available and transmits safely.
