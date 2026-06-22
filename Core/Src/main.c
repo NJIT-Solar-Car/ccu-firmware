@@ -115,6 +115,12 @@ CommandType LastCommandSent_M2 = NONE; //Right motor command memory
 MotorPacketInfo Motor1_Data; // Left Motor 
 MotorPacketInfo Motor2_Data; // Right Motor
 
+volatile TaskHandle_t xLeftMotorWaiting;
+volatile TaskHandle_t xRightMotorWaiting;
+
+uint8_t LeftMotorRxBuffer[8];
+uint8_t RightMotorRxBuffer[8];
+
 MPPT1_Data_t MPPT1_Data;
 
 //Counts number of dropped packets

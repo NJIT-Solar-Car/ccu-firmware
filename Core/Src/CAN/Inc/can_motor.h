@@ -25,6 +25,20 @@
 #include "stm32f4xx_hal.h"
 
 /**
+ * @defgroup CAN_Defines
+ * @brief Define macros to be used *by us* for CAN communication
+ *
+ * @{
+ */
+
+#define CCU_CAN_RINGBUFFER_SIZE 20	/**< Size of the \ref MotorControllerInfo ringbuffer */
+#define CCU_MOTOR_TIMEOUT 500		/**< Timeout (in ms) of the CAN motor controller functions */
+
+/**
+ * @}
+ */
+
+/**
  * @defgroup CAN_Structs
  * @brief Data structures to be used for CAN communication. This includes motor controller state, state of the CAN-logic on CCU side, and possibly more.
  *
@@ -36,7 +50,7 @@
  * individual command functions for more details.
  */
 typedef enum CommandType {
-	NONE				= 0x00,		/**< No command */
+	COMMAND_NONE		= 0x00,		/**< No command */
 	A2D_BATCH_READ1		= (1 << 0),	/**< A2D Batch Read1. Provides brake and throttle position, and battery voltage */
 	A2D_BATCH_READ2		= (1 << 1),	/**< A2D Batch Read2. Provides 3 phase voltage and current readings. *CURRENTLY UNUSED!!!* */
 	MONITOR1			= (1 << 2),	/**< Monitor1. Provides PWM, as well as motor and controller temp, and low/high side mosfet temp */
@@ -50,9 +64,10 @@ typedef enum CommandType {
  * @brief Specifies the status of the motor. Accelerating, braking, and/or reversing.
  */
 typedef enum MotorStatus {
-	ACC		= (1 << 0),	/**< Accelerator being pressed */
-	BRK		= (1 << 1),	/**< Brake being pressed */
-	REV		= (1 << 2)	/**< Motor is reversing */
+	STATUS_NONE = 0x00		/**< No status */
+	ACC			= (1 << 0),	/**< Accelerator being pressed */
+	BRK			= (1 << 1),	/**< Brake being pressed */
+	REV			= (1 << 2)	/**< Motor is reversing */
 } MotorStatus;
 
 /**
@@ -62,8 +77,7 @@ typedef enum MotorStatus {
 typedef struct MotorControllerInfo {
 	char 		Model[8];					/**< Model name of the motor controller. Really unnecessary, but we have two
 					 						     motors and will only have two of these structs instantiated. */
-	uint32_t 	ID;							/**< 29 bit ID of the motor controller. This will be split into Std_ID and
-											     ExtID within the send/receive functions */
+	uint16_t 	ID;							/**< 11 bit ID of the motor controller. */
 	char 		SoftwareVer[2];				/**< Software version. I believe it should be 83. */
 	uint8_t		ThrottleLowEndDeadZone;		/**< Throttle Low-end dead zone of controller. Can be altered via kelly software over rs232. */
 	uint8_t		ThrottleHighEndDeadZone;	/**< Throttle High-end dead zone of controller. Can be altered via kelly software over rs232. */
@@ -137,10 +151,63 @@ HAL_StatusTypeDef CCU_CAN_Tx(CAN_HandleTypeDef *hcan, CAN_TxHeaderTypeDef *pHead
 
 /**
  * @defgroup CAN_Motor_Funcs
- * @brief Functions for interacting with motor controllers via the CAN bus
+ * @brief Functions for interacting with motor controllers via the CAN bus. Each function's parameter is a pointer to a motor packet info struct, 
+ * and the functions assume they've been initialized to a default. It is from here (pmpi->ControllerInfo->ID) that the motor controller's CAN ID
+ * will be obtained. Additionally, all functions will be blocking until either the controller responds, or the \ref CCU_MOTOR_TIMEOUT times out.
+ *
+ * Overall procedure for each function is: Send a command to the motor controller. Then, use xTaskNotifyWait to block until either the call times out, or a message is received.
+ *
+ * A recieved message is processed by the ISR callback function \ref HAL_CAN_RxFifo0MsgPendingCallback. This function will GLOBALLY handle
+ * all received messages, categorize them based on its ID and/or data, and accordingly pipe the message along. Same applies here.
+ *
+ * In main.c there are two global volatile variables of TaskHandle_t named xLeftMotorWaiting and xRightMotorWaiting. According to which
+ * motor controller we're communicating with, the corresponding task handle will be set to the current task handle with xTaskGetCurrentTaskHandle. 
+ * Then, when a received message is categorized within the ISR callback function, it will accordingly wake the task back up.
  *
  * @{
  */
+
+/**
+ * @brief A2D Batch Read1. Check \ref A2D_BATCH_READ1
+ * @param pmpi: Pointer to MotorPacketInfo struct.
+ */
+HAL_StatusTypeDef A2D_BATCH_READ1_Func(MotorPacketInfo * pmpi);
+
+/**
+ * @brief A2D Batch Read2. Check \ref A2D_BATCH_READ2
+ * @param pmpi: Pointer to MotorPacketInfo struct.
+ */
+HAL_StatusTypeDef A2D_BATCH_READ2_Func(MotorPacketInfo * pmpi);
+
+/**
+ * @brief Monitor1. Check \ref MONITOR1
+ * @param pmpi: Pointer to MotorPacketInfo struct.
+ */
+HAL_StatusTypeDef MONITOR1_Func(MotorPacketInfo * pmpi);
+
+/**
+ * @brief Monitor2. Check \ref MONITOR2
+ * @param pmpi: Pointer to MotorPacketInfo struct.
+ */
+HAL_StatusTypeDef MONITOR2_Func(MotorPacketInfo * pmpi);
+
+/**
+ * @brief Check \ref SW_ACC
+ * @param pmpi: Pointer to MotorPacketInfo struct.
+ */
+HAL_StatusTypeDef SW_ACC_Func(MotorPacketInfo * pmpi);
+
+/**
+ * @brief Check \ref SW_BRAKE
+ * @param pmpi: Pointer to MotorPacketInfo struct.
+ */
+HAL_StatusTypeDef SW_BRAKE_Func(MotorPacketInfo * pmpi);
+
+/**
+ * @brief Check \ref SW_REV
+ * @param pmpi: Pointer to MotorPacketInfo struct.
+ */
+HAL_StatusTypeDef SW_REV_Func(MotorPacketInfo * pmpi);
 
 /**
  * @}

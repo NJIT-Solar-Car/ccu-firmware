@@ -27,10 +27,10 @@
  * @{
  */
 /*Kelly Motor Controller Base IDs*/
-#define CAN_ID_MOTOR1_CMD                0x6B    /**< Command RX*/
-#define CAN_ID_MOTOR2_CMD				 0x6C
-#define CAN_ID_MOTOR1_RSP                0x73    /**< Response TX*/
-#define CAN_ID_MOTOR2_RSP				 0x74
+#define CAN_ID_MOTOR_LEFT_CMD                0x6B    /**< Command RX*/
+#define CAN_ID_MOTOR_RIGHT_CMD				 0x6C
+#define CAN_ID_MOTOR_LEFT_RSP                0x73    /**< Response TX*/
+#define CAN_ID_MOTOR_RIGHT_RSP				 0x74
 /**
  * @}
  */

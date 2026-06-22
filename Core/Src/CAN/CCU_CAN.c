@@ -1,4 +1,11 @@
+/**
+ * @file CCU_CAN.c
+ * @brief Holds function definitions for general CAN functions. *Not* motor- or MPPT-specific functions.
+ * @author Arnav Revankar
+ */
+
 #include "CAN/Inc/can_motor.h"
+#include "CAN/Inc/can_dictionary.h"
 
 #include "semphr.h"
 #include "cmsis_os.h"
@@ -31,8 +38,8 @@ void CCU_CAN_FilterConfig(CAN_HandleTypeDef *phcan1, CAN_HandleTypeDef *phcan2) 
    */
 
   /* Kelly Controllers */
-  sFilterConfig.FilterIdLow  = (0x73 << 5);   /* Left Motor (Check ref manual page 1081 for bit shift reasoning) */
-  sFilterConfig.FilterIdHigh = (0x74 << 5);   /* Right Motor */
+  sFilterConfig.FilterIdLow  = (CAN_ID_MOTOR_LEFT_RSP << 5);	/* Left Motor (Check ref manual page 1081 for bit shift reasoning) */
+  sFilterConfig.FilterIdHigh = (CAN_ID_MOTOR_RIGHT_RSP << 5);	/* Right Motor */
   sFilterConfig.FilterBank = 0;
   sFilterConfig.FilterFIFOAssignment = CAN_FILTER_FIFO0;
   sFilterConfig.FilterActivation = CAN_FILTER_ENABLE;
