@@ -1,5 +1,6 @@
 #include "CAN/Inc/can_motor.h"
 
+#include "semphr.h"
 #include "cmsis_os.h"
 #include "stm32f4xx_hal.h"
 

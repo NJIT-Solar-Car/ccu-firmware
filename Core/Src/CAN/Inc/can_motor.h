@@ -21,12 +21,39 @@
 
 #include <stdint.h>
 
+#include "FreeRTOS.h"
+#include "stm32f4xx_hal.h"
+
 /**
  * @defgroup CAN_Structs
  * @brief Data structures to be used for CAN communication. This includes motor controller state, state of the CAN-logic on CCU side, and possibly more.
  *
  * @{
  */
+
+/**
+ * @brief Specifies which commands have been run. Only members filled in by those commands are valid. Check
+ * individual command functions for more details.
+ */
+typedef enum CommandType {
+	NONE				= 0x00,		/**< No command */
+	A2D_BATCH_READ1		= (1 << 0),	/**< A2D Batch Read1. Provides brake and throttle position, and battery voltage */
+	A2D_BATCH_READ2		= (1 << 1),	/**< A2D Batch Read2. Provides 3 phase voltage and current readings. *CURRENTLY UNUSED!!!* */
+	MONITOR1			= (1 << 2),	/**< Monitor1. Provides PWM, as well as motor and controller temp, and low/high side mosfet temp */
+	MONITOR2			= (1 << 3),	/**< Monitor2. Provides motor RPM */
+	SW_ACC				= (1 << 4),	/**< Provides ACC field of #MotorStatus */
+	SW_BRAKE			= (1 << 5),	/**< Provides BRK field of #MotorStatus */
+	SW_REV				= (1 << 6)	/**< Provides REV field of #MotorStatus */
+} CommandType;
+
+/**
+ * @brief Specifies the status of the motor. Accelerating, braking, and/or reversing.
+ */
+typedef enum MotorStatus {
+	ACC		= (1 << 0),	/**< Accelerator being pressed */
+	BRK		= (1 << 1),	/**< Brake being pressed */
+	REV		= (1 << 2)	/**< Motor is reversing */
+} MotorStatus;
 
 /**
  * @brief Struct holding general, static info about a motor controller. Order is optimized for [struct size](https://www.geeksforgeeks.org/c/structure-member-alignment-padding-and-data-packing/)
@@ -68,31 +95,6 @@ typedef struct MotorPacketInfo {
 	
 	MotorStatus Status;		/**< Functions as a bitmask. Check #MotorStatus for more info. */
 } MotorPacketInfo;
-
-/**
- * @brief Specifies which commands have been run. Only members filled in by those commands are valid. Check
- * individual command functions for more details.
- */
-typedef enum CommandType {
-	NONE				= 0x00,		/**< No command */
-	A2D_BATCH_READ1		= (1 << 0),	/**< A2D Batch Read1. Provides brake and throttle position, and battery voltage */
-	A2D_BATCH_READ2		= (1 << 1),	/**< A2D Batch Read2. Provides 3 phase voltage and current readings. *CURRENTLY UNUSED!!!* */
-	MONITOR1			= (1 << 2),	/**< Monitor1. Provides PWM, as well as motor and controller temp, and low/high side mosfet temp */
-	MONITOR2			= (1 << 3),	/**< Monitor2. Provides motor RPM */
-	SW_ACC				= (1 << 4),	/**< Provides ACC field of #MotorStatus */
-	SW_BRAKE			= (1 << 5),	/**< Provides BRK field of #MotorStatus */
-	SW_REV				= (1 << 6)	/**< Provides REV field of #MotorStatus */
-} __attribute__((packed)) CommandType;
-
-/**
- * @brief Specifies the status of the motor. Accelerating, braking, and/or reversing.
- */
-typedef enum MotorStatus {
-	NONE	= 0x00,		/**< No motor state :( */
-	ACC		= (1 << 0),	/**< Accelerator being pressed */
-	BRK		= (1 << 1),	/**< Brake being pressed */
-	REV		= (1 << 2)	/**< Motor is reversing */
-} __attribute__((packed)) MotorStatus;
 
 /**
  * @}
