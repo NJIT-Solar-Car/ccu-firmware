@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['i2c_5fhandletypedef_0',['I2C_HandleTypeDef',['../dd/d39/structI2C__HandleTypeDef.html',1,'']]],
-  ['i2c_5finittypedef_1',['I2C_InitTypeDef',['../da/d51/structI2C__InitTypeDef.html',1,'']]]
+  ['gpio_5finittypedef_0',['GPIO_InitTypeDef',['../db/d19/structGPIO__InitTypeDef.html',1,'']]],
+  ['gpio_5ftypedef_1',['GPIO_TypeDef',['../d0/d6b/structGPIO__TypeDef.html',1,'']]]
 ];

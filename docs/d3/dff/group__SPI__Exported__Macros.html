@@ -126,10 +126,10 @@ Macros</h2></td></tr>
 <tr class="memitem:ga7ff182f5cf6c731318c882351d6d7ac2" id="r_ga7ff182f5cf6c731318c882351d6d7ac2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dff/group__SPI__Exported__Macros.html#ga7ff182f5cf6c731318c882351d6d7ac2">__HAL_SPI_CLEAR_FREFLAG</a>(__HANDLE__)</td></tr>
 <tr class="memdesc:ga7ff182f5cf6c731318c882351d6d7ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the SPI FRE pending flag.  <br /></td></tr>
 <tr class="separator:ga7ff182f5cf6c731318c882351d6d7ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga16d2d73c2b16004499ae8d492e71fd4e" id="r_ga16d2d73c2b16004499ae8d492e71fd4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dff/group__SPI__Exported__Macros.html#ga16d2d73c2b16004499ae8d492e71fd4e">__HAL_SPI_ENABLE</a>(__HANDLE__)&#160;&#160;&#160;SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, SPI_CR1_SPE)</td></tr>
+<tr class="memitem:ga16d2d73c2b16004499ae8d492e71fd4e" id="r_ga16d2d73c2b16004499ae8d492e71fd4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dff/group__SPI__Exported__Macros.html#ga16d2d73c2b16004499ae8d492e71fd4e">__HAL_SPI_ENABLE</a>(__HANDLE__)&#160;&#160;&#160;SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gac5a646d978d3b98eb7c6a5d95d75c3f9">SPI_CR1_SPE</a>)</td></tr>
 <tr class="memdesc:ga16d2d73c2b16004499ae8d492e71fd4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the SPI peripheral.  <br /></td></tr>
 <tr class="separator:ga16d2d73c2b16004499ae8d492e71fd4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa10d88f87d16de53bd81dfb33bd56959" id="r_gaa10d88f87d16de53bd81dfb33bd56959"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dff/group__SPI__Exported__Macros.html#gaa10d88f87d16de53bd81dfb33bd56959">__HAL_SPI_DISABLE</a>(__HANDLE__)&#160;&#160;&#160;CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, SPI_CR1_SPE)</td></tr>
+<tr class="memitem:gaa10d88f87d16de53bd81dfb33bd56959" id="r_gaa10d88f87d16de53bd81dfb33bd56959"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dff/group__SPI__Exported__Macros.html#gaa10d88f87d16de53bd81dfb33bd56959">__HAL_SPI_DISABLE</a>(__HANDLE__)&#160;&#160;&#160;CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gac5a646d978d3b98eb7c6a5d95d75c3f9">SPI_CR1_SPE</a>)</td></tr>
 <tr class="memdesc:gaa10d88f87d16de53bd81dfb33bd56959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the SPI peripheral.  <br /></td></tr>
 <tr class="separator:gaa10d88f87d16de53bd81dfb33bd56959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -222,9 +222,10 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span>{                                                    \</div>
 <div class="line">    __IO uint32_t tmpreg_modf = 0x00U;                   \</div>
 <div class="line">    tmpreg_modf = (__HANDLE__)-&gt;Instance-&gt;SR;            \</div>
-<div class="line">    CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, SPI_CR1_SPE); \</div>
+<div class="line">    CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gac5a646d978d3b98eb7c6a5d95d75c3f9">SPI_CR1_SPE</a>); \</div>
 <div class="line">    UNUSED(tmpreg_modf);                                 \</div>
 <div class="line">  } <span class="keywordflow">while</span>(0U)</div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_gac5a646d978d3b98eb7c6a5d95d75c3f9"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gac5a646d978d3b98eb7c6a5d95d75c3f9">SPI_CR1_SPE</a></div><div class="ttdeci">#define SPI_CR1_SPE</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:11906</div></div>
 </div><!-- fragment -->
 <p>Clear the SPI MODF pending flag. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -291,7 +292,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__HANDLE__</td><td>)</td>
-          <td>&#160;&#160;&#160;CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, SPI_CR1_SPE)</td>
+          <td>&#160;&#160;&#160;CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gac5a646d978d3b98eb7c6a5d95d75c3f9">SPI_CR1_SPE</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -371,7 +372,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__HANDLE__</td><td>)</td>
-          <td>&#160;&#160;&#160;SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, SPI_CR1_SPE)</td>
+          <td>&#160;&#160;&#160;SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gac5a646d978d3b98eb7c6a5d95d75c3f9">SPI_CR1_SPE</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">

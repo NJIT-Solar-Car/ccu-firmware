@@ -99,10 +99,10 @@ $(document).ready(function(){initNavTree('de/db0/group__SPI__Private__Macros.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gae3b2eb5e818e58b66474d42dedac5523" id="r_gae3b2eb5e818e58b66474d42dedac5523"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db0/group__SPI__Private__Macros.html#gae3b2eb5e818e58b66474d42dedac5523">SPI_1LINE_TX</a>(__HANDLE__)&#160;&#160;&#160;SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, SPI_CR1_BIDIOE)</td></tr>
+<tr class="memitem:gae3b2eb5e818e58b66474d42dedac5523" id="r_gae3b2eb5e818e58b66474d42dedac5523"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db0/group__SPI__Private__Macros.html#gae3b2eb5e818e58b66474d42dedac5523">SPI_1LINE_TX</a>(__HANDLE__)&#160;&#160;&#160;SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga378953916b7701bd49f063c0366b703f">SPI_CR1_BIDIOE</a>)</td></tr>
 <tr class="memdesc:gae3b2eb5e818e58b66474d42dedac5523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the SPI transmit-only mode.  <br /></td></tr>
 <tr class="separator:gae3b2eb5e818e58b66474d42dedac5523"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa8d58cef91c1874d5a4dde4014cf6269" id="r_gaa8d58cef91c1874d5a4dde4014cf6269"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db0/group__SPI__Private__Macros.html#gaa8d58cef91c1874d5a4dde4014cf6269">SPI_1LINE_RX</a>(__HANDLE__)&#160;&#160;&#160;CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, SPI_CR1_BIDIOE)</td></tr>
+<tr class="memitem:gaa8d58cef91c1874d5a4dde4014cf6269" id="r_gaa8d58cef91c1874d5a4dde4014cf6269"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db0/group__SPI__Private__Macros.html#gaa8d58cef91c1874d5a4dde4014cf6269">SPI_1LINE_RX</a>(__HANDLE__)&#160;&#160;&#160;CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga378953916b7701bd49f063c0366b703f">SPI_CR1_BIDIOE</a>)</td></tr>
 <tr class="memdesc:gaa8d58cef91c1874d5a4dde4014cf6269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the SPI receive-only mode.  <br /></td></tr>
 <tr class="separator:gaa8d58cef91c1874d5a4dde4014cf6269"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab120a0085b72939e7d19c4f6b3381a99" id="r_gab120a0085b72939e7d19c4f6b3381a99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db0/group__SPI__Private__Macros.html#gab120a0085b72939e7d19c4f6b3381a99">SPI_RESET_CRC</a>(__HANDLE__)</td></tr>
@@ -679,7 +679,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__HANDLE__</td><td>)</td>
-          <td>&#160;&#160;&#160;CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, SPI_CR1_BIDIOE)</td>
+          <td>&#160;&#160;&#160;CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga378953916b7701bd49f063c0366b703f">SPI_CR1_BIDIOE</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -711,7 +711,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__HANDLE__</td><td>)</td>
-          <td>&#160;&#160;&#160;SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, SPI_CR1_BIDIOE)</td>
+          <td>&#160;&#160;&#160;SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga378953916b7701bd49f063c0366b703f">SPI_CR1_BIDIOE</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -853,9 +853,10 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span>{                                                       \</div>
-<div class="line">    CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, SPI_CR1_CRCEN);  \</div>
-<div class="line">    SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, SPI_CR1_CRCEN);    \</div>
+<div class="line">    CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gac9339b7c6466f09ad26c26b3bb81c51b">SPI_CR1_CRCEN</a>);  \</div>
+<div class="line">    SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gac9339b7c6466f09ad26c26b3bb81c51b">SPI_CR1_CRCEN</a>);    \</div>
 <div class="line">  } <span class="keywordflow">while</span>(0U)</div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_gac9339b7c6466f09ad26c26b3bb81c51b"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gac9339b7c6466f09ad26c26b3bb81c51b">SPI_CR1_CRCEN</a></div><div class="ttdeci">#define SPI_CR1_CRCEN</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:11927</div></div>
 </div><!-- fragment -->
 <p>Reset the CRC calculation of the SPI. </p>
 <dl class="params"><dt>Parameters</dt><dd>

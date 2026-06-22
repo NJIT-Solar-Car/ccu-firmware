@@ -122,10 +122,10 @@ Macros</h2></td></tr>
 <tr class="memitem:gae8e94c16809df16411862b11fea781db" id="r_gae8e94c16809df16411862b11fea781db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/group__I2C__Exported__Macros.html#gae8e94c16809df16411862b11fea781db">__HAL_I2C_CLEAR_STOPFLAG</a>(__HANDLE__)</td></tr>
 <tr class="memdesc:gae8e94c16809df16411862b11fea781db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the I2C STOPF pending flag.  <br /></td></tr>
 <tr class="separator:gae8e94c16809df16411862b11fea781db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacff412c47b0c1d63ef3b2a07f65988b7" id="r_gacff412c47b0c1d63ef3b2a07f65988b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/group__I2C__Exported__Macros.html#gacff412c47b0c1d63ef3b2a07f65988b7">__HAL_I2C_ENABLE</a>(__HANDLE__)&#160;&#160;&#160;SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, I2C_CR1_PE)</td></tr>
+<tr class="memitem:gacff412c47b0c1d63ef3b2a07f65988b7" id="r_gacff412c47b0c1d63ef3b2a07f65988b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/group__I2C__Exported__Macros.html#gacff412c47b0c1d63ef3b2a07f65988b7">__HAL_I2C_ENABLE</a>(__HANDLE__)&#160;&#160;&#160;SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga953b0d38414808db79da116842ed3262">I2C_CR1_PE</a>)</td></tr>
 <tr class="memdesc:gacff412c47b0c1d63ef3b2a07f65988b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the specified I2C peripheral.  <br /></td></tr>
 <tr class="separator:gacff412c47b0c1d63ef3b2a07f65988b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3d6a35da02ca72537a15570912c80412" id="r_ga3d6a35da02ca72537a15570912c80412"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/group__I2C__Exported__Macros.html#ga3d6a35da02ca72537a15570912c80412">__HAL_I2C_DISABLE</a>(__HANDLE__)&#160;&#160;&#160;CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, I2C_CR1_PE)</td></tr>
+<tr class="memitem:ga3d6a35da02ca72537a15570912c80412" id="r_ga3d6a35da02ca72537a15570912c80412"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/group__I2C__Exported__Macros.html#ga3d6a35da02ca72537a15570912c80412">__HAL_I2C_DISABLE</a>(__HANDLE__)&#160;&#160;&#160;CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga953b0d38414808db79da116842ed3262">I2C_CR1_PE</a>)</td></tr>
 <tr class="memdesc:ga3d6a35da02ca72537a15570912c80412"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the specified I2C peripheral.  <br /></td></tr>
 <tr class="separator:ga3d6a35da02ca72537a15570912c80412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -236,9 +236,10 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span>{                                                  \</div>
 <div class="line">    __IO uint32_t tmpreg = 0x00U;                      \</div>
 <div class="line">    tmpreg = (__HANDLE__)-&gt;Instance-&gt;SR1;              \</div>
-<div class="line">    SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, I2C_CR1_PE);  \</div>
+<div class="line">    SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga953b0d38414808db79da116842ed3262">I2C_CR1_PE</a>);  \</div>
 <div class="line">    UNUSED(tmpreg);                                    \</div>
 <div class="line">  } <span class="keywordflow">while</span>(0)</div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_ga953b0d38414808db79da116842ed3262"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga953b0d38414808db79da116842ed3262">I2C_CR1_PE</a></div><div class="ttdeci">#define I2C_CR1_PE</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:8621</div></div>
 </div><!-- fragment -->
 <p>Clears the I2C STOPF pending flag. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -267,7 +268,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__HANDLE__</td><td>)</td>
-          <td>&#160;&#160;&#160;CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, I2C_CR1_PE)</td>
+          <td>&#160;&#160;&#160;CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga953b0d38414808db79da116842ed3262">I2C_CR1_PE</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -327,7 +328,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__HANDLE__</td><td>)</td>
-          <td>&#160;&#160;&#160;SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, I2C_CR1_PE)</td>
+          <td>&#160;&#160;&#160;SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR1, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga953b0d38414808db79da116842ed3262">I2C_CR1_PE</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -1,10 +1,10 @@
 var structFLASH__TypeDef =
 [
-    [ "ACR", "d8/d7f/structFLASH__TypeDef.html#aee15e24246c6cbbd9a082f2a1da6f4a8", null ],
-    [ "CR", "d8/d7f/structFLASH__TypeDef.html#a57b564f26046fc2cb30c5aad3e77348a", null ],
-    [ "KEYR", "d8/d7f/structFLASH__TypeDef.html#ae7ed76afe51a51d2e051cd28f0afe6ad", null ],
-    [ "OPTCR", "d8/d7f/structFLASH__TypeDef.html#ac24c261a8050dee45db26665f9ccc99e", null ],
-    [ "OPTCR1", "d8/d7f/structFLASH__TypeDef.html#a87189f5c020bd93427d382f10e1ef494", null ],
-    [ "OPTKEYR", "d8/d7f/structFLASH__TypeDef.html#aebce0c2c98d58b84879bcb97b1d930ef", null ],
-    [ "SR", "d8/d7f/structFLASH__TypeDef.html#a68ba75adcbcd9dbdab37b0bc9f402146", null ]
+    [ "ACR", "d8/d7f/structFLASH__TypeDef.html#aaf432a8a8948613f4f66fcace5d2e5fe", null ],
+    [ "CR", "d8/d7f/structFLASH__TypeDef.html#a7919306d0e032a855200420a57f884d7", null ],
+    [ "KEYR", "d8/d7f/structFLASH__TypeDef.html#a802e9a26a89b44decd2d32d97f729dd3", null ],
+    [ "OPTCR", "d8/d7f/structFLASH__TypeDef.html#a54026c3b5bc2059f1b187acb6c4817ac", null ],
+    [ "OPTCR1", "d8/d7f/structFLASH__TypeDef.html#a180354afdf5ff27d04befd794c46156d", null ],
+    [ "OPTKEYR", "d8/d7f/structFLASH__TypeDef.html#a793cd13a4636c9785fdb99316f7fd7ab", null ],
+    [ "SR", "d8/d7f/structFLASH__TypeDef.html#a52c4943c64904227a559bf6f14ce4de6", null ]
 ];

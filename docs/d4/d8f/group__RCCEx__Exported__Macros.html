@@ -151,10 +151,14 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  (RCC-&gt;PLLCFGR = (0x20000000U | (__RCC_PLLSource__) | (__PLLM__)| \</div>
-<div class="line">                   ((__PLLN__) &lt;&lt; RCC_PLLCFGR_PLLN_Pos)                | \</div>
-<div class="line">                   ((((__PLLP__) &gt;&gt; 1U) -1U) &lt;&lt; RCC_PLLCFGR_PLLP_Pos)    | \</div>
-<div class="line">                   ((__PLLQ__) &lt;&lt; RCC_PLLCFGR_PLLQ_Pos)))</div>
+<b>Value:</b><div class="fragment"><div class="line">  (<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;PLLCFGR = (0x20000000U | (__RCC_PLLSource__) | (__PLLM__)| \</div>
+<div class="line">                   ((__PLLN__) &lt;&lt; <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga78a5913e3fc53a740fe874ece04b2d84">RCC_PLLCFGR_PLLN_Pos</a>)                | \</div>
+<div class="line">                   ((((__PLLP__) &gt;&gt; 1U) -1U) &lt;&lt; <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gaa67d9c488f8ce7cc078b2c7ca607d742">RCC_PLLCFGR_PLLP_Pos</a>)    | \</div>
+<div class="line">                   ((__PLLQ__) &lt;&lt; <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gac574324eee39c3dcee75b37d7728c9ae">RCC_PLLCFGR_PLLQ_Pos</a>)))</div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_ga78a5913e3fc53a740fe874ece04b2d84"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga78a5913e3fc53a740fe874ece04b2d84">RCC_PLLCFGR_PLLN_Pos</a></div><div class="ttdeci">#define RCC_PLLCFGR_PLLN_Pos</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:9531</div></div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_gaa67d9c488f8ce7cc078b2c7ca607d742"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gaa67d9c488f8ce7cc078b2c7ca607d742">RCC_PLLCFGR_PLLP_Pos</a></div><div class="ttdeci">#define RCC_PLLCFGR_PLLP_Pos</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:9544</div></div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_gac574324eee39c3dcee75b37d7728c9ae"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gac574324eee39c3dcee75b37d7728c9ae">RCC_PLLCFGR_PLLQ_Pos</a></div><div class="ttdeci">#define RCC_PLLCFGR_PLLQ_Pos</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:9558</div></div>
+<div class="ttc" id="agroup__Peripheral__declaration_html_ga74944438a086975793d26ae48d5882d4"><div class="ttname"><a href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a></div><div class="ttdeci">#define RCC</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:1164</div></div>
 </div><!-- fragment -->
 <p>Macro to configure the main PLL clock source, multiplication and division factors. </p>
 <dl class="section note"><dt>Note</dt><dd>This function must be used only when the main PLL is disabled. </dd></dl>
@@ -219,8 +223,10 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  (RCC-&gt;PLLI2SCFGR = (((__PLLI2SN__) &lt;&lt; RCC_PLLI2SCFGR_PLLI2SN_Pos)  |\</div>
-<div class="line">                      ((__PLLI2SR__) &lt;&lt; RCC_PLLI2SCFGR_PLLI2SR_Pos)))</div>
+<b>Value:</b><div class="fragment"><div class="line">  (<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;PLLI2SCFGR = (((__PLLI2SN__) &lt;&lt; <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gab3cf5415c0debb40f8932d59677103a2">RCC_PLLI2SCFGR_PLLI2SN_Pos</a>)  |\</div>
+<div class="line">                      ((__PLLI2SR__) &lt;&lt; <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga93e7478c8a17f7d07b937e180f8f13f4">RCC_PLLI2SCFGR_PLLI2SR_Pos</a>)))</div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_ga93e7478c8a17f7d07b937e180f8f13f4"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga93e7478c8a17f7d07b937e180f8f13f4">RCC_PLLI2SCFGR_PLLI2SR_Pos</a></div><div class="ttdeci">#define RCC_PLLI2SCFGR_PLLI2SR_Pos</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:10470</div></div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_gab3cf5415c0debb40f8932d59677103a2"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gab3cf5415c0debb40f8932d59677103a2">RCC_PLLI2SCFGR_PLLI2SN_Pos</a></div><div class="ttdeci">#define RCC_PLLI2SCFGR_PLLI2SN_Pos</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:10447</div></div>
 </div><!-- fragment -->
 <p>Macro to configure the PLLI2S clock multiplication and division factors . </p>
 <dl class="section note"><dt>Note</dt><dd>This macro must be used only when the PLLI2S is disabled. </dd>

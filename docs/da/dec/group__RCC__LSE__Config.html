@@ -101,9 +101,9 @@ $(document).ready(function(){initNavTree('da/dec/group__RCC__LSE__Config.html','
 Macros</h2></td></tr>
 <tr class="memitem:ga6645c27708d0cad1a4ab61d2abb24c77" id="r_ga6645c27708d0cad1a4ab61d2abb24c77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dec/group__RCC__LSE__Config.html#ga6645c27708d0cad1a4ab61d2abb24c77">RCC_LSE_OFF</a>&#160;&#160;&#160;0x00000000U</td></tr>
 <tr class="separator:ga6645c27708d0cad1a4ab61d2abb24c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac981ea636c2f215e4473901e0912f55a" id="r_gac981ea636c2f215e4473901e0912f55a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dec/group__RCC__LSE__Config.html#gac981ea636c2f215e4473901e0912f55a">RCC_LSE_ON</a>&#160;&#160;&#160;RCC_BDCR_LSEON</td></tr>
+<tr class="memitem:gac981ea636c2f215e4473901e0912f55a" id="r_gac981ea636c2f215e4473901e0912f55a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dec/group__RCC__LSE__Config.html#gac981ea636c2f215e4473901e0912f55a">RCC_LSE_ON</a>&#160;&#160;&#160;<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga00145f8814cb9a5b180d76499d97aead">RCC_BDCR_LSEON</a></td></tr>
 <tr class="separator:gac981ea636c2f215e4473901e0912f55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaad580157edbae878edbcc83c5a68e767" id="r_gaad580157edbae878edbcc83c5a68e767"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dec/group__RCC__LSE__Config.html#gaad580157edbae878edbcc83c5a68e767">RCC_LSE_BYPASS</a>&#160;&#160;&#160;((uint32_t)(RCC_BDCR_LSEBYP | RCC_BDCR_LSEON))</td></tr>
+<tr class="memitem:gaad580157edbae878edbcc83c5a68e767" id="r_gaad580157edbae878edbcc83c5a68e767"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dec/group__RCC__LSE__Config.html#gaad580157edbae878edbcc83c5a68e767">RCC_LSE_BYPASS</a>&#160;&#160;&#160;((uint32_t)(<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga542dffd7f8dc4da5401b54d822a22af0">RCC_BDCR_LSEBYP</a> | <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga00145f8814cb9a5b180d76499d97aead">RCC_BDCR_LSEON</a>))</td></tr>
 <tr class="separator:gaad580157edbae878edbcc83c5a68e767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -115,7 +115,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define RCC_LSE_BYPASS&#160;&#160;&#160;((uint32_t)(RCC_BDCR_LSEBYP | RCC_BDCR_LSEON))</td>
+          <td class="memname">#define RCC_LSE_BYPASS&#160;&#160;&#160;((uint32_t)(<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga542dffd7f8dc4da5401b54d822a22af0">RCC_BDCR_LSEBYP</a> | <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga00145f8814cb9a5b180d76499d97aead">RCC_BDCR_LSEON</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -143,7 +143,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define RCC_LSE_ON&#160;&#160;&#160;RCC_BDCR_LSEON</td>
+          <td class="memname">#define RCC_LSE_ON&#160;&#160;&#160;<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga00145f8814cb9a5b180d76499d97aead">RCC_BDCR_LSEON</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

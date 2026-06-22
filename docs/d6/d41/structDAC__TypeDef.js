@@ -1,17 +1,17 @@
 var structDAC__TypeDef =
 [
-    [ "CR", "d6/d41/structDAC__TypeDef.html#a744e10d2b2389c4d5a7962b7dda6de22", null ],
-    [ "DHR12L1", "d6/d41/structDAC__TypeDef.html#aaa45be8c2f6ead607d0bf222e6187d9d", null ],
-    [ "DHR12L2", "d6/d41/structDAC__TypeDef.html#aa6fa357cfea45b3ac93ffa8fc5ffeaee", null ],
-    [ "DHR12LD", "d6/d41/structDAC__TypeDef.html#a69d7035608d302018ed089089036fab4", null ],
-    [ "DHR12R1", "d6/d41/structDAC__TypeDef.html#a8787f9b932eeef8b33e19156ef5b2b82", null ],
-    [ "DHR12R2", "d6/d41/structDAC__TypeDef.html#a4c4816286cf66f6e673d55bd407192a9", null ],
-    [ "DHR12RD", "d6/d41/structDAC__TypeDef.html#aa38f22dfe6dea29032360815a175bba1", null ],
-    [ "DHR8R1", "d6/d41/structDAC__TypeDef.html#a5c04db17b814e6a18676a364510e0c2d", null ],
-    [ "DHR8R2", "d6/d41/structDAC__TypeDef.html#abfe3849273f96b08c01df69c30b3af5c", null ],
-    [ "DHR8RD", "d6/d41/structDAC__TypeDef.html#a7bd456044af46dfa3086d68d2e68d0ed", null ],
-    [ "DOR1", "d6/d41/structDAC__TypeDef.html#a58e5816f1f3806ca20482c8948779435", null ],
-    [ "DOR2", "d6/d41/structDAC__TypeDef.html#a8983cfe2aa0f5d57a3dc49dc6a641d8e", null ],
-    [ "SR", "d6/d41/structDAC__TypeDef.html#a5e20763b623cdee98d973353d57011e0", null ],
-    [ "SWTRIGR", "d6/d41/structDAC__TypeDef.html#a975022184a300c7e153b98de7fc4b614", null ]
+    [ "CR", "d6/d41/structDAC__TypeDef.html#a394324f0b573837ca15a87127b2a37ea", null ],
+    [ "DHR12L1", "d6/d41/structDAC__TypeDef.html#a5eb63912e39085e3e13d64bdb0cf38bd", null ],
+    [ "DHR12L2", "d6/d41/structDAC__TypeDef.html#a9f612b6b3e065e810e5a2fb254d6a40b", null ],
+    [ "DHR12LD", "d6/d41/structDAC__TypeDef.html#aea4d055e3697999b44cdcf2702d79d40", null ],
+    [ "DHR12R1", "d6/d41/structDAC__TypeDef.html#afbfd2855cdb81939b4efc58e08aaf3e5", null ],
+    [ "DHR12R2", "d6/d41/structDAC__TypeDef.html#ab1f777540c487c26bf27e6fa37a644cc", null ],
+    [ "DHR12RD", "d6/d41/structDAC__TypeDef.html#affa5cc9fe0cc9eb594d703bdc9d9abd9", null ],
+    [ "DHR8R1", "d6/d41/structDAC__TypeDef.html#a3a382d341fb608a04390bacb8c00b0f0", null ],
+    [ "DHR8R2", "d6/d41/structDAC__TypeDef.html#a3b096b71656f8fb32cd18b4c8b1d2334", null ],
+    [ "DHR8RD", "d6/d41/structDAC__TypeDef.html#a03f8d95bbf0ce3a53cb79506d5bf995a", null ],
+    [ "DOR1", "d6/d41/structDAC__TypeDef.html#a50b4f0b0d2a376f729c8d7acf47864c3", null ],
+    [ "DOR2", "d6/d41/structDAC__TypeDef.html#a1bde8391647d6422b39ab5ba4f13848b", null ],
+    [ "SR", "d6/d41/structDAC__TypeDef.html#a1d3fd83d6ed8b2d90b471db4509b0e70", null ],
+    [ "SWTRIGR", "d6/d41/structDAC__TypeDef.html#a4ccb66068a1ebee1179574dda20206b6", null ]
 ];

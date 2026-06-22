@@ -111,10 +111,10 @@ Macros</h2></td></tr>
 <tr class="memitem:ga9d8ab157f58045b8daf8136bee54f139" id="r_ga9d8ab157f58045b8daf8136bee54f139"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd9/group__RCC__Flags__Interrupts__Management.html#ga9d8ab157f58045b8daf8136bee54f139">__HAL_RCC_CLEAR_IT</a>(__INTERRUPT__)&#160;&#160;&#160;(*(__IO uint8_t *) <a class="el" href="../../d4/df4/group__RCC__BitAddress__AliasRegion.html#ga1387fb2dfadb830eb83ab2772c8d2294">RCC_CIR_BYTE2_ADDRESS</a> = (__INTERRUPT__))</td></tr>
 <tr class="memdesc:ga9d8ab157f58045b8daf8136bee54f139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the RCC's interrupt pending bits (Perform Byte access to RCC_CIR[23:16] bits to clear the selected interrupt pending bits.  <br /></td></tr>
 <tr class="separator:ga9d8ab157f58045b8daf8136bee54f139"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga134af980b892f362c05ae21922cd828d" id="r_ga134af980b892f362c05ae21922cd828d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd9/group__RCC__Flags__Interrupts__Management.html#ga134af980b892f362c05ae21922cd828d">__HAL_RCC_GET_IT</a>(__INTERRUPT__)&#160;&#160;&#160;((RCC-&gt;CIR &amp; (__INTERRUPT__)) == (__INTERRUPT__))</td></tr>
+<tr class="memitem:ga134af980b892f362c05ae21922cd828d" id="r_ga134af980b892f362c05ae21922cd828d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd9/group__RCC__Flags__Interrupts__Management.html#ga134af980b892f362c05ae21922cd828d">__HAL_RCC_GET_IT</a>(__INTERRUPT__)&#160;&#160;&#160;((<a class="el" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;CIR &amp; (__INTERRUPT__)) == (__INTERRUPT__))</td></tr>
 <tr class="memdesc:ga134af980b892f362c05ae21922cd828d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the RCC's interrupt has occurred or not.  <br /></td></tr>
 <tr class="separator:ga134af980b892f362c05ae21922cd828d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf28c11b36035ef1e27883ff7ee2c46b0" id="r_gaf28c11b36035ef1e27883ff7ee2c46b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd9/group__RCC__Flags__Interrupts__Management.html#gaf28c11b36035ef1e27883ff7ee2c46b0">__HAL_RCC_CLEAR_RESET_FLAGS</a>()&#160;&#160;&#160;(RCC-&gt;CSR |= RCC_CSR_RMVF)</td></tr>
+<tr class="memitem:gaf28c11b36035ef1e27883ff7ee2c46b0" id="r_gaf28c11b36035ef1e27883ff7ee2c46b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd9/group__RCC__Flags__Interrupts__Management.html#gaf28c11b36035ef1e27883ff7ee2c46b0">__HAL_RCC_CLEAR_RESET_FLAGS</a>()&#160;&#160;&#160;(<a class="el" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;CSR |= <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gafc26c5996b14005a70afbeaa29aae716">RCC_CSR_RMVF</a>)</td></tr>
 <tr class="memdesc:gaf28c11b36035ef1e27883ff7ee2c46b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set RMVF bit to clear the reset flags: RCC_FLAG_PINRST, RCC_FLAG_PORRST, RCC_FLAG_SFTRST, RCC_FLAG_IWDGRST, RCC_FLAG_WWDGRST and RCC_FLAG_LPWRRST.  <br /></td></tr>
 <tr class="separator:gaf28c11b36035ef1e27883ff7ee2c46b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga80017c6bf8a5c6f53a1a21bb8db93a82" id="r_ga80017c6bf8a5c6f53a1a21bb8db93a82"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd9/group__RCC__Flags__Interrupts__Management.html#ga80017c6bf8a5c6f53a1a21bb8db93a82">RCC_FLAG_MASK</a>&#160;&#160;&#160;((uint8_t)0x1FU)</td></tr>
@@ -171,7 +171,7 @@ Macros</h2></td></tr>
           <td class="memname">#define __HAL_RCC_CLEAR_RESET_FLAGS</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;(RCC-&gt;CSR |= RCC_CSR_RMVF)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;CSR |= <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gafc26c5996b14005a70afbeaa29aae716">RCC_CSR_RMVF</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -264,8 +264,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                                          (((((((__FLAG__) &gt;&gt; 5U)\</div>
-<div class="line">                                          == 1U)? RCC-&gt;CR :((((__FLAG__) &gt;&gt; 5U) == 2U) ? RCC-&gt;BDCR :((((__FLAG__) &gt;&gt; 5U) == 3U)? RCC-&gt;CSR :RCC-&gt;CIR))) &amp;\</div>
+<div class="line">                                          == 1U)? <a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;CR :((((__FLAG__) &gt;&gt; 5U) == 2U) ? <a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;BDCR :((((__FLAG__) &gt;&gt; 5U) == 3U)? <a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;CSR :<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;CIR))) &amp;\</div>
 <div class="line">                                        (1U &lt;&lt; ((__FLAG__) &amp; <a class="code hl_define" href="../../de/dd9/group__RCC__Flags__Interrupts__Management.html#ga80017c6bf8a5c6f53a1a21bb8db93a82">RCC_FLAG_MASK</a>)))!= 0U)? 1U : 0U)</div>
+<div class="ttc" id="agroup__Peripheral__declaration_html_ga74944438a086975793d26ae48d5882d4"><div class="ttname"><a href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a></div><div class="ttdeci">#define RCC</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:1164</div></div>
 <div class="ttc" id="agroup__RCC__Flags__Interrupts__Management_html_ga80017c6bf8a5c6f53a1a21bb8db93a82"><div class="ttname"><a href="../../de/dd9/group__RCC__Flags__Interrupts__Management.html#ga80017c6bf8a5c6f53a1a21bb8db93a82">RCC_FLAG_MASK</a></div><div class="ttdeci">#define RCC_FLAG_MASK</div><div class="ttdoc">Check RCC flag is set or not.</div><div class="ttdef"><b>Definition</b> stm32f4xx_hal_rcc.h:1222</div></div>
 </div><!-- fragment -->
 </div>
@@ -281,7 +282,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__INTERRUPT__</td><td>)</td>
-          <td>&#160;&#160;&#160;((RCC-&gt;CIR &amp; (__INTERRUPT__)) == (__INTERRUPT__))</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;CIR &amp; (__INTERRUPT__)) == (__INTERRUPT__))</td>
         </tr>
       </table>
 </div><div class="memdoc">

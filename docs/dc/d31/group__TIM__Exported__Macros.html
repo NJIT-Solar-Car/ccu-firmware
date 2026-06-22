@@ -102,10 +102,10 @@ Macros</h2></td></tr>
 <tr class="memitem:gace20fd4e38231b9682fbc83a80ec19a3" id="r_gace20fd4e38231b9682fbc83a80ec19a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#gace20fd4e38231b9682fbc83a80ec19a3">__HAL_TIM_RESET_HANDLE_STATE</a>(__HANDLE__)</td></tr>
 <tr class="memdesc:gace20fd4e38231b9682fbc83a80ec19a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset TIM handle state.  <br /></td></tr>
 <tr class="separator:gace20fd4e38231b9682fbc83a80ec19a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1a90544705059e9f19f991651623b0c0" id="r_ga1a90544705059e9f19f991651623b0c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#ga1a90544705059e9f19f991651623b0c0">__HAL_TIM_ENABLE</a>(__HANDLE__)&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1|=(TIM_CR1_CEN))</td></tr>
+<tr class="memitem:ga1a90544705059e9f19f991651623b0c0" id="r_ga1a90544705059e9f19f991651623b0c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#ga1a90544705059e9f19f991651623b0c0">__HAL_TIM_ENABLE</a>(__HANDLE__)&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1|=(<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga93d86355e5e3b399ed45e1ca83abed2a">TIM_CR1_CEN</a>))</td></tr>
 <tr class="memdesc:ga1a90544705059e9f19f991651623b0c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the TIM peripheral.  <br /></td></tr>
 <tr class="separator:ga1a90544705059e9f19f991651623b0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga04890dcef3ed061854721a3672585607" id="r_ga04890dcef3ed061854721a3672585607"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#ga04890dcef3ed061854721a3672585607">__HAL_TIM_MOE_ENABLE</a>(__HANDLE__)&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;BDTR|=(TIM_BDTR_MOE))</td></tr>
+<tr class="memitem:ga04890dcef3ed061854721a3672585607" id="r_ga04890dcef3ed061854721a3672585607"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#ga04890dcef3ed061854721a3672585607">__HAL_TIM_MOE_ENABLE</a>(__HANDLE__)&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;BDTR|=(<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga277a096614829feba2d0a4fbb7d3dffc">TIM_BDTR_MOE</a>))</td></tr>
 <tr class="memdesc:ga04890dcef3ed061854721a3672585607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the TIM main Output.  <br /></td></tr>
 <tr class="separator:ga04890dcef3ed061854721a3672585607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6a5e653e0e06a04151b74eb1a5f96eb6" id="r_ga6a5e653e0e06a04151b74eb1a5f96eb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#ga6a5e653e0e06a04151b74eb1a5f96eb6">__HAL_TIM_DISABLE</a>(__HANDLE__)</td></tr>
@@ -114,7 +114,7 @@ Macros</h2></td></tr>
 <tr class="memitem:ga69d63e147faeca8909e9679f684c0325" id="r_ga69d63e147faeca8909e9679f684c0325"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#ga69d63e147faeca8909e9679f684c0325">__HAL_TIM_MOE_DISABLE</a>(__HANDLE__)</td></tr>
 <tr class="memdesc:ga69d63e147faeca8909e9679f684c0325"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the TIM main Output.  <br /></td></tr>
 <tr class="separator:ga69d63e147faeca8909e9679f684c0325"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa5c4053e8e57dc234efecbb698287b55" id="r_gaa5c4053e8e57dc234efecbb698287b55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#gaa5c4053e8e57dc234efecbb698287b55">__HAL_TIM_MOE_DISABLE_UNCONDITIONALLY</a>(__HANDLE__)&#160;&#160;&#160;(__HANDLE__)-&gt;Instance-&gt;BDTR &amp;= ~(TIM_BDTR_MOE)</td></tr>
+<tr class="memitem:gaa5c4053e8e57dc234efecbb698287b55" id="r_gaa5c4053e8e57dc234efecbb698287b55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#gaa5c4053e8e57dc234efecbb698287b55">__HAL_TIM_MOE_DISABLE_UNCONDITIONALLY</a>(__HANDLE__)&#160;&#160;&#160;(__HANDLE__)-&gt;Instance-&gt;BDTR &amp;= ~(<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga277a096614829feba2d0a4fbb7d3dffc">TIM_BDTR_MOE</a>)</td></tr>
 <tr class="memdesc:gaa5c4053e8e57dc234efecbb698287b55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the TIM main Output.  <br /></td></tr>
 <tr class="separator:gaa5c4053e8e57dc234efecbb698287b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4d69943bc4716743c78e3194e259097e" id="r_ga4d69943bc4716743c78e3194e259097e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#ga4d69943bc4716743c78e3194e259097e">__HAL_TIM_ENABLE_IT</a>(__HANDLE__,  __INTERRUPT__)&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;DIER |= (__INTERRUPT__))</td></tr>
@@ -141,7 +141,7 @@ Macros</h2></td></tr>
 <tr class="memitem:gaea68155ce77e591e0c2582def061d6f0" id="r_gaea68155ce77e591e0c2582def061d6f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#gaea68155ce77e591e0c2582def061d6f0">__HAL_TIM_CLEAR_IT</a>(__HANDLE__,  __INTERRUPT__)&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;SR = ~(__INTERRUPT__))</td></tr>
 <tr class="memdesc:gaea68155ce77e591e0c2582def061d6f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the TIM interrupt pending bits.  <br /></td></tr>
 <tr class="separator:gaea68155ce77e591e0c2582def061d6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac73f5e7669d92971830481e7298e98ba" id="r_gac73f5e7669d92971830481e7298e98ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#gac73f5e7669d92971830481e7298e98ba">__HAL_TIM_IS_TIM_COUNTING_DOWN</a>(__HANDLE__)&#160;&#160;&#160;(((__HANDLE__)-&gt;Instance-&gt;CR1 &amp;(TIM_CR1_DIR)) == (TIM_CR1_DIR))</td></tr>
+<tr class="memitem:gac73f5e7669d92971830481e7298e98ba" id="r_gac73f5e7669d92971830481e7298e98ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#gac73f5e7669d92971830481e7298e98ba">__HAL_TIM_IS_TIM_COUNTING_DOWN</a>(__HANDLE__)&#160;&#160;&#160;(((__HANDLE__)-&gt;Instance-&gt;CR1 &amp;(<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gacea10770904af189f3aaeb97b45722aa">TIM_CR1_DIR</a>)) == (<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gacea10770904af189f3aaeb97b45722aa">TIM_CR1_DIR</a>))</td></tr>
 <tr class="memdesc:gac73f5e7669d92971830481e7298e98ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not the TIM Counter is used as downcounter.  <br /></td></tr>
 <tr class="separator:gac73f5e7669d92971830481e7298e98ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafdc5a06eab07e0c24e729fd492bdb27c" id="r_gafdc5a06eab07e0c24e729fd492bdb27c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#gafdc5a06eab07e0c24e729fd492bdb27c">__HAL_TIM_SET_PRESCALER</a>(__HANDLE__,  __PRESC__)&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;PSC = (__PRESC__))</td></tr>
@@ -162,7 +162,7 @@ Macros</h2></td></tr>
 <tr class="memitem:ga8aa84d77c670890408092630f9b2bdc4" id="r_ga8aa84d77c670890408092630f9b2bdc4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#ga8aa84d77c670890408092630f9b2bdc4">__HAL_TIM_SET_CLOCKDIVISION</a>(__HANDLE__,  __CKD__)</td></tr>
 <tr class="memdesc:ga8aa84d77c670890408092630f9b2bdc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the TIM Clock Division value on runtime without calling another time any Init function.  <br /></td></tr>
 <tr class="separator:ga8aa84d77c670890408092630f9b2bdc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae6bc91bb5940bce52828c690f24001b8" id="r_gae6bc91bb5940bce52828c690f24001b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#gae6bc91bb5940bce52828c690f24001b8">__HAL_TIM_GET_CLOCKDIVISION</a>(__HANDLE__)&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1 &amp; TIM_CR1_CKD)</td></tr>
+<tr class="memitem:gae6bc91bb5940bce52828c690f24001b8" id="r_gae6bc91bb5940bce52828c690f24001b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#gae6bc91bb5940bce52828c690f24001b8">__HAL_TIM_GET_CLOCKDIVISION</a>(__HANDLE__)&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1 &amp; <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gacacc4ff7e5b75fd2e4e6b672ccd33a72">TIM_CR1_CKD</a>)</td></tr>
 <tr class="memdesc:gae6bc91bb5940bce52828c690f24001b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the TIM Clock Division value on runtime.  <br /></td></tr>
 <tr class="separator:gae6bc91bb5940bce52828c690f24001b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeb106399b95ef02cec502f58276a0e92" id="r_gaeb106399b95ef02cec502f58276a0e92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#gaeb106399b95ef02cec502f58276a0e92">__HAL_TIM_SET_ICPRESCALER</a>(__HANDLE__,  __CHANNEL__,  __ICPSC__)</td></tr>
@@ -189,16 +189,16 @@ Macros</h2></td></tr>
 <tr class="memitem:gab9f8dc78886759192b5f044c7b9b0aa7" id="r_gab9f8dc78886759192b5f044c7b9b0aa7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#gab9f8dc78886759192b5f044c7b9b0aa7">__HAL_TIM_DISABLE_OCxFAST</a>(__HANDLE__,  __CHANNEL__)</td></tr>
 <tr class="memdesc:gab9f8dc78886759192b5f044c7b9b0aa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable fast mode for a given channel.  <br /></td></tr>
 <tr class="separator:gab9f8dc78886759192b5f044c7b9b0aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3b06856bd6d7e10cfff342b1726db51d" id="r_ga3b06856bd6d7e10cfff342b1726db51d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#ga3b06856bd6d7e10cfff342b1726db51d">__HAL_TIM_URS_ENABLE</a>(__HANDLE__)&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1|= TIM_CR1_URS)</td></tr>
+<tr class="memitem:ga3b06856bd6d7e10cfff342b1726db51d" id="r_ga3b06856bd6d7e10cfff342b1726db51d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#ga3b06856bd6d7e10cfff342b1726db51d">__HAL_TIM_URS_ENABLE</a>(__HANDLE__)&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1|= <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga06c997c2c23e8bef7ca07579762c113b">TIM_CR1_URS</a>)</td></tr>
 <tr class="memdesc:ga3b06856bd6d7e10cfff342b1726db51d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Update Request Source (URS) bit of the TIMx_CR1 register.  <br /></td></tr>
 <tr class="separator:ga3b06856bd6d7e10cfff342b1726db51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafacb551a4c537e62a0fe740b2f12236c" id="r_gafacb551a4c537e62a0fe740b2f12236c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#gafacb551a4c537e62a0fe740b2f12236c">__HAL_TIM_URS_DISABLE</a>(__HANDLE__)&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1&amp;=~TIM_CR1_URS)</td></tr>
+<tr class="memitem:gafacb551a4c537e62a0fe740b2f12236c" id="r_gafacb551a4c537e62a0fe740b2f12236c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#gafacb551a4c537e62a0fe740b2f12236c">__HAL_TIM_URS_DISABLE</a>(__HANDLE__)&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1&amp;=~<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga06c997c2c23e8bef7ca07579762c113b">TIM_CR1_URS</a>)</td></tr>
 <tr class="memdesc:gafacb551a4c537e62a0fe740b2f12236c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the Update Request Source (URS) bit of the TIMx_CR1 register.  <br /></td></tr>
 <tr class="separator:gafacb551a4c537e62a0fe740b2f12236c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac5d6989516caa67fae23a9329228cdc7" id="r_gac5d6989516caa67fae23a9329228cdc7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#gac5d6989516caa67fae23a9329228cdc7">__HAL_TIM_SET_CAPTUREPOLARITY</a>(__HANDLE__,  __CHANNEL__,  __POLARITY__)</td></tr>
 <tr class="memdesc:gac5d6989516caa67fae23a9329228cdc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the TIM Capture x input polarity on runtime.  <br /></td></tr>
 <tr class="separator:gac5d6989516caa67fae23a9329228cdc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gace8f6dae3653111344f4ff6bbfde7d2a" id="r_gace8f6dae3653111344f4ff6bbfde7d2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#gace8f6dae3653111344f4ff6bbfde7d2a">__HAL_TIM_SELECT_CCDMAREQUEST</a>(__HANDLE__,  __CCDMA__)&#160;&#160;&#160;  MODIFY_REG((__HANDLE__)-&gt;Instance-&gt;CR2, TIM_CR2_CCDS, (__CCDMA__))</td></tr>
+<tr class="memitem:gace8f6dae3653111344f4ff6bbfde7d2a" id="r_gace8f6dae3653111344f4ff6bbfde7d2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/group__TIM__Exported__Macros.html#gace8f6dae3653111344f4ff6bbfde7d2a">__HAL_TIM_SELECT_CCDMAREQUEST</a>(__HANDLE__,  __CCDMA__)&#160;&#160;&#160;  MODIFY_REG((__HANDLE__)-&gt;Instance-&gt;CR2, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gade656832d3ec303a2a7a422638dd560e">TIM_CR2_CCDS</a>, (__CCDMA__))</td></tr>
 <tr class="memdesc:gace8f6dae3653111344f4ff6bbfde7d2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select the Capture/compare DMA request source.  <br /></td></tr>
 <tr class="separator:gace8f6dae3653111344f4ff6bbfde7d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -334,10 +334,11 @@ Macros</h2></td></tr>
 <div class="line">    { \</div>
 <div class="line">      if(((__HANDLE__)-&gt;Instance-&gt;CCER &amp; <a class="code hl_define" href="../../df/db6/group__TIM__Private__Constants.html#gaeae61652a005098f9fe6b398d29d4279">TIM_CCER_CCxNE_MASK</a>) == 0UL) \</div>
 <div class="line">      { \</div>
-<div class="line">        (__HANDLE__)-&gt;Instance-&gt;CR1 &amp;= ~(TIM_CR1_CEN); \</div>
+<div class="line">        (__HANDLE__)-&gt;Instance-&gt;CR1 &amp;= ~(<a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga93d86355e5e3b399ed45e1ca83abed2a">TIM_CR1_CEN</a>); \</div>
 <div class="line">      } \</div>
 <div class="line">    } \</div>
 <div class="line">  } <span class="keywordflow">while</span>(0)</div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_ga93d86355e5e3b399ed45e1ca83abed2a"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga93d86355e5e3b399ed45e1ca83abed2a">TIM_CR1_CEN</a></div><div class="ttdeci">#define TIM_CR1_CEN</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:12411</div></div>
 <div class="ttc" id="agroup__TIM__Private__Constants_html_ga5d1a1d755cda12637dfa5143130b4891"><div class="ttname"><a href="../../df/db6/group__TIM__Private__Constants.html#ga5d1a1d755cda12637dfa5143130b4891">TIM_CCER_CCxE_MASK</a></div><div class="ttdeci">#define TIM_CCER_CCxE_MASK</div><div class="ttdef"><b>Definition</b> stm32f4xx_hal_tim.h:1559</div></div>
 <div class="ttc" id="agroup__TIM__Private__Constants_html_gaeae61652a005098f9fe6b398d29d4279"><div class="ttname"><a href="../../df/db6/group__TIM__Private__Constants.html#gaeae61652a005098f9fe6b398d29d4279">TIM_CCER_CCxNE_MASK</a></div><div class="ttdeci">#define TIM_CCER_CCxNE_MASK</div><div class="ttdef"><b>Definition</b> stm32f4xx_hal_tim.h:1560</div></div>
 </div><!-- fragment -->
@@ -487,10 +488,14 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  (((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga6b1541e4a49d62610899e24bf23f4879">TIM_CHANNEL_1</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR1 &amp;= ~TIM_CCMR1_OC1FE) :\</div>
-<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga33e02d43345a7ac5886f01b39e4f7ccd">TIM_CHANNEL_2</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR1 &amp;= ~TIM_CCMR1_OC2FE) :\</div>
-<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga4ea100c1789b178f3cb46721b7257e2d">TIM_CHANNEL_3</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR2 &amp;= ~TIM_CCMR2_OC3FE) :\</div>
-<div class="line">   ((__HANDLE__)-&gt;Instance-&gt;CCMR2 &amp;= ~TIM_CCMR2_OC4FE))</div>
+<b>Value:</b><div class="fragment"><div class="line">  (((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga6b1541e4a49d62610899e24bf23f4879">TIM_CHANNEL_1</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR1 &amp;= ~<a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gab9c5878e85ce02c22d8a374deebd1b6e">TIM_CCMR1_OC1FE</a>) :\</div>
+<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga33e02d43345a7ac5886f01b39e4f7ccd">TIM_CHANNEL_2</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR1 &amp;= ~<a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga3bf610cf77c3c6c936ce7c4f85992e6c">TIM_CCMR1_OC2FE</a>) :\</div>
+<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga4ea100c1789b178f3cb46721b7257e2d">TIM_CHANNEL_3</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR2 &amp;= ~<a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gae6d8d2847058747ce23a648668ce4dba">TIM_CCMR2_OC3FE</a>) :\</div>
+<div class="line">   ((__HANDLE__)-&gt;Instance-&gt;CCMR2 &amp;= ~<a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga70dc197250c2699d470aea1a7a42ad57">TIM_CCMR2_OC4FE</a>))</div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_ga3bf610cf77c3c6c936ce7c4f85992e6c"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga3bf610cf77c3c6c936ce7c4f85992e6c">TIM_CCMR1_OC2FE</a></div><div class="ttdeci">#define TIM_CCMR1_OC2FE</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:12668</div></div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_ga70dc197250c2699d470aea1a7a42ad57"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga70dc197250c2699d470aea1a7a42ad57">TIM_CCMR2_OC4FE</a></div><div class="ttdeci">#define TIM_CCMR2_OC4FE</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:12747</div></div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_gab9c5878e85ce02c22d8a374deebd1b6e"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gab9c5878e85ce02c22d8a374deebd1b6e">TIM_CCMR1_OC1FE</a></div><div class="ttdeci">#define TIM_CCMR1_OC1FE</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:12644</div></div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_gae6d8d2847058747ce23a648668ce4dba"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gae6d8d2847058747ce23a648668ce4dba">TIM_CCMR2_OC3FE</a></div><div class="ttdeci">#define TIM_CCMR2_OC3FE</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:12723</div></div>
 <div class="ttc" id="agroup__TIM__Channel_html_ga33e02d43345a7ac5886f01b39e4f7ccd"><div class="ttname"><a href="../../dd/da4/group__TIM__Channel.html#ga33e02d43345a7ac5886f01b39e4f7ccd">TIM_CHANNEL_2</a></div><div class="ttdeci">#define TIM_CHANNEL_2</div><div class="ttdef"><b>Definition</b> stm32f4xx_hal_tim.h:739</div></div>
 <div class="ttc" id="agroup__TIM__Channel_html_ga4ea100c1789b178f3cb46721b7257e2d"><div class="ttname"><a href="../../dd/da4/group__TIM__Channel.html#ga4ea100c1789b178f3cb46721b7257e2d">TIM_CHANNEL_3</a></div><div class="ttdeci">#define TIM_CHANNEL_3</div><div class="ttdef"><b>Definition</b> stm32f4xx_hal_tim.h:740</div></div>
 <div class="ttc" id="agroup__TIM__Channel_html_ga6b1541e4a49d62610899e24bf23f4879"><div class="ttname"><a href="../../dd/da4/group__TIM__Channel.html#ga6b1541e4a49d62610899e24bf23f4879">TIM_CHANNEL_1</a></div><div class="ttdeci">#define TIM_CHANNEL_1</div><div class="ttdef"><b>Definition</b> stm32f4xx_hal_tim.h:738</div></div>
@@ -544,10 +549,14 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  (((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga6b1541e4a49d62610899e24bf23f4879">TIM_CHANNEL_1</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR1 &amp;= ~TIM_CCMR1_OC1PE) :\</div>
-<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga33e02d43345a7ac5886f01b39e4f7ccd">TIM_CHANNEL_2</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR1 &amp;= ~TIM_CCMR1_OC2PE) :\</div>
-<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga4ea100c1789b178f3cb46721b7257e2d">TIM_CHANNEL_3</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR2 &amp;= ~TIM_CCMR2_OC3PE) :\</div>
-<div class="line">   ((__HANDLE__)-&gt;Instance-&gt;CCMR2 &amp;= ~TIM_CCMR2_OC4PE))</div>
+<b>Value:</b><div class="fragment"><div class="line">  (((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga6b1541e4a49d62610899e24bf23f4879">TIM_CHANNEL_1</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR1 &amp;= ~<a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga1aa54ddf87a4b339881a8d5368ec80eb">TIM_CCMR1_OC1PE</a>) :\</div>
+<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga33e02d43345a7ac5886f01b39e4f7ccd">TIM_CHANNEL_2</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR1 &amp;= ~<a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gabddbf508732039730125ab3e87e9d370">TIM_CCMR1_OC2PE</a>) :\</div>
+<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga4ea100c1789b178f3cb46721b7257e2d">TIM_CHANNEL_3</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR2 &amp;= ~<a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga276fd2250d2b085b73ef51cb4c099d24">TIM_CCMR2_OC3PE</a>) :\</div>
+<div class="line">   ((__HANDLE__)-&gt;Instance-&gt;CCMR2 &amp;= ~<a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga3e951cd3f6593e321cf79b662a1deaaa">TIM_CCMR2_OC4PE</a>))</div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_ga1aa54ddf87a4b339881a8d5368ec80eb"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga1aa54ddf87a4b339881a8d5368ec80eb">TIM_CCMR1_OC1PE</a></div><div class="ttdeci">#define TIM_CCMR1_OC1PE</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:12647</div></div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_ga276fd2250d2b085b73ef51cb4c099d24"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga276fd2250d2b085b73ef51cb4c099d24">TIM_CCMR2_OC3PE</a></div><div class="ttdeci">#define TIM_CCMR2_OC3PE</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:12726</div></div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_ga3e951cd3f6593e321cf79b662a1deaaa"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga3e951cd3f6593e321cf79b662a1deaaa">TIM_CCMR2_OC4PE</a></div><div class="ttdeci">#define TIM_CCMR2_OC4PE</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:12750</div></div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_gabddbf508732039730125ab3e87e9d370"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gabddbf508732039730125ab3e87e9d370">TIM_CCMR1_OC2PE</a></div><div class="ttdeci">#define TIM_CCMR1_OC2PE</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:12671</div></div>
 </div><!-- fragment -->
 <p>Reset the TIM Output compare preload. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -583,7 +592,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__HANDLE__</td><td>)</td>
-          <td>&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1|=(TIM_CR1_CEN))</td>
+          <td>&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1|=(<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga93d86355e5e3b399ed45e1ca83abed2a">TIM_CR1_CEN</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -734,10 +743,10 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  (((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga6b1541e4a49d62610899e24bf23f4879">TIM_CHANNEL_1</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR1 |= TIM_CCMR1_OC1FE) :\</div>
-<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga33e02d43345a7ac5886f01b39e4f7ccd">TIM_CHANNEL_2</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR1 |= TIM_CCMR1_OC2FE) :\</div>
-<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga4ea100c1789b178f3cb46721b7257e2d">TIM_CHANNEL_3</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR2 |= TIM_CCMR2_OC3FE) :\</div>
-<div class="line">   ((__HANDLE__)-&gt;Instance-&gt;CCMR2 |= TIM_CCMR2_OC4FE))</div>
+<b>Value:</b><div class="fragment"><div class="line">  (((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga6b1541e4a49d62610899e24bf23f4879">TIM_CHANNEL_1</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR1 |= <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gab9c5878e85ce02c22d8a374deebd1b6e">TIM_CCMR1_OC1FE</a>) :\</div>
+<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga33e02d43345a7ac5886f01b39e4f7ccd">TIM_CHANNEL_2</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR1 |= <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga3bf610cf77c3c6c936ce7c4f85992e6c">TIM_CCMR1_OC2FE</a>) :\</div>
+<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga4ea100c1789b178f3cb46721b7257e2d">TIM_CHANNEL_3</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR2 |= <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gae6d8d2847058747ce23a648668ce4dba">TIM_CCMR2_OC3FE</a>) :\</div>
+<div class="line">   ((__HANDLE__)-&gt;Instance-&gt;CCMR2 |= <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga70dc197250c2699d470aea1a7a42ad57">TIM_CCMR2_OC4FE</a>))</div>
 </div><!-- fragment -->
 <p>Enable fast mode for a given channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -790,10 +799,10 @@ Fast mode acts only if the channel is configured in PWM1 or PWM2 mode. </dd></dl
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  (((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga6b1541e4a49d62610899e24bf23f4879">TIM_CHANNEL_1</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR1 |= TIM_CCMR1_OC1PE) :\</div>
-<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga33e02d43345a7ac5886f01b39e4f7ccd">TIM_CHANNEL_2</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR1 |= TIM_CCMR1_OC2PE) :\</div>
-<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga4ea100c1789b178f3cb46721b7257e2d">TIM_CHANNEL_3</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR2 |= TIM_CCMR2_OC3PE) :\</div>
-<div class="line">   ((__HANDLE__)-&gt;Instance-&gt;CCMR2 |= TIM_CCMR2_OC4PE))</div>
+<b>Value:</b><div class="fragment"><div class="line">  (((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga6b1541e4a49d62610899e24bf23f4879">TIM_CHANNEL_1</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR1 |= <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga1aa54ddf87a4b339881a8d5368ec80eb">TIM_CCMR1_OC1PE</a>) :\</div>
+<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga33e02d43345a7ac5886f01b39e4f7ccd">TIM_CHANNEL_2</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR1 |= <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gabddbf508732039730125ab3e87e9d370">TIM_CCMR1_OC2PE</a>) :\</div>
+<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga4ea100c1789b178f3cb46721b7257e2d">TIM_CHANNEL_3</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR2 |= <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga276fd2250d2b085b73ef51cb4c099d24">TIM_CCMR2_OC3PE</a>) :\</div>
+<div class="line">   ((__HANDLE__)-&gt;Instance-&gt;CCMR2 |= <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga3e951cd3f6593e321cf79b662a1deaaa">TIM_CCMR2_OC4PE</a>))</div>
 </div><!-- fragment -->
 <p>Set the TIM Output compare preload. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -861,7 +870,7 @@ Fast mode acts only if the channel is configured in PWM1 or PWM2 mode. </dd></dl
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__HANDLE__</td><td>)</td>
-          <td>&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1 &amp; TIM_CR1_CKD)</td>
+          <td>&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1 &amp; <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gacacc4ff7e5b75fd2e4e6b672ccd33a72">TIM_CR1_CKD</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1054,10 +1063,14 @@ Fast mode acts only if the channel is configured in PWM1 or PWM2 mode. </dd></dl
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  (((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga6b1541e4a49d62610899e24bf23f4879">TIM_CHANNEL_1</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR1 &amp; TIM_CCMR1_IC1PSC) :\</div>
-<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga33e02d43345a7ac5886f01b39e4f7ccd">TIM_CHANNEL_2</a>) ? (((__HANDLE__)-&gt;Instance-&gt;CCMR1 &amp; TIM_CCMR1_IC2PSC) &gt;&gt; 8U) :\</div>
-<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga4ea100c1789b178f3cb46721b7257e2d">TIM_CHANNEL_3</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR2 &amp; TIM_CCMR2_IC3PSC) :\</div>
-<div class="line">   (((__HANDLE__)-&gt;Instance-&gt;CCMR2 &amp; TIM_CCMR2_IC4PSC)) &gt;&gt; 8U)</div>
+<b>Value:</b><div class="fragment"><div class="line">  (((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga6b1541e4a49d62610899e24bf23f4879">TIM_CHANNEL_1</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR1 &amp; <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gab46b7186665f5308cd2ca52acfb63e72">TIM_CCMR1_IC1PSC</a>) :\</div>
+<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga33e02d43345a7ac5886f01b39e4f7ccd">TIM_CHANNEL_2</a>) ? (((__HANDLE__)-&gt;Instance-&gt;CCMR1 &amp; <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga5e8e704f9ce5742f45e15e3b3126aa9d">TIM_CCMR1_IC2PSC</a>) &gt;&gt; 8U) :\</div>
+<div class="line">   ((__CHANNEL__) == <a class="code hl_define" href="../../dd/da4/group__TIM__Channel.html#ga4ea100c1789b178f3cb46721b7257e2d">TIM_CHANNEL_3</a>) ? ((__HANDLE__)-&gt;Instance-&gt;CCMR2 &amp; <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gafc3d11f2e968752bc9ec7131c986c3a6">TIM_CCMR2_IC3PSC</a>) :\</div>
+<div class="line">   (((__HANDLE__)-&gt;Instance-&gt;CCMR2 &amp; <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga6fd7591e2de10272f7fafb08cdd1b7b0">TIM_CCMR2_IC4PSC</a>)) &gt;&gt; 8U)</div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_ga5e8e704f9ce5742f45e15e3b3126aa9d"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga5e8e704f9ce5742f45e15e3b3126aa9d">TIM_CCMR1_IC2PSC</a></div><div class="ttdeci">#define TIM_CCMR1_IC2PSC</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:12702</div></div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_ga6fd7591e2de10272f7fafb08cdd1b7b0"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga6fd7591e2de10272f7fafb08cdd1b7b0">TIM_CCMR2_IC4PSC</a></div><div class="ttdeci">#define TIM_CCMR2_IC4PSC</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:12781</div></div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_gab46b7186665f5308cd2ca52acfb63e72"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gab46b7186665f5308cd2ca52acfb63e72">TIM_CCMR1_IC1PSC</a></div><div class="ttdeci">#define TIM_CCMR1_IC1PSC</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:12688</div></div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_gafc3d11f2e968752bc9ec7131c986c3a6"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gafc3d11f2e968752bc9ec7131c986c3a6">TIM_CCMR2_IC3PSC</a></div><div class="ttdeci">#define TIM_CCMR2_IC3PSC</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:12767</div></div>
 </div><!-- fragment -->
 <p>Get the TIM Input Capture prescaler on runtime. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1154,7 +1167,7 @@ Fast mode acts only if the channel is configured in PWM1 or PWM2 mode. </dd></dl
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__HANDLE__</td><td>)</td>
-          <td>&#160;&#160;&#160;(((__HANDLE__)-&gt;Instance-&gt;CR1 &amp;(TIM_CR1_DIR)) == (TIM_CR1_DIR))</td>
+          <td>&#160;&#160;&#160;(((__HANDLE__)-&gt;Instance-&gt;CR1 &amp;(<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gacea10770904af189f3aaeb97b45722aa">TIM_CR1_DIR</a>)) == (<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gacea10770904af189f3aaeb97b45722aa">TIM_CR1_DIR</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1196,10 +1209,11 @@ Fast mode acts only if the channel is configured in PWM1 or PWM2 mode. </dd></dl
 <div class="line">    { \</div>
 <div class="line">      if(((__HANDLE__)-&gt;Instance-&gt;CCER &amp; <a class="code hl_define" href="../../df/db6/group__TIM__Private__Constants.html#gaeae61652a005098f9fe6b398d29d4279">TIM_CCER_CCxNE_MASK</a>) == 0UL) \</div>
 <div class="line">      { \</div>
-<div class="line">        (__HANDLE__)-&gt;Instance-&gt;BDTR &amp;= ~(TIM_BDTR_MOE); \</div>
+<div class="line">        (__HANDLE__)-&gt;Instance-&gt;BDTR &amp;= ~(<a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga277a096614829feba2d0a4fbb7d3dffc">TIM_BDTR_MOE</a>); \</div>
 <div class="line">      } \</div>
 <div class="line">    } \</div>
 <div class="line">  } <span class="keywordflow">while</span>(0)</div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_ga277a096614829feba2d0a4fbb7d3dffc"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga277a096614829feba2d0a4fbb7d3dffc">TIM_BDTR_MOE</a></div><div class="ttdeci">#define TIM_BDTR_MOE</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:12916</div></div>
 </div><!-- fragment -->
 <p>Disable the TIM main Output. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1229,7 +1243,7 @@ Fast mode acts only if the channel is configured in PWM1 or PWM2 mode. </dd></dl
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__HANDLE__</td><td>)</td>
-          <td>&#160;&#160;&#160;(__HANDLE__)-&gt;Instance-&gt;BDTR &amp;= ~(TIM_BDTR_MOE)</td>
+          <td>&#160;&#160;&#160;(__HANDLE__)-&gt;Instance-&gt;BDTR &amp;= ~(<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga277a096614829feba2d0a4fbb7d3dffc">TIM_BDTR_MOE</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1262,7 +1276,7 @@ Fast mode acts only if the channel is configured in PWM1 or PWM2 mode. </dd></dl
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__HANDLE__</td><td>)</td>
-          <td>&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;BDTR|=(TIM_BDTR_MOE))</td>
+          <td>&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;BDTR|=(<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga277a096614829feba2d0a4fbb7d3dffc">TIM_BDTR_MOE</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1351,7 +1365,7 @@ Fast mode acts only if the channel is configured in PWM1 or PWM2 mode. </dd></dl
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;  MODIFY_REG((__HANDLE__)-&gt;Instance-&gt;CR2, TIM_CR2_CCDS, (__CCDMA__))</td>
+          <td></td><td>&#160;&#160;&#160;  MODIFY_REG((__HANDLE__)-&gt;Instance-&gt;CR2, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gade656832d3ec303a2a7a422638dd560e">TIM_CR2_CCDS</a>, (__CCDMA__))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1515,10 +1529,11 @@ Fast mode acts only if the channel is configured in PWM1 or PWM2 mode. </dd></dl
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span>{                                                   \</div>
-<div class="line">    (__HANDLE__)-&gt;Instance-&gt;CR1 &amp;= (~TIM_CR1_CKD);  \</div>
+<div class="line">    (__HANDLE__)-&gt;Instance-&gt;CR1 &amp;= (~<a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gacacc4ff7e5b75fd2e4e6b672ccd33a72">TIM_CR1_CKD</a>);  \</div>
 <div class="line">    (__HANDLE__)-&gt;Instance-&gt;CR1 |= (__CKD__);       \</div>
 <div class="line">    (__HANDLE__)-&gt;Init.ClockDivision = (__CKD__);   \</div>
 <div class="line">  } <span class="keywordflow">while</span>(0)</div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_gacacc4ff7e5b75fd2e4e6b672ccd33a72"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gacacc4ff7e5b75fd2e4e6b672ccd33a72">TIM_CR1_CKD</a></div><div class="ttdeci">#define TIM_CR1_CKD</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:12437</div></div>
 </div><!-- fragment -->
 <p>Set the TIM Clock Division value on runtime without calling another time any Init function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1765,7 +1780,7 @@ Fast mode acts only if the channel is configured in PWM1 or PWM2 mode. </dd></dl
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__HANDLE__</td><td>)</td>
-          <td>&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1&amp;=~TIM_CR1_URS)</td>
+          <td>&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1&amp;=~<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga06c997c2c23e8bef7ca07579762c113b">TIM_CR1_URS</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1798,7 +1813,7 @@ Fast mode acts only if the channel is configured in PWM1 or PWM2 mode. </dd></dl
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__HANDLE__</td><td>)</td>
-          <td>&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1|= TIM_CR1_URS)</td>
+          <td>&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1|= <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga06c997c2c23e8bef7ca07579762c113b">TIM_CR1_URS</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">

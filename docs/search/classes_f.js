@@ -1,17 +1,11 @@
 var searchData=
 [
-  ['tim_5fbase_5finittypedef_0',['TIM_Base_InitTypeDef',['../d3/d2d/structTIM__Base__InitTypeDef.html',1,'']]],
-  ['tim_5fbreakdeadtimeconfigtypedef_1',['TIM_BreakDeadTimeConfigTypeDef',['../d8/d16/structTIM__BreakDeadTimeConfigTypeDef.html',1,'']]],
-  ['tim_5fclearinputconfigtypedef_2',['TIM_ClearInputConfigTypeDef',['../d6/d18/structTIM__ClearInputConfigTypeDef.html',1,'']]],
-  ['tim_5fclockconfigtypedef_3',['TIM_ClockConfigTypeDef',['../d4/d28/structTIM__ClockConfigTypeDef.html',1,'']]],
-  ['tim_5fencoder_5finittypedef_4',['TIM_Encoder_InitTypeDef',['../d6/d67/structTIM__Encoder__InitTypeDef.html',1,'']]],
-  ['tim_5fhallsensor_5finittypedef_5',['TIM_HallSensor_InitTypeDef',['../db/d52/structTIM__HallSensor__InitTypeDef.html',1,'']]],
-  ['tim_5fhandletypedef_6',['TIM_HandleTypeDef',['../dc/d4f/structTIM__HandleTypeDef.html',1,'']]],
-  ['tim_5fic_5finittypedef_7',['TIM_IC_InitTypeDef',['../de/d9c/structTIM__IC__InitTypeDef.html',1,'']]],
-  ['tim_5fmasterconfigtypedef_8',['TIM_MasterConfigTypeDef',['../d7/d6f/structTIM__MasterConfigTypeDef.html',1,'']]],
-  ['tim_5foc_5finittypedef_9',['TIM_OC_InitTypeDef',['../d9/d4a/structTIM__OC__InitTypeDef.html',1,'']]],
-  ['tim_5fonepulse_5finittypedef_10',['TIM_OnePulse_InitTypeDef',['../df/d94/structTIM__OnePulse__InitTypeDef.html',1,'']]],
-  ['tim_5fslaveconfigtypedef_11',['TIM_SlaveConfigTypeDef',['../de/d50/structTIM__SlaveConfigTypeDef.html',1,'']]],
-  ['tim_5ftypedef_12',['TIM_TypeDef',['../d6/d12/structTIM__TypeDef.html',1,'']]],
-  ['tpi_5ftype_13',['TPI_Type',['../db/daf/structTPI__Type.html',1,'']]]
+  ['uart_5finittypedef_0',['UART_InitTypeDef',['../dd/ddc/structUART__InitTypeDef.html',1,'']]],
+  ['usart_5ftypedef_1',['USART_TypeDef',['../d1/d3e/structUSART__TypeDef.html',1,'']]],
+  ['usb_5fotg_5fdevicetypedef_2',['USB_OTG_DeviceTypeDef',['../da/de8/structUSB__OTG__DeviceTypeDef.html',1,'']]],
+  ['usb_5fotg_5fglobaltypedef_3',['USB_OTG_GlobalTypeDef',['../d1/da3/structUSB__OTG__GlobalTypeDef.html',1,'']]],
+  ['usb_5fotg_5fhostchanneltypedef_4',['USB_OTG_HostChannelTypeDef',['../d2/def/structUSB__OTG__HostChannelTypeDef.html',1,'']]],
+  ['usb_5fotg_5fhosttypedef_5',['USB_OTG_HostTypeDef',['../dc/d6a/structUSB__OTG__HostTypeDef.html',1,'']]],
+  ['usb_5fotg_5finendpointtypedef_6',['USB_OTG_INEndpointTypeDef',['../d1/db2/structUSB__OTG__INEndpointTypeDef.html',1,'']]],
+  ['usb_5fotg_5foutendpointtypedef_7',['USB_OTG_OUTEndpointTypeDef',['../df/d7d/structUSB__OTG__OUTEndpointTypeDef.html',1,'']]]
 ];

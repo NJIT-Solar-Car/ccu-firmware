@@ -1,6 +1,22 @@
 var searchData=
 [
-  ['generalcallmode_0',['GeneralCallMode',['../da/d51/structI2C__InitTypeDef.html#a17ce92b135a4b5c045a5387c91677803',1,'I2C_InitTypeDef']]],
-  ['gpiosel_1',['GPIOSel',['../dd/def/structEXTI__ConfigTypeDef.html#acb9a59bb7943a21c105481f85007a79c',1,'EXTI_ConfigTypeDef']]],
-  ['gstate_2',['gState',['../df/da4/struct____UART__HandleTypeDef.html#a0c4242c009d8754417dfd87a5ab6cb10',1,'__UART_HandleTypeDef']]]
+  ['gahbcfg_0',['GAHBCFG',['../d1/da3/structUSB__OTG__GlobalTypeDef.html#a212059dc4a38136fee7fb358fc74c0d0',1,'USB_OTG_GlobalTypeDef']]],
+  ['gccfg_1',['GCCFG',['../d1/da3/structUSB__OTG__GlobalTypeDef.html#a9f94762e8ec6d3984e2da3f48bae8a7b',1,'USB_OTG_GlobalTypeDef']]],
+  ['gcr_2',['GCR',['../d3/db2/structSAI__TypeDef.html#ada6999b49bbe697c1dd5fdabc9bad7f4',1,'SAI_TypeDef']]],
+  ['gdfifocfg_3',['GDFIFOCFG',['../d1/da3/structUSB__OTG__GlobalTypeDef.html#a03a213a5cf7e94f475860ae4d7615a23',1,'USB_OTG_GlobalTypeDef']]],
+  ['generalcallmode_4',['GeneralCallMode',['../da/d51/structI2C__InitTypeDef.html#a17ce92b135a4b5c045a5387c91677803',1,'I2C_InitTypeDef']]],
+  ['ghwcfg3_5',['GHWCFG3',['../d1/da3/structUSB__OTG__GlobalTypeDef.html#a4d0af4dfa531b5fcc09a421399963aaa',1,'USB_OTG_GlobalTypeDef']]],
+  ['gintmsk_6',['GINTMSK',['../d1/da3/structUSB__OTG__GlobalTypeDef.html#a42668fa352b82eb13164a99664956271',1,'USB_OTG_GlobalTypeDef']]],
+  ['gintsts_7',['GINTSTS',['../d1/da3/structUSB__OTG__GlobalTypeDef.html#a0c0a00511f6c07b8609b54adb14319da',1,'USB_OTG_GlobalTypeDef']]],
+  ['glpmcfg_8',['GLPMCFG',['../d1/da3/structUSB__OTG__GlobalTypeDef.html#ae085e2623371c13a970c3caf3d322ed6',1,'USB_OTG_GlobalTypeDef']]],
+  ['gotgctl_9',['GOTGCTL',['../d1/da3/structUSB__OTG__GlobalTypeDef.html#a44d3a8825526e6f362da26bbdfb9c71d',1,'USB_OTG_GlobalTypeDef']]],
+  ['gotgint_10',['GOTGINT',['../d1/da3/structUSB__OTG__GlobalTypeDef.html#a09055525656d2be5adce9471c2590c49',1,'USB_OTG_GlobalTypeDef']]],
+  ['gpiosel_11',['GPIOSel',['../dd/def/structEXTI__ConfigTypeDef.html#acb9a59bb7943a21c105481f85007a79c',1,'EXTI_ConfigTypeDef']]],
+  ['grstctl_12',['GRSTCTL',['../d1/da3/structUSB__OTG__GlobalTypeDef.html#a75148d8257eaeec482aa99f8b4a8b0fb',1,'USB_OTG_GlobalTypeDef']]],
+  ['grxfsiz_13',['GRXFSIZ',['../d1/da3/structUSB__OTG__GlobalTypeDef.html#ade50afc41de620913eaf1bc66d93cd3a',1,'USB_OTG_GlobalTypeDef']]],
+  ['grxstsp_14',['GRXSTSP',['../d1/da3/structUSB__OTG__GlobalTypeDef.html#a060364111cf507dfab9bb6503477983a',1,'USB_OTG_GlobalTypeDef']]],
+  ['grxstsr_15',['GRXSTSR',['../d1/da3/structUSB__OTG__GlobalTypeDef.html#a77b651a1120fc5fb647eaccac6f002c6',1,'USB_OTG_GlobalTypeDef']]],
+  ['gstate_16',['gState',['../df/da4/struct____UART__HandleTypeDef.html#a0c4242c009d8754417dfd87a5ab6cb10',1,'__UART_HandleTypeDef']]],
+  ['gtpr_17',['GTPR',['../d1/d3e/structUSART__TypeDef.html#ae23acff49b4ff96fd29093e80fc7d72e',1,'USART_TypeDef']]],
+  ['gusbcfg_18',['GUSBCFG',['../d1/da3/structUSB__OTG__GlobalTypeDef.html#a2094f12e3e4d4e6cc45047dedbfd0acd',1,'USB_OTG_GlobalTypeDef']]]
 ];

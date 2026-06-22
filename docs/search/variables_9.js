@@ -1,8 +1,12 @@
 var searchData=
 [
-  ['line_0',['line',['../d3/d8e/structEXTI__HandleTypeDef.html#a6a2875051ad4276be5322ffa99e12566',1,'EXTI_HandleTypeDef::Line'],['../dd/def/structEXTI__ConfigTypeDef.html#a19ad88703f9ac13e8a741afdba86f6af',1,'EXTI_ConfigTypeDef::Line']]],
-  ['lock_1',['lock',['../d0/d7d/struct____DMA__HandleTypeDef.html#a005e867f695aa4b85aca665af7345b51',1,'__DMA_HandleTypeDef::Lock'],['../dd/d15/structFLASH__ProcessTypeDef.html#ab5892cd1aacb0c0304b40f57023061e2',1,'FLASH_ProcessTypeDef::Lock'],['../dd/d39/structI2C__HandleTypeDef.html#af28a07c34f97e2b2ade505357a467a50',1,'I2C_HandleTypeDef::Lock'],['../d0/d3e/struct____SPI__HandleTypeDef.html#aa13d993a0b9b0ea6a07e5a77eeaf394e',1,'__SPI_HandleTypeDef::Lock'],['../dc/d4f/structTIM__HandleTypeDef.html#a2a24b963b57150ed2fb0f051cd87b65a',1,'TIM_HandleTypeDef::Lock'],['../df/da4/struct____UART__HandleTypeDef.html#a203cf57913d43137feeb4fe24fe38af2',1,'__UART_HandleTypeDef::Lock']]],
-  ['locklevel_2',['LockLevel',['../d8/d16/structTIM__BreakDeadTimeConfigTypeDef.html#ab00ae9fa5c6daa6319883863dee6e40a',1,'TIM_BreakDeadTimeConfigTypeDef']]],
-  ['lsestate_3',['LSEState',['../d0/d1e/structRCC__OscInitTypeDef.html#a7c1294e9407e69e80fe034caf35fe7ea',1,'RCC_OscInitTypeDef']]],
-  ['lsistate_4',['LSIState',['../d0/d1e/structRCC__OscInitTypeDef.html#a955de90db8882fde02c4fb59c7c000f0',1,'RCC_OscInitTypeDef']]]
+  ['jdr1_0',['JDR1',['../da/dcd/structADC__TypeDef.html#ab4b0a79a9e4a9d5b0a24d7285cf55bdc',1,'ADC_TypeDef']]],
+  ['jdr2_1',['JDR2',['../da/dcd/structADC__TypeDef.html#a898b87cab4f099bcca981cc4c9318b51',1,'ADC_TypeDef']]],
+  ['jdr3_2',['JDR3',['../da/dcd/structADC__TypeDef.html#a40999cd0a255ef62b2340e2726695063',1,'ADC_TypeDef']]],
+  ['jdr4_3',['JDR4',['../da/dcd/structADC__TypeDef.html#abae6e9d688b16ef350878998f5e21c0b',1,'ADC_TypeDef']]],
+  ['jofr1_4',['JOFR1',['../da/dcd/structADC__TypeDef.html#aa005e656f528aaad28d70d61c9db9b81',1,'ADC_TypeDef']]],
+  ['jofr2_5',['JOFR2',['../da/dcd/structADC__TypeDef.html#aa20f76044c11042dde41c1060853fb82',1,'ADC_TypeDef']]],
+  ['jofr3_6',['JOFR3',['../da/dcd/structADC__TypeDef.html#ae9c78142f6edf8122384263878d09015',1,'ADC_TypeDef']]],
+  ['jofr4_7',['JOFR4',['../da/dcd/structADC__TypeDef.html#a92f5c1a5aaa8b286317f923482e09d35',1,'ADC_TypeDef']]],
+  ['jsqr_8',['JSQR',['../da/dcd/structADC__TypeDef.html#a5438a76a93ac1bd2526e92ef298dc193',1,'ADC_TypeDef']]]
 ];

@@ -1,5 +1,5 @@
 var structCAN__FilterRegister__TypeDef =
 [
-    [ "FR1", "d1/da6/structCAN__FilterRegister__TypeDef.html#a9c8c11137c6b54c017b0b1cd30169ec5", null ],
-    [ "FR2", "d1/da6/structCAN__FilterRegister__TypeDef.html#a44d598c0f4f1d3cbdc70a142ebae7a52", null ]
+    [ "FR1", "d1/da6/structCAN__FilterRegister__TypeDef.html#ac9bc1e42212239d6830582bf0c696fc5", null ],
+    [ "FR2", "d1/da6/structCAN__FilterRegister__TypeDef.html#a77959e28a302b05829f6a1463be7f800", null ]
 ];

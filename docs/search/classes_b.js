@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['spi_5finittypedef_0',['SPI_InitTypeDef',['../d2/dc3/structSPI__InitTypeDef.html',1,'']]]
+  ['quadspi_5ftypedef_0',['QUADSPI_TypeDef',['../de/d17/structQUADSPI__TypeDef.html',1,'']]]
 ];

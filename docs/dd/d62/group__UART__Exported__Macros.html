@@ -147,16 +147,16 @@ Macros</h2></td></tr>
 <tr class="memitem:ga8c034e96ad8f263cafeb5898ff7311fd" id="r_ga8c034e96ad8f263cafeb5898ff7311fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/group__UART__Exported__Macros.html#ga8c034e96ad8f263cafeb5898ff7311fd">__HAL_UART_HWCONTROL_RTS_DISABLE</a>(__HANDLE__)</td></tr>
 <tr class="memdesc:ga8c034e96ad8f263cafeb5898ff7311fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable RTS flow control This macro allows to disable RTS hardware flow control for a given UART instance, without need to call <a class="el" href="../../d5/d3b/group__UART__Exported__Functions__Group1.html#gabe47045024787099b0bfa82bbe7b0b6a" title="Initializes the UART mode according to the specified parameters in the UART_InitTypeDef and create th...">HAL_UART_Init()</a> function. As involving direct access to UART registers, usage of this macro should be fully endorsed by user.  <br /></td></tr>
 <tr class="separator:ga8c034e96ad8f263cafeb5898ff7311fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3524747e5896296ab066d786431503ce" id="r_ga3524747e5896296ab066d786431503ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/group__UART__Exported__Macros.html#ga3524747e5896296ab066d786431503ce">__HAL_UART_ONE_BIT_SAMPLE_ENABLE</a>(__HANDLE__)&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR3|= USART_CR3_ONEBIT)</td></tr>
+<tr class="memitem:ga3524747e5896296ab066d786431503ce" id="r_ga3524747e5896296ab066d786431503ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/group__UART__Exported__Macros.html#ga3524747e5896296ab066d786431503ce">__HAL_UART_ONE_BIT_SAMPLE_ENABLE</a>(__HANDLE__)&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR3|= <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga9a96fb1a7beab602cbc8cb0393593826">USART_CR3_ONEBIT</a>)</td></tr>
 <tr class="memdesc:ga3524747e5896296ab066d786431503ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to enable the UART's one bit sample method.  <br /></td></tr>
 <tr class="separator:ga3524747e5896296ab066d786431503ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2dbd7e6592e8c5999f817b69f0fd24bb" id="r_ga2dbd7e6592e8c5999f817b69f0fd24bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/group__UART__Exported__Macros.html#ga2dbd7e6592e8c5999f817b69f0fd24bb">__HAL_UART_ONE_BIT_SAMPLE_DISABLE</a>(__HANDLE__)</td></tr>
 <tr class="memdesc:ga2dbd7e6592e8c5999f817b69f0fd24bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to disable the UART's one bit sample method.  <br /></td></tr>
 <tr class="separator:ga2dbd7e6592e8c5999f817b69f0fd24bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga49eb5ea4996a957afeb8be2793ba3fe9" id="r_ga49eb5ea4996a957afeb8be2793ba3fe9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/group__UART__Exported__Macros.html#ga49eb5ea4996a957afeb8be2793ba3fe9">__HAL_UART_ENABLE</a>(__HANDLE__)&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1 |=  USART_CR1_UE)</td></tr>
+<tr class="memitem:ga49eb5ea4996a957afeb8be2793ba3fe9" id="r_ga49eb5ea4996a957afeb8be2793ba3fe9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/group__UART__Exported__Macros.html#ga49eb5ea4996a957afeb8be2793ba3fe9">__HAL_UART_ENABLE</a>(__HANDLE__)&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1 |=  <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga2bb650676aaae4a5203f372d497d5947">USART_CR1_UE</a>)</td></tr>
 <tr class="memdesc:ga49eb5ea4996a957afeb8be2793ba3fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable UART.  <br /></td></tr>
 <tr class="separator:ga49eb5ea4996a957afeb8be2793ba3fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad2f9fbdb4adf3a09939e201eaeea072f" id="r_gad2f9fbdb4adf3a09939e201eaeea072f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/group__UART__Exported__Macros.html#gad2f9fbdb4adf3a09939e201eaeea072f">__HAL_UART_DISABLE</a>(__HANDLE__)&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1 &amp;=  ~USART_CR1_UE)</td></tr>
+<tr class="memitem:gad2f9fbdb4adf3a09939e201eaeea072f" id="r_gad2f9fbdb4adf3a09939e201eaeea072f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/group__UART__Exported__Macros.html#gad2f9fbdb4adf3a09939e201eaeea072f">__HAL_UART_DISABLE</a>(__HANDLE__)&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1 &amp;=  ~<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga2bb650676aaae4a5203f372d497d5947">USART_CR1_UE</a>)</td></tr>
 <tr class="memdesc:gad2f9fbdb4adf3a09939e201eaeea072f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable UART.  <br /></td></tr>
 <tr class="separator:gad2f9fbdb4adf3a09939e201eaeea072f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -395,7 +395,7 @@ TXE flag is cleared only by a write to the USART_DR register.</dd></dl>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__HANDLE__</td><td>)</td>
-          <td>&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1 &amp;=  ~USART_CR1_UE)</td>
+          <td>&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1 &amp;=  ~<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga2bb650676aaae4a5203f372d497d5947">USART_CR1_UE</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -486,7 +486,7 @@ TXE flag is cleared only by a write to the USART_DR register.</dd></dl>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__HANDLE__</td><td>)</td>
-          <td>&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1 |=  USART_CR1_UE)</td>
+          <td>&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR1 |=  <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga2bb650676aaae4a5203f372d497d5947">USART_CR1_UE</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -714,9 +714,10 @@ TXE flag is cleared only by a write to the USART_DR register.</dd></dl>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span>{                                                       \</div>
-<div class="line">    ATOMIC_CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR3, USART_CR3_CTSE); \</div>
-<div class="line">    (__HANDLE__)-&gt;Init.HwFlowCtl &amp;= ~(USART_CR3_CTSE);      \</div>
+<div class="line">    ATOMIC_CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR3, <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gaa125f026b1ca2d76eab48b191baed265">USART_CR3_CTSE</a>); \</div>
+<div class="line">    (__HANDLE__)-&gt;Init.HwFlowCtl &amp;= ~(<a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gaa125f026b1ca2d76eab48b191baed265">USART_CR3_CTSE</a>);      \</div>
 <div class="line">  } <span class="keywordflow">while</span>(0U)</div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_gaa125f026b1ca2d76eab48b191baed265"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gaa125f026b1ca2d76eab48b191baed265">USART_CR3_CTSE</a></div><div class="ttdeci">#define USART_CR3_CTSE</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:13304</div></div>
 </div><!-- fragment -->
 <p>Disable CTS flow control. </p>
 <dl class="section note"><dt>Note</dt><dd>This macro allows to disable CTS hardware flow control for a given UART instance, without need to call <a class="el" href="../../d5/d3b/group__UART__Exported__Functions__Group1.html#gabe47045024787099b0bfa82bbe7b0b6a" title="Initializes the UART mode according to the specified parameters in the UART_InitTypeDef and create th...">HAL_UART_Init()</a> function. As involving direct access to UART registers, usage of this macro should be fully endorsed by user. </dd>
@@ -757,8 +758,8 @@ As macro is expected to be used for modifying CTS Hw flow control feature activa
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span>{                                                      \</div>
-<div class="line">    ATOMIC_SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR3, USART_CR3_CTSE);  \</div>
-<div class="line">    (__HANDLE__)-&gt;Init.HwFlowCtl |= USART_CR3_CTSE;        \</div>
+<div class="line">    ATOMIC_SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR3, <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gaa125f026b1ca2d76eab48b191baed265">USART_CR3_CTSE</a>);  \</div>
+<div class="line">    (__HANDLE__)-&gt;Init.HwFlowCtl |= <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gaa125f026b1ca2d76eab48b191baed265">USART_CR3_CTSE</a>;        \</div>
 <div class="line">  } <span class="keywordflow">while</span>(0U)</div>
 </div><!-- fragment -->
 <p>Enable CTS flow control. </p>
@@ -800,9 +801,10 @@ As macro is expected to be used for modifying CTS Hw flow control feature activa
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span>{                                                      \</div>
-<div class="line">    ATOMIC_CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR3, USART_CR3_RTSE);\</div>
-<div class="line">    (__HANDLE__)-&gt;Init.HwFlowCtl &amp;= ~(USART_CR3_RTSE);     \</div>
+<div class="line">    ATOMIC_CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CR3, <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga7c5d6fcd84a4728cda578a0339b4cac2">USART_CR3_RTSE</a>);\</div>
+<div class="line">    (__HANDLE__)-&gt;Init.HwFlowCtl &amp;= ~(<a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga7c5d6fcd84a4728cda578a0339b4cac2">USART_CR3_RTSE</a>);     \</div>
 <div class="line">  } <span class="keywordflow">while</span>(0U)</div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_ga7c5d6fcd84a4728cda578a0339b4cac2"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga7c5d6fcd84a4728cda578a0339b4cac2">USART_CR3_RTSE</a></div><div class="ttdeci">#define USART_CR3_RTSE</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:13301</div></div>
 </div><!-- fragment -->
 <p>Disable RTS flow control This macro allows to disable RTS hardware flow control for a given UART instance, without need to call <a class="el" href="../../d5/d3b/group__UART__Exported__Functions__Group1.html#gabe47045024787099b0bfa82bbe7b0b6a" title="Initializes the UART mode according to the specified parameters in the UART_InitTypeDef and create th...">HAL_UART_Init()</a> function. As involving direct access to UART registers, usage of this macro should be fully endorsed by user. </p>
 <dl class="section note"><dt>Note</dt><dd>As macro is expected to be used for modifying RTS Hw flow control feature activation, without need for USART instance Deinit/Init, following conditions for macro call should be fulfilled :<ul>
@@ -841,8 +843,8 @@ As macro is expected to be used for modifying CTS Hw flow control feature activa
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span>{                                                     \</div>
-<div class="line">    ATOMIC_SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR3, USART_CR3_RTSE); \</div>
-<div class="line">    (__HANDLE__)-&gt;Init.HwFlowCtl |= USART_CR3_RTSE;       \</div>
+<div class="line">    ATOMIC_SET_BIT((__HANDLE__)-&gt;Instance-&gt;CR3, <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga7c5d6fcd84a4728cda578a0339b4cac2">USART_CR3_RTSE</a>); \</div>
+<div class="line">    (__HANDLE__)-&gt;Init.HwFlowCtl |= <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga7c5d6fcd84a4728cda578a0339b4cac2">USART_CR3_RTSE</a>;       \</div>
 <div class="line">  } <span class="keywordflow">while</span>(0U)</div>
 </div><!-- fragment -->
 <p>Enable RTS flow control This macro allows to enable RTS hardware flow control for a given UART instance, without need to call <a class="el" href="../../d5/d3b/group__UART__Exported__Functions__Group1.html#gabe47045024787099b0bfa82bbe7b0b6a" title="Initializes the UART mode according to the specified parameters in the UART_InitTypeDef and create th...">HAL_UART_Init()</a> function. As involving direct access to UART registers, usage of this macro should be fully endorsed by user. </p>
@@ -882,7 +884,8 @@ As macro is expected to be used for modifying CTS Hw flow control feature activa
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                                                       ((__HANDLE__)-&gt;Instance-&gt;CR3\</div>
-<div class="line">                                                       &amp;= (uint16_t)~((uint16_t)USART_CR3_ONEBIT))</div>
+<div class="line">                                                       &amp;= (uint16_t)~((uint16_t)<a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga9a96fb1a7beab602cbc8cb0393593826">USART_CR3_ONEBIT</a>))</div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_ga9a96fb1a7beab602cbc8cb0393593826"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga9a96fb1a7beab602cbc8cb0393593826">USART_CR3_ONEBIT</a></div><div class="ttdeci">#define USART_CR3_ONEBIT</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:13310</div></div>
 </div><!-- fragment -->
 <p>Macro to disable the UART's one bit sample method. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -911,7 +914,7 @@ As macro is expected to be used for modifying CTS Hw flow control feature activa
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__HANDLE__</td><td>)</td>
-          <td>&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR3|= USART_CR3_ONEBIT)</td>
+          <td>&#160;&#160;&#160;((__HANDLE__)-&gt;Instance-&gt;CR3|= <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga9a96fb1a7beab602cbc8cb0393593826">USART_CR3_ONEBIT</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">

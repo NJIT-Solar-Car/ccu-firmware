@@ -101,11 +101,11 @@ $(document).ready(function(){initNavTree('d4/d44/group__CAN__operating__mode.htm
 Macros</h2></td></tr>
 <tr class="memitem:ga89cd5ea2e9d70a51bc12b100be28ca3d" id="r_ga89cd5ea2e9d70a51bc12b100be28ca3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d44/group__CAN__operating__mode.html#ga89cd5ea2e9d70a51bc12b100be28ca3d">CAN_MODE_NORMAL</a>&#160;&#160;&#160;(0x00000000U)</td></tr>
 <tr class="separator:ga89cd5ea2e9d70a51bc12b100be28ca3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga891031afc77974a041accb3d0ceb21bb" id="r_ga891031afc77974a041accb3d0ceb21bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d44/group__CAN__operating__mode.html#ga891031afc77974a041accb3d0ceb21bb">CAN_MODE_LOOPBACK</a>&#160;&#160;&#160;((uint32_t)CAN_BTR_LBKM)</td></tr>
+<tr class="memitem:ga891031afc77974a041accb3d0ceb21bb" id="r_ga891031afc77974a041accb3d0ceb21bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d44/group__CAN__operating__mode.html#ga891031afc77974a041accb3d0ceb21bb">CAN_MODE_LOOPBACK</a>&#160;&#160;&#160;((uint32_t)<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gac6c0a81d8dcde61a1f2772232f5343b8">CAN_BTR_LBKM</a>)</td></tr>
 <tr class="separator:ga891031afc77974a041accb3d0ceb21bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga82448408eae654a4703b76fea138ff7a" id="r_ga82448408eae654a4703b76fea138ff7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d44/group__CAN__operating__mode.html#ga82448408eae654a4703b76fea138ff7a">CAN_MODE_SILENT</a>&#160;&#160;&#160;((uint32_t)CAN_BTR_SILM)</td></tr>
+<tr class="memitem:ga82448408eae654a4703b76fea138ff7a" id="r_ga82448408eae654a4703b76fea138ff7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d44/group__CAN__operating__mode.html#ga82448408eae654a4703b76fea138ff7a">CAN_MODE_SILENT</a>&#160;&#160;&#160;((uint32_t)<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gaa36bc23e833190cbee9b8cf5cf49159d">CAN_BTR_SILM</a>)</td></tr>
 <tr class="separator:ga82448408eae654a4703b76fea138ff7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1d11f82e1182b50c483c8c648263f80c" id="r_ga1d11f82e1182b50c483c8c648263f80c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d44/group__CAN__operating__mode.html#ga1d11f82e1182b50c483c8c648263f80c">CAN_MODE_SILENT_LOOPBACK</a>&#160;&#160;&#160;((uint32_t)(CAN_BTR_LBKM | CAN_BTR_SILM))</td></tr>
+<tr class="memitem:ga1d11f82e1182b50c483c8c648263f80c" id="r_ga1d11f82e1182b50c483c8c648263f80c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d44/group__CAN__operating__mode.html#ga1d11f82e1182b50c483c8c648263f80c">CAN_MODE_SILENT_LOOPBACK</a>&#160;&#160;&#160;((uint32_t)(<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gac6c0a81d8dcde61a1f2772232f5343b8">CAN_BTR_LBKM</a> | <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gaa36bc23e833190cbee9b8cf5cf49159d">CAN_BTR_SILM</a>))</td></tr>
 <tr class="separator:ga1d11f82e1182b50c483c8c648263f80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -117,7 +117,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CAN_MODE_LOOPBACK&#160;&#160;&#160;((uint32_t)CAN_BTR_LBKM)</td>
+          <td class="memname">#define CAN_MODE_LOOPBACK&#160;&#160;&#160;((uint32_t)<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gac6c0a81d8dcde61a1f2772232f5343b8">CAN_BTR_LBKM</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -148,7 +148,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CAN_MODE_SILENT&#160;&#160;&#160;((uint32_t)CAN_BTR_SILM)</td>
+          <td class="memname">#define CAN_MODE_SILENT&#160;&#160;&#160;((uint32_t)<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gaa36bc23e833190cbee9b8cf5cf49159d">CAN_BTR_SILM</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -164,7 +164,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CAN_MODE_SILENT_LOOPBACK&#160;&#160;&#160;((uint32_t)(CAN_BTR_LBKM | CAN_BTR_SILM))</td>
+          <td class="memname">#define CAN_MODE_SILENT_LOOPBACK&#160;&#160;&#160;((uint32_t)(<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gac6c0a81d8dcde61a1f2772232f5343b8">CAN_BTR_LBKM</a> | <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gaa36bc23e833190cbee9b8cf5cf49159d">CAN_BTR_SILM</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('de/d32/can__motor_8h.html','../../'); 
 </div><!--header-->
 <div class="contents">
 
-<p>Holds function and struct definitions which pertain to the Kelly KBL motor controller.  
+<p>Holds function and struct definitions which pertain to the Kelly KBL motor controller <em>and</em> CAN bus functions in general.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 </div>
@@ -139,6 +139,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5e507f3828f12cac6119e6c1c98d6849" id="r_ga5e507f3828f12cac6119e6c1c98d6849"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga5e507f3828f12cac6119e6c1c98d6849">__attribute__</a> ((packed)) <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a></td></tr>
 <tr class="memdesc:ga5e507f3828f12cac6119e6c1c98d6849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies which commands have been run. Only members filled in by those commands are valid. Check individual command functions for more details.  <br /></td></tr>
 <tr class="separator:ga5e507f3828f12cac6119e6c1c98d6849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga545f0a4aac743c9bf73af07491a269e3" id="r_ga545f0a4aac743c9bf73af07491a269e3"><td class="memItemLeft" align="right" valign="top">BaseType_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc5/group__CAN__Funcs.html#ga545f0a4aac743c9bf73af07491a269e3">CCU_CAN_Init</a> (void)</td></tr>
+<tr class="memdesc:ga545f0a4aac743c9bf73af07491a269e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the global CAN mutex variable (in <a class="el" href="../../d3/d03/CCU__CAN_8c.html">CCU_CAN.c</a>)  <br /></td></tr>
+<tr class="separator:ga545f0a4aac743c9bf73af07491a269e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26d239dbb3e322e958243872747ad4b8" id="r_ga26d239dbb3e322e958243872747ad4b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc5/group__CAN__Funcs.html#ga26d239dbb3e322e958243872747ad4b8">CCU_CAN_FilterConfig</a> (<a class="el" href="../../da/d27/structCAN__FilterTypeDef.html">CAN_FilterTypeDef</a> *phcan1, <a class="el" href="../../da/d27/structCAN__FilterTypeDef.html">CAN_FilterTypeDef</a> *phcan2)</td></tr>
+<tr class="memdesc:ga26d239dbb3e322e958243872747ad4b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the filters for the CAN peripheral. Assumes that MX_CAN1_Init() has been called. Ideally place after USER CODE BEGIN 2.  <br /></td></tr>
+<tr class="separator:ga26d239dbb3e322e958243872747ad4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2bd17c32983010e9292658e2fd2a94ab" id="r_ga2bd17c32983010e9292658e2fd2a94ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc5/group__CAN__Funcs.html#ga2bd17c32983010e9292658e2fd2a94ab">CCU_CAN_Tx</a> (<a class="el" href="../../d9/dbb/structCAN__HandleTypeDef.html">CAN_HandleTypeDef</a> *hcan, <a class="el" href="../../d1/d85/structCAN__TxHeaderTypeDef.html">CAN_TxHeaderTypeDef</a> *pHeader, uint8_t aData[], uint32_t *pTxMailbox, TickType_t xTicksToWait)</td></tr>
+<tr class="memdesc:ga2bd17c32983010e9292658e2fd2a94ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread-safe wrapper for HAL_CAN_AddTxMessage. Blocks until a hardware mailbox is available and transmits safely.  <br /></td></tr>
+<tr class="separator:ga2bd17c32983010e9292658e2fd2a94ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -166,7 +175,7 @@ Variables</h2></td></tr>
 <tr class="separator:a4a12dc90d5cd3b85736e10dbf8bf0221"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Holds function and struct definitions which pertain to the Kelly KBL motor controller. </p>
+<div class="textblock"><p>Holds function and struct definitions which pertain to the Kelly KBL motor controller <em>and</em> CAN bus functions in general. </p>
 <dl class="section author"><dt>Author</dt><dd>Arnav Revankar </dd></dl>
 </div><h2 class="groupheader">Variable Documentation</h2>
 <a id="a37047c30994e2b448b3a3a6203801201" name="a37047c30994e2b448b3a3a6203801201"></a>

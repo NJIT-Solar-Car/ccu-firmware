@@ -109,7 +109,7 @@ Macros</h2></td></tr>
 <tr class="separator:ga8e080e726e0a0503384563610c18ef07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga30bf3d43ca9c1d9eb665bda03d84ec4a" id="r_ga30bf3d43ca9c1d9eb665bda03d84ec4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d85/group__I2C__Private__Macros.html#ga30bf3d43ca9c1d9eb665bda03d84ec4a">I2C_MIN_PCLK_FREQ</a>(__PCLK__,  __SPEED__)&#160;&#160;&#160;(((__SPEED__) &lt;= 100000U) ? ((__PCLK__) &lt; <a class="el" href="../../de/d8e/group__I2C__Private__Constants.html#ga6c86f9bd6ba54caa5cd13163ae49f753">I2C_MIN_PCLK_FREQ_STANDARD</a>) : ((__PCLK__) &lt; <a class="el" href="../../de/d8e/group__I2C__Private__Constants.html#gacda1638db89dd9edf880f012ec185bac">I2C_MIN_PCLK_FREQ_FAST</a>))</td></tr>
 <tr class="separator:ga30bf3d43ca9c1d9eb665bda03d84ec4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga647da9b3c71c56e2e1b49417bc557233" id="r_ga647da9b3c71c56e2e1b49417bc557233"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d85/group__I2C__Private__Macros.html#ga647da9b3c71c56e2e1b49417bc557233">I2C_CCR_CALCULATION</a>(__PCLK__,  __SPEED__,  __COEFF__)&#160;&#160;&#160;(((((__PCLK__) - 1U)/((__SPEED__) * (__COEFF__))) + 1U) &amp; I2C_CCR_CCR)</td></tr>
+<tr class="memitem:ga647da9b3c71c56e2e1b49417bc557233" id="r_ga647da9b3c71c56e2e1b49417bc557233"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d85/group__I2C__Private__Macros.html#ga647da9b3c71c56e2e1b49417bc557233">I2C_CCR_CALCULATION</a>(__PCLK__,  __SPEED__,  __COEFF__)&#160;&#160;&#160;(((((__PCLK__) - 1U)/((__SPEED__) * (__COEFF__))) + 1U) &amp; <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga5c8cb2bd83dd7dbdcf6ca4bbf4a841de">I2C_CCR_CCR</a>)</td></tr>
 <tr class="separator:ga647da9b3c71c56e2e1b49417bc557233"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9b4e4686872c7b0bd9daed9049d0c431" id="r_ga9b4e4686872c7b0bd9daed9049d0c431"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d85/group__I2C__Private__Macros.html#ga9b4e4686872c7b0bd9daed9049d0c431">I2C_FREQRANGE</a>(__PCLK__)&#160;&#160;&#160;((__PCLK__)/1000000U)</td></tr>
 <tr class="separator:ga9b4e4686872c7b0bd9daed9049d0c431"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,9 +121,9 @@ Macros</h2></td></tr>
 <tr class="separator:ga9e5a85344d70ab05020e41ba24566f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0e871b470a0f7a9d641156f07e37c810" id="r_ga0e871b470a0f7a9d641156f07e37c810"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d85/group__I2C__Private__Macros.html#ga0e871b470a0f7a9d641156f07e37c810">I2C_SPEED</a>(__PCLK__,  __SPEED__,  __DUTYCYCLE__)</td></tr>
 <tr class="separator:ga0e871b470a0f7a9d641156f07e37c810"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad83949bd18eca67258b05763a90d0128" id="r_gad83949bd18eca67258b05763a90d0128"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d85/group__I2C__Private__Macros.html#gad83949bd18eca67258b05763a90d0128">I2C_7BIT_ADD_WRITE</a>(__ADDRESS__)&#160;&#160;&#160;((uint8_t)((__ADDRESS__) &amp; (uint8_t)(~I2C_OAR1_ADD0)))</td></tr>
+<tr class="memitem:gad83949bd18eca67258b05763a90d0128" id="r_gad83949bd18eca67258b05763a90d0128"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d85/group__I2C__Private__Macros.html#gad83949bd18eca67258b05763a90d0128">I2C_7BIT_ADD_WRITE</a>(__ADDRESS__)&#160;&#160;&#160;((uint8_t)((__ADDRESS__) &amp; (uint8_t)(~<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga8b7c20c81f79d17921718412b8fca6d7">I2C_OAR1_ADD0</a>)))</td></tr>
 <tr class="separator:gad83949bd18eca67258b05763a90d0128"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacec6f0d6fde48a24327d2db15387fed8" id="r_gacec6f0d6fde48a24327d2db15387fed8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d85/group__I2C__Private__Macros.html#gacec6f0d6fde48a24327d2db15387fed8">I2C_7BIT_ADD_READ</a>(__ADDRESS__)&#160;&#160;&#160;((uint8_t)((__ADDRESS__) | I2C_OAR1_ADD0))</td></tr>
+<tr class="memitem:gacec6f0d6fde48a24327d2db15387fed8" id="r_gacec6f0d6fde48a24327d2db15387fed8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d85/group__I2C__Private__Macros.html#gacec6f0d6fde48a24327d2db15387fed8">I2C_7BIT_ADD_READ</a>(__ADDRESS__)&#160;&#160;&#160;((uint8_t)((__ADDRESS__) | <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga8b7c20c81f79d17921718412b8fca6d7">I2C_OAR1_ADD0</a>))</td></tr>
 <tr class="separator:gacec6f0d6fde48a24327d2db15387fed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga51ad2b93ef13577d3d437507e09191cd" id="r_ga51ad2b93ef13577d3d437507e09191cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d85/group__I2C__Private__Macros.html#ga51ad2b93ef13577d3d437507e09191cd">I2C_10BIT_ADDRESS</a>(__ADDRESS__)&#160;&#160;&#160;((uint8_t)((uint16_t)((__ADDRESS__) &amp; (uint16_t)0x00FF)))</td></tr>
 <tr class="separator:ga51ad2b93ef13577d3d437507e09191cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,7 +203,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__ADDRESS__</td><td>)</td>
-          <td>&#160;&#160;&#160;((uint8_t)((__ADDRESS__) | I2C_OAR1_ADD0))</td>
+          <td>&#160;&#160;&#160;((uint8_t)((__ADDRESS__) | <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga8b7c20c81f79d17921718412b8fca6d7">I2C_OAR1_ADD0</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -221,7 +221,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__ADDRESS__</td><td>)</td>
-          <td>&#160;&#160;&#160;((uint8_t)((__ADDRESS__) &amp; (uint8_t)(~I2C_OAR1_ADD0)))</td>
+          <td>&#160;&#160;&#160;((uint8_t)((__ADDRESS__) &amp; (uint8_t)(~<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga8b7c20c81f79d17921718412b8fca6d7">I2C_OAR1_ADD0</a>)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -255,7 +255,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((((__PCLK__) - 1U)/((__SPEED__) * (__COEFF__))) + 1U) &amp; I2C_CCR_CCR)</td>
+          <td></td><td>&#160;&#160;&#160;(((((__PCLK__) - 1U)/((__SPEED__) * (__COEFF__))) + 1U) &amp; <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga5c8cb2bd83dd7dbdcf6ca4bbf4a841de">I2C_CCR_CCR</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -422,10 +422,12 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                                                                  (((__SPEED__) &lt;= 100000U)? (<a class="code hl_define" href="../../d2/d85/group__I2C__Private__Macros.html#gaa71590c93b126e79fc86afbc819742b3">I2C_SPEED_STANDARD</a>((__PCLK__), (__SPEED__))) : \</div>
-<div class="line">                                                                  ((<a class="code hl_define" href="../../d2/d85/group__I2C__Private__Macros.html#ga9e5a85344d70ab05020e41ba24566f57">I2C_SPEED_FAST</a>((__PCLK__), (__SPEED__), (__DUTYCYCLE__)) &amp; I2C_CCR_CCR) == 0U)? 1U : \</div>
-<div class="line">                                                                  ((<a class="code hl_define" href="../../d2/d85/group__I2C__Private__Macros.html#ga9e5a85344d70ab05020e41ba24566f57">I2C_SPEED_FAST</a>((__PCLK__), (__SPEED__), (__DUTYCYCLE__))) | I2C_CCR_FS))</div>
+<div class="line">                                                                  ((<a class="code hl_define" href="../../d2/d85/group__I2C__Private__Macros.html#ga9e5a85344d70ab05020e41ba24566f57">I2C_SPEED_FAST</a>((__PCLK__), (__SPEED__), (__DUTYCYCLE__)) &amp; <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga5c8cb2bd83dd7dbdcf6ca4bbf4a841de">I2C_CCR_CCR</a>) == 0U)? 1U : \</div>
+<div class="line">                                                                  ((<a class="code hl_define" href="../../d2/d85/group__I2C__Private__Macros.html#ga9e5a85344d70ab05020e41ba24566f57">I2C_SPEED_FAST</a>((__PCLK__), (__SPEED__), (__DUTYCYCLE__))) | <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gaea64e5d7eba609ac9a84964bc0bc2def">I2C_CCR_FS</a>))</div>
 <div class="ttc" id="agroup__I2C__Private__Macros_html_ga9e5a85344d70ab05020e41ba24566f57"><div class="ttname"><a href="../../d2/d85/group__I2C__Private__Macros.html#ga9e5a85344d70ab05020e41ba24566f57">I2C_SPEED_FAST</a></div><div class="ttdeci">#define I2C_SPEED_FAST(__PCLK__, __SPEED__, __DUTYCYCLE__)</div><div class="ttdef"><b>Definition</b> stm32f4xx_hal_i2c.h:664</div></div>
 <div class="ttc" id="agroup__I2C__Private__Macros_html_gaa71590c93b126e79fc86afbc819742b3"><div class="ttname"><a href="../../d2/d85/group__I2C__Private__Macros.html#gaa71590c93b126e79fc86afbc819742b3">I2C_SPEED_STANDARD</a></div><div class="ttdeci">#define I2C_SPEED_STANDARD(__PCLK__, __SPEED__)</div><div class="ttdef"><b>Definition</b> stm32f4xx_hal_i2c.h:663</div></div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_ga5c8cb2bd83dd7dbdcf6ca4bbf4a841de"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga5c8cb2bd83dd7dbdcf6ca4bbf4a841de">I2C_CCR_CCR</a></div><div class="ttdeci">#define I2C_CCR_CCR</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:8814</div></div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_gaea64e5d7eba609ac9a84964bc0bc2def"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gaea64e5d7eba609ac9a84964bc0bc2def">I2C_CCR_FS</a></div><div class="ttdeci">#define I2C_CCR_FS</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:8820</div></div>
 </div><!-- fragment -->
 </div>
 </div>

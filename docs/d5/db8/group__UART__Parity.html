@@ -101,9 +101,9 @@ $(document).ready(function(){initNavTree('d5/db8/group__UART__Parity.html','../.
 Macros</h2></td></tr>
 <tr class="memitem:ga270dea6e1a92dd83fe58802450bdd60c" id="r_ga270dea6e1a92dd83fe58802450bdd60c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/group__UART__Parity.html#ga270dea6e1a92dd83fe58802450bdd60c">UART_PARITY_NONE</a>&#160;&#160;&#160;0x00000000U</td></tr>
 <tr class="separator:ga270dea6e1a92dd83fe58802450bdd60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga063b14ac42ef9e8f4246c17a586b14eb" id="r_ga063b14ac42ef9e8f4246c17a586b14eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/group__UART__Parity.html#ga063b14ac42ef9e8f4246c17a586b14eb">UART_PARITY_EVEN</a>&#160;&#160;&#160;((uint32_t)USART_CR1_PCE)</td></tr>
+<tr class="memitem:ga063b14ac42ef9e8f4246c17a586b14eb" id="r_ga063b14ac42ef9e8f4246c17a586b14eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/group__UART__Parity.html#ga063b14ac42ef9e8f4246c17a586b14eb">UART_PARITY_EVEN</a>&#160;&#160;&#160;((uint32_t)<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga60f8fcf084f9a8514efafb617c70b074">USART_CR1_PCE</a>)</td></tr>
 <tr class="separator:ga063b14ac42ef9e8f4246c17a586b14eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga229615e64964f68f7a856ea6ffea359e" id="r_ga229615e64964f68f7a856ea6ffea359e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/group__UART__Parity.html#ga229615e64964f68f7a856ea6ffea359e">UART_PARITY_ODD</a>&#160;&#160;&#160;((uint32_t)(USART_CR1_PCE | USART_CR1_PS))</td></tr>
+<tr class="memitem:ga229615e64964f68f7a856ea6ffea359e" id="r_ga229615e64964f68f7a856ea6ffea359e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/group__UART__Parity.html#ga229615e64964f68f7a856ea6ffea359e">UART_PARITY_ODD</a>&#160;&#160;&#160;((uint32_t)(<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga60f8fcf084f9a8514efafb617c70b074">USART_CR1_PCE</a> | <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga2e159d36ab2c93a2c1942df60e9eebbe">USART_CR1_PS</a>))</td></tr>
 <tr class="separator:ga229615e64964f68f7a856ea6ffea359e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -115,7 +115,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define UART_PARITY_EVEN&#160;&#160;&#160;((uint32_t)USART_CR1_PCE)</td>
+          <td class="memname">#define UART_PARITY_EVEN&#160;&#160;&#160;((uint32_t)<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga60f8fcf084f9a8514efafb617c70b074">USART_CR1_PCE</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -143,7 +143,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define UART_PARITY_ODD&#160;&#160;&#160;((uint32_t)(USART_CR1_PCE | USART_CR1_PS))</td>
+          <td class="memname">#define UART_PARITY_ODD&#160;&#160;&#160;((uint32_t)(<a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga60f8fcf084f9a8514efafb617c70b074">USART_CR1_PCE</a> | <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga2e159d36ab2c93a2c1942df60e9eebbe">USART_CR1_PS</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">

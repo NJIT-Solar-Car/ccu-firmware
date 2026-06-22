@@ -1,5 +1,5 @@
 var structPWR__TypeDef =
 [
-    [ "CR", "d2/d83/structPWR__TypeDef.html#aceb77c46a5d18127c1e1ba7b53ed080a", null ],
-    [ "CSR", "d2/d83/structPWR__TypeDef.html#ac4d2e7f4062ae41d7d870534d7cd1137", null ]
+    [ "CR", "d2/d83/structPWR__TypeDef.html#aeb6bcdb2b99d58b9a0ffd86deb606eac", null ],
+    [ "CSR", "d2/d83/structPWR__TypeDef.html#ae17097e69c88b6c00033d6fb84a8182b", null ]
 ];

@@ -365,88 +365,88 @@ $(document).ready(function(){initNavTree('dc/d9f/stm32f4xx__ll__bus_8h_source.ht
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_AHB1_GRP1_EnableClock(uint32_t Periphs)</div>
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>{</div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>  __IO uint32_t tmpreg;</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>  SET_BIT(RCC-&gt;AHB1ENR, Periphs);</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>  SET_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB1ENR, Periphs);</div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>  <span class="comment">/* Delay after an RCC peripheral clock enabling */</span></div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>  tmpreg = READ_BIT(RCC-&gt;AHB1ENR, Periphs);</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>  tmpreg = READ_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB1ENR, Periphs);</div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>  (void)tmpreg;</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>}</div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
 <div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>__STATIC_INLINE uint32_t LL_AHB1_GRP1_IsEnabledClock(uint32_t Periphs)</div>
 <div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>{</div>
-<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>  <span class="keywordflow">return</span> (READ_BIT(RCC-&gt;AHB1ENR, Periphs) == Periphs);</div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>  <span class="keywordflow">return</span> (READ_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB1ENR, Periphs) == Periphs);</div>
 <div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>}</div>
 <div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span> </div>
 <div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_AHB1_GRP1_DisableClock(uint32_t Periphs)</div>
 <div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>{</div>
-<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>  CLEAR_BIT(RCC-&gt;AHB1ENR, Periphs);</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>  CLEAR_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB1ENR, Periphs);</div>
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>}</div>
 <div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span> </div>
 <div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_AHB1_GRP1_ForceReset(uint32_t Periphs)</div>
 <div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>{</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>  SET_BIT(RCC-&gt;AHB1RSTR, Periphs);</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>  SET_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB1RSTR, Periphs);</div>
 <div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>}</div>
 <div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span> </div>
 <div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_AHB1_GRP1_ReleaseReset(uint32_t Periphs)</div>
 <div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>{</div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>  CLEAR_BIT(RCC-&gt;AHB1RSTR, Periphs);</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>  CLEAR_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB1RSTR, Periphs);</div>
 <div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>}</div>
 <div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span> </div>
 <div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_AHB1_GRP1_EnableClockLowPower(uint32_t Periphs)</div>
 <div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>{</div>
 <div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>  __IO uint32_t tmpreg;</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>  SET_BIT(RCC-&gt;AHB1LPENR, Periphs);</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>  SET_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB1LPENR, Periphs);</div>
 <div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>  <span class="comment">/* Delay after an RCC peripheral clock enabling */</span></div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>  tmpreg = READ_BIT(RCC-&gt;AHB1LPENR, Periphs);</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>  tmpreg = READ_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB1LPENR, Periphs);</div>
 <div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>  (void)tmpreg;</div>
 <div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>}</div>
 <div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span> </div>
 <div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_AHB1_GRP1_DisableClockLowPower(uint32_t Periphs)</div>
 <div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>{</div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>  CLEAR_BIT(RCC-&gt;AHB1LPENR, Periphs);</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>  CLEAR_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB1LPENR, Periphs);</div>
 <div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>}</div>
 <div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span> </div>
 <div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span><span class="preprocessor">#if defined(RCC_AHB2_SUPPORT)</span></div>
 <div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_AHB2_GRP1_EnableClock(uint32_t Periphs)</div>
 <div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>{</div>
 <div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>  __IO uint32_t tmpreg;</div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>  SET_BIT(RCC-&gt;AHB2ENR, Periphs);</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>  SET_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB2ENR, Periphs);</div>
 <div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>  <span class="comment">/* Delay after an RCC peripheral clock enabling */</span></div>
-<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>  tmpreg = READ_BIT(RCC-&gt;AHB2ENR, Periphs);</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>  tmpreg = READ_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB2ENR, Periphs);</div>
 <div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>  (void)tmpreg;</div>
 <div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>}</div>
 <div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span> </div>
 <div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>__STATIC_INLINE uint32_t LL_AHB2_GRP1_IsEnabledClock(uint32_t Periphs)</div>
 <div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>{</div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>  <span class="keywordflow">return</span> (READ_BIT(RCC-&gt;AHB2ENR, Periphs) == Periphs);</div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>  <span class="keywordflow">return</span> (READ_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB2ENR, Periphs) == Periphs);</div>
 <div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>}</div>
 <div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span> </div>
 <div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_AHB2_GRP1_DisableClock(uint32_t Periphs)</div>
 <div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>{</div>
-<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>  CLEAR_BIT(RCC-&gt;AHB2ENR, Periphs);</div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>  CLEAR_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB2ENR, Periphs);</div>
 <div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>}</div>
 <div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span> </div>
 <div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_AHB2_GRP1_ForceReset(uint32_t Periphs)</div>
 <div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>{</div>
-<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>  SET_BIT(RCC-&gt;AHB2RSTR, Periphs);</div>
+<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>  SET_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB2RSTR, Periphs);</div>
 <div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>}</div>
 <div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span> </div>
 <div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_AHB2_GRP1_ReleaseReset(uint32_t Periphs)</div>
 <div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>{</div>
-<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>  CLEAR_BIT(RCC-&gt;AHB2RSTR, Periphs);</div>
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>  CLEAR_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB2RSTR, Periphs);</div>
 <div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>}</div>
 <div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span> </div>
 <div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_AHB2_GRP1_EnableClockLowPower(uint32_t Periphs)</div>
 <div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>{</div>
 <div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>  __IO uint32_t tmpreg;</div>
-<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>  SET_BIT(RCC-&gt;AHB2LPENR, Periphs);</div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>  SET_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB2LPENR, Periphs);</div>
 <div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>  <span class="comment">/* Delay after an RCC peripheral clock enabling */</span></div>
-<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>  tmpreg = READ_BIT(RCC-&gt;AHB2LPENR, Periphs);</div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>  tmpreg = READ_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB2LPENR, Periphs);</div>
 <div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>  (void)tmpreg;</div>
 <div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>}</div>
 <div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span> </div>
 <div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_AHB2_GRP1_DisableClockLowPower(uint32_t Periphs)</div>
 <div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>{</div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>  CLEAR_BIT(RCC-&gt;AHB2LPENR, Periphs);</div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>  CLEAR_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB2LPENR, Periphs);</div>
 <div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>}</div>
 <div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span> </div>
 <div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span><span class="preprocessor">#endif </span><span class="comment">/* RCC_AHB2_SUPPORT */</span><span class="preprocessor"></span></div>
@@ -455,44 +455,44 @@ $(document).ready(function(){initNavTree('dc/d9f/stm32f4xx__ll__bus_8h_source.ht
 <div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_AHB3_GRP1_EnableClock(uint32_t Periphs)</div>
 <div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>{</div>
 <div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>  __IO uint32_t tmpreg;</div>
-<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>  SET_BIT(RCC-&gt;AHB3ENR, Periphs);</div>
+<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>  SET_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB3ENR, Periphs);</div>
 <div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>  <span class="comment">/* Delay after an RCC peripheral clock enabling */</span></div>
-<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>  tmpreg = READ_BIT(RCC-&gt;AHB3ENR, Periphs);</div>
+<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>  tmpreg = READ_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB3ENR, Periphs);</div>
 <div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>  (void)tmpreg;</div>
 <div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>}</div>
 <div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span> </div>
 <div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>__STATIC_INLINE uint32_t LL_AHB3_GRP1_IsEnabledClock(uint32_t Periphs)</div>
 <div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>{</div>
-<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>  <span class="keywordflow">return</span> (READ_BIT(RCC-&gt;AHB3ENR, Periphs) == Periphs);</div>
+<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>  <span class="keywordflow">return</span> (READ_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB3ENR, Periphs) == Periphs);</div>
 <div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>}</div>
 <div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span> </div>
 <div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_AHB3_GRP1_DisableClock(uint32_t Periphs)</div>
 <div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span>{</div>
-<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>  CLEAR_BIT(RCC-&gt;AHB3ENR, Periphs);</div>
+<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>  CLEAR_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB3ENR, Periphs);</div>
 <div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>}</div>
 <div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span> </div>
 <div class="line"><a id="l01043" name="l01043"></a><span class="lineno"> 1043</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_AHB3_GRP1_ForceReset(uint32_t Periphs)</div>
 <div class="line"><a id="l01044" name="l01044"></a><span class="lineno"> 1044</span>{</div>
-<div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span>  SET_BIT(RCC-&gt;AHB3RSTR, Periphs);</div>
+<div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span>  SET_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB3RSTR, Periphs);</div>
 <div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span>}</div>
 <div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span> </div>
 <div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_AHB3_GRP1_ReleaseReset(uint32_t Periphs)</div>
 <div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>{</div>
-<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>  CLEAR_BIT(RCC-&gt;AHB3RSTR, Periphs);</div>
+<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>  CLEAR_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB3RSTR, Periphs);</div>
 <div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>}</div>
 <div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span> </div>
 <div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_AHB3_GRP1_EnableClockLowPower(uint32_t Periphs)</div>
 <div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>{</div>
 <div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>  __IO uint32_t tmpreg;</div>
-<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span>  SET_BIT(RCC-&gt;AHB3LPENR, Periphs);</div>
+<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span>  SET_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB3LPENR, Periphs);</div>
 <div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>  <span class="comment">/* Delay after an RCC peripheral clock enabling */</span></div>
-<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>  tmpreg = READ_BIT(RCC-&gt;AHB3LPENR, Periphs);</div>
+<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>  tmpreg = READ_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB3LPENR, Periphs);</div>
 <div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>  (void)tmpreg;</div>
 <div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span>}</div>
 <div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span> </div>
 <div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_AHB3_GRP1_DisableClockLowPower(uint32_t Periphs)</div>
 <div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span>{</div>
-<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span>  CLEAR_BIT(RCC-&gt;AHB3LPENR, Periphs);</div>
+<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span>  CLEAR_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB3LPENR, Periphs);</div>
 <div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span>}</div>
 <div class="line"><a id="l01106" name="l01106"></a><span class="lineno"> 1106</span> </div>
 <div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span><span class="preprocessor">#endif </span><span class="comment">/* RCC_AHB3_SUPPORT */</span><span class="preprocessor"></span></div>
@@ -500,87 +500,87 @@ $(document).ready(function(){initNavTree('dc/d9f/stm32f4xx__ll__bus_8h_source.ht
 <div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_APB1_GRP1_EnableClock(uint32_t Periphs)</div>
 <div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>{</div>
 <div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span>  __IO uint32_t tmpreg;</div>
-<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>  SET_BIT(RCC-&gt;APB1ENR, Periphs);</div>
+<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>  SET_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB1ENR, Periphs);</div>
 <div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>  <span class="comment">/* Delay after an RCC peripheral clock enabling */</span></div>
-<div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span>  tmpreg = READ_BIT(RCC-&gt;APB1ENR, Periphs);</div>
+<div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span>  tmpreg = READ_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB1ENR, Periphs);</div>
 <div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span>  (void)tmpreg;</div>
 <div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span>}</div>
 <div class="line"><a id="l01193" name="l01193"></a><span class="lineno"> 1193</span> </div>
 <div class="line"><a id="l01263" name="l01263"></a><span class="lineno"> 1263</span>__STATIC_INLINE uint32_t LL_APB1_GRP1_IsEnabledClock(uint32_t Periphs)</div>
 <div class="line"><a id="l01264" name="l01264"></a><span class="lineno"> 1264</span>{</div>
-<div class="line"><a id="l01265" name="l01265"></a><span class="lineno"> 1265</span>  <span class="keywordflow">return</span> (READ_BIT(RCC-&gt;APB1ENR, Periphs) == Periphs);</div>
+<div class="line"><a id="l01265" name="l01265"></a><span class="lineno"> 1265</span>  <span class="keywordflow">return</span> (READ_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB1ENR, Periphs) == Periphs);</div>
 <div class="line"><a id="l01266" name="l01266"></a><span class="lineno"> 1266</span>}</div>
 <div class="line"><a id="l01267" name="l01267"></a><span class="lineno"> 1267</span> </div>
 <div class="line"><a id="l01337" name="l01337"></a><span class="lineno"> 1337</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_APB1_GRP1_DisableClock(uint32_t Periphs)</div>
 <div class="line"><a id="l01338" name="l01338"></a><span class="lineno"> 1338</span>{</div>
-<div class="line"><a id="l01339" name="l01339"></a><span class="lineno"> 1339</span>  CLEAR_BIT(RCC-&gt;APB1ENR, Periphs);</div>
+<div class="line"><a id="l01339" name="l01339"></a><span class="lineno"> 1339</span>  CLEAR_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB1ENR, Periphs);</div>
 <div class="line"><a id="l01340" name="l01340"></a><span class="lineno"> 1340</span>}</div>
 <div class="line"><a id="l01341" name="l01341"></a><span class="lineno"> 1341</span> </div>
 <div class="line"><a id="l01409" name="l01409"></a><span class="lineno"> 1409</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_APB1_GRP1_ForceReset(uint32_t Periphs)</div>
 <div class="line"><a id="l01410" name="l01410"></a><span class="lineno"> 1410</span>{</div>
-<div class="line"><a id="l01411" name="l01411"></a><span class="lineno"> 1411</span>  SET_BIT(RCC-&gt;APB1RSTR, Periphs);</div>
+<div class="line"><a id="l01411" name="l01411"></a><span class="lineno"> 1411</span>  SET_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB1RSTR, Periphs);</div>
 <div class="line"><a id="l01412" name="l01412"></a><span class="lineno"> 1412</span>}</div>
 <div class="line"><a id="l01413" name="l01413"></a><span class="lineno"> 1413</span> </div>
 <div class="line"><a id="l01481" name="l01481"></a><span class="lineno"> 1481</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_APB1_GRP1_ReleaseReset(uint32_t Periphs)</div>
 <div class="line"><a id="l01482" name="l01482"></a><span class="lineno"> 1482</span>{</div>
-<div class="line"><a id="l01483" name="l01483"></a><span class="lineno"> 1483</span>  CLEAR_BIT(RCC-&gt;APB1RSTR, Periphs);</div>
+<div class="line"><a id="l01483" name="l01483"></a><span class="lineno"> 1483</span>  CLEAR_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB1RSTR, Periphs);</div>
 <div class="line"><a id="l01484" name="l01484"></a><span class="lineno"> 1484</span>}</div>
 <div class="line"><a id="l01485" name="l01485"></a><span class="lineno"> 1485</span> </div>
 <div class="line"><a id="l01555" name="l01555"></a><span class="lineno"> 1555</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_APB1_GRP1_EnableClockLowPower(uint32_t Periphs)</div>
 <div class="line"><a id="l01556" name="l01556"></a><span class="lineno"> 1556</span>{</div>
 <div class="line"><a id="l01557" name="l01557"></a><span class="lineno"> 1557</span>  __IO uint32_t tmpreg;</div>
-<div class="line"><a id="l01558" name="l01558"></a><span class="lineno"> 1558</span>  SET_BIT(RCC-&gt;APB1LPENR, Periphs);</div>
+<div class="line"><a id="l01558" name="l01558"></a><span class="lineno"> 1558</span>  SET_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB1LPENR, Periphs);</div>
 <div class="line"><a id="l01559" name="l01559"></a><span class="lineno"> 1559</span>  <span class="comment">/* Delay after an RCC peripheral clock enabling */</span></div>
-<div class="line"><a id="l01560" name="l01560"></a><span class="lineno"> 1560</span>  tmpreg = READ_BIT(RCC-&gt;APB1LPENR, Periphs);</div>
+<div class="line"><a id="l01560" name="l01560"></a><span class="lineno"> 1560</span>  tmpreg = READ_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB1LPENR, Periphs);</div>
 <div class="line"><a id="l01561" name="l01561"></a><span class="lineno"> 1561</span>  (void)tmpreg;</div>
 <div class="line"><a id="l01562" name="l01562"></a><span class="lineno"> 1562</span>}</div>
 <div class="line"><a id="l01563" name="l01563"></a><span class="lineno"> 1563</span> </div>
 <div class="line"><a id="l01633" name="l01633"></a><span class="lineno"> 1633</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_APB1_GRP1_DisableClockLowPower(uint32_t Periphs)</div>
 <div class="line"><a id="l01634" name="l01634"></a><span class="lineno"> 1634</span>{</div>
-<div class="line"><a id="l01635" name="l01635"></a><span class="lineno"> 1635</span>  CLEAR_BIT(RCC-&gt;APB1LPENR, Periphs);</div>
+<div class="line"><a id="l01635" name="l01635"></a><span class="lineno"> 1635</span>  CLEAR_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB1LPENR, Periphs);</div>
 <div class="line"><a id="l01636" name="l01636"></a><span class="lineno"> 1636</span>}</div>
 <div class="line"><a id="l01637" name="l01637"></a><span class="lineno"> 1637</span> </div>
 <div class="line"><a id="l01704" name="l01704"></a><span class="lineno"> 1704</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_APB2_GRP1_EnableClock(uint32_t Periphs)</div>
 <div class="line"><a id="l01705" name="l01705"></a><span class="lineno"> 1705</span>{</div>
 <div class="line"><a id="l01706" name="l01706"></a><span class="lineno"> 1706</span>  __IO uint32_t tmpreg;</div>
-<div class="line"><a id="l01707" name="l01707"></a><span class="lineno"> 1707</span>  SET_BIT(RCC-&gt;APB2ENR, Periphs);</div>
+<div class="line"><a id="l01707" name="l01707"></a><span class="lineno"> 1707</span>  SET_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB2ENR, Periphs);</div>
 <div class="line"><a id="l01708" name="l01708"></a><span class="lineno"> 1708</span>  <span class="comment">/* Delay after an RCC peripheral clock enabling */</span></div>
-<div class="line"><a id="l01709" name="l01709"></a><span class="lineno"> 1709</span>  tmpreg = READ_BIT(RCC-&gt;APB2ENR, Periphs);</div>
+<div class="line"><a id="l01709" name="l01709"></a><span class="lineno"> 1709</span>  tmpreg = READ_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB2ENR, Periphs);</div>
 <div class="line"><a id="l01710" name="l01710"></a><span class="lineno"> 1710</span>  (void)tmpreg;</div>
 <div class="line"><a id="l01711" name="l01711"></a><span class="lineno"> 1711</span>}</div>
 <div class="line"><a id="l01712" name="l01712"></a><span class="lineno"> 1712</span> </div>
 <div class="line"><a id="l01770" name="l01770"></a><span class="lineno"> 1770</span>__STATIC_INLINE uint32_t LL_APB2_GRP1_IsEnabledClock(uint32_t Periphs)</div>
 <div class="line"><a id="l01771" name="l01771"></a><span class="lineno"> 1771</span>{</div>
-<div class="line"><a id="l01772" name="l01772"></a><span class="lineno"> 1772</span>  <span class="keywordflow">return</span> (READ_BIT(RCC-&gt;APB2ENR, Periphs) == Periphs);</div>
+<div class="line"><a id="l01772" name="l01772"></a><span class="lineno"> 1772</span>  <span class="keywordflow">return</span> (READ_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB2ENR, Periphs) == Periphs);</div>
 <div class="line"><a id="l01773" name="l01773"></a><span class="lineno"> 1773</span>}</div>
 <div class="line"><a id="l01774" name="l01774"></a><span class="lineno"> 1774</span> </div>
 <div class="line"><a id="l01832" name="l01832"></a><span class="lineno"> 1832</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_APB2_GRP1_DisableClock(uint32_t Periphs)</div>
 <div class="line"><a id="l01833" name="l01833"></a><span class="lineno"> 1833</span>{</div>
-<div class="line"><a id="l01834" name="l01834"></a><span class="lineno"> 1834</span>  CLEAR_BIT(RCC-&gt;APB2ENR, Periphs);</div>
+<div class="line"><a id="l01834" name="l01834"></a><span class="lineno"> 1834</span>  CLEAR_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB2ENR, Periphs);</div>
 <div class="line"><a id="l01835" name="l01835"></a><span class="lineno"> 1835</span>}</div>
 <div class="line"><a id="l01836" name="l01836"></a><span class="lineno"> 1836</span> </div>
 <div class="line"><a id="l01889" name="l01889"></a><span class="lineno"> 1889</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_APB2_GRP1_ForceReset(uint32_t Periphs)</div>
 <div class="line"><a id="l01890" name="l01890"></a><span class="lineno"> 1890</span>{</div>
-<div class="line"><a id="l01891" name="l01891"></a><span class="lineno"> 1891</span>  SET_BIT(RCC-&gt;APB2RSTR, Periphs);</div>
+<div class="line"><a id="l01891" name="l01891"></a><span class="lineno"> 1891</span>  SET_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB2RSTR, Periphs);</div>
 <div class="line"><a id="l01892" name="l01892"></a><span class="lineno"> 1892</span>}</div>
 <div class="line"><a id="l01893" name="l01893"></a><span class="lineno"> 1893</span> </div>
 <div class="line"><a id="l01947" name="l01947"></a><span class="lineno"> 1947</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_APB2_GRP1_ReleaseReset(uint32_t Periphs)</div>
 <div class="line"><a id="l01948" name="l01948"></a><span class="lineno"> 1948</span>{</div>
-<div class="line"><a id="l01949" name="l01949"></a><span class="lineno"> 1949</span>  CLEAR_BIT(RCC-&gt;APB2RSTR, Periphs);</div>
+<div class="line"><a id="l01949" name="l01949"></a><span class="lineno"> 1949</span>  CLEAR_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB2RSTR, Periphs);</div>
 <div class="line"><a id="l01950" name="l01950"></a><span class="lineno"> 1950</span>}</div>
 <div class="line"><a id="l01951" name="l01951"></a><span class="lineno"> 1951</span> </div>
 <div class="line"><a id="l02010" name="l02010"></a><span class="lineno"> 2010</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_APB2_GRP1_EnableClockLowPower(uint32_t Periphs)</div>
 <div class="line"><a id="l02011" name="l02011"></a><span class="lineno"> 2011</span>{</div>
 <div class="line"><a id="l02012" name="l02012"></a><span class="lineno"> 2012</span>  __IO uint32_t tmpreg;</div>
-<div class="line"><a id="l02013" name="l02013"></a><span class="lineno"> 2013</span>  SET_BIT(RCC-&gt;APB2LPENR, Periphs);</div>
+<div class="line"><a id="l02013" name="l02013"></a><span class="lineno"> 2013</span>  SET_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB2LPENR, Periphs);</div>
 <div class="line"><a id="l02014" name="l02014"></a><span class="lineno"> 2014</span>  <span class="comment">/* Delay after an RCC peripheral clock enabling */</span></div>
-<div class="line"><a id="l02015" name="l02015"></a><span class="lineno"> 2015</span>  tmpreg = READ_BIT(RCC-&gt;APB2LPENR, Periphs);</div>
+<div class="line"><a id="l02015" name="l02015"></a><span class="lineno"> 2015</span>  tmpreg = READ_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB2LPENR, Periphs);</div>
 <div class="line"><a id="l02016" name="l02016"></a><span class="lineno"> 2016</span>  (void)tmpreg;</div>
 <div class="line"><a id="l02017" name="l02017"></a><span class="lineno"> 2017</span>}</div>
 <div class="line"><a id="l02018" name="l02018"></a><span class="lineno"> 2018</span> </div>
 <div class="line"><a id="l02077" name="l02077"></a><span class="lineno"> 2077</span>__STATIC_INLINE <span class="keywordtype">void</span> LL_APB2_GRP1_DisableClockLowPower(uint32_t Periphs)</div>
 <div class="line"><a id="l02078" name="l02078"></a><span class="lineno"> 2078</span>{</div>
-<div class="line"><a id="l02079" name="l02079"></a><span class="lineno"> 2079</span>  CLEAR_BIT(RCC-&gt;APB2LPENR, Periphs);</div>
+<div class="line"><a id="l02079" name="l02079"></a><span class="lineno"> 2079</span>  CLEAR_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB2LPENR, Periphs);</div>
 <div class="line"><a id="l02080" name="l02080"></a><span class="lineno"> 2080</span>}</div>
 <div class="line"><a id="l02081" name="l02081"></a><span class="lineno"> 2081</span> </div>
 <div class="line"><a id="l02094" name="l02094"></a><span class="lineno"> 2094</span><span class="preprocessor">#endif </span><span class="comment">/* defined(RCC) */</span><span class="preprocessor"></span></div>
@@ -591,6 +591,7 @@ $(document).ready(function(){initNavTree('dc/d9f/stm32f4xx__ll__bus_8h_source.ht
 <div class="line"><a id="l02103" name="l02103"></a><span class="lineno"> 2103</span> </div>
 <div class="line"><a id="l02104" name="l02104"></a><span class="lineno"> 2104</span><span class="preprocessor">#endif </span><span class="comment">/* __STM32F4xx_LL_BUS_H */</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l02105" name="l02105"></a><span class="lineno"> 2105</span> </div>
+<div class="ttc" id="agroup__Peripheral__declaration_html_ga74944438a086975793d26ae48d5882d4"><div class="ttname"><a href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a></div><div class="ttdeci">#define RCC</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:1164</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

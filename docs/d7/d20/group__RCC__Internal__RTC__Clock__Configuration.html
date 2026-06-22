@@ -109,10 +109,10 @@ Macros</h2></td></tr>
 <tr class="separator:ga7e10e306e7d9f3cd59d30dcb2c9cf61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2b1e5349631886f29040d7a31c002718" id="r_ga2b1e5349631886f29040d7a31c002718"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d20/group__RCC__Internal__RTC__Clock__Configuration.html#ga2b1e5349631886f29040d7a31c002718">__HAL_RCC_RTC_CONFIG</a>(__RTCCLKSource__)</td></tr>
 <tr class="separator:ga2b1e5349631886f29040d7a31c002718"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad40d00ff1c984ebd011ea9f6e7f93c44" id="r_gad40d00ff1c984ebd011ea9f6e7f93c44"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d20/group__RCC__Internal__RTC__Clock__Configuration.html#gad40d00ff1c984ebd011ea9f6e7f93c44">__HAL_RCC_GET_RTC_SOURCE</a>()&#160;&#160;&#160;(READ_BIT(RCC-&gt;BDCR, RCC_BDCR_RTCSEL))</td></tr>
+<tr class="memitem:gad40d00ff1c984ebd011ea9f6e7f93c44" id="r_gad40d00ff1c984ebd011ea9f6e7f93c44"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d20/group__RCC__Internal__RTC__Clock__Configuration.html#gad40d00ff1c984ebd011ea9f6e7f93c44">__HAL_RCC_GET_RTC_SOURCE</a>()&#160;&#160;&#160;(READ_BIT(<a class="el" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;BDCR, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gabe30dbd38f6456990ee641648bc05d40">RCC_BDCR_RTCSEL</a>))</td></tr>
 <tr class="memdesc:gad40d00ff1c984ebd011ea9f6e7f93c44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to get the RTC clock source.  <br /></td></tr>
 <tr class="separator:gad40d00ff1c984ebd011ea9f6e7f93c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga85dc62f0fcb14981c47d7f7da25e26d6" id="r_ga85dc62f0fcb14981c47d7f7da25e26d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d20/group__RCC__Internal__RTC__Clock__Configuration.html#ga85dc62f0fcb14981c47d7f7da25e26d6">__HAL_RCC_GET_RTC_HSE_PRESCALER</a>()&#160;&#160;&#160;(READ_BIT(RCC-&gt;CFGR, RCC_CFGR_RTCPRE) | RCC_BDCR_RTCSEL)</td></tr>
+<tr class="memitem:ga85dc62f0fcb14981c47d7f7da25e26d6" id="r_ga85dc62f0fcb14981c47d7f7da25e26d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d20/group__RCC__Internal__RTC__Clock__Configuration.html#ga85dc62f0fcb14981c47d7f7da25e26d6">__HAL_RCC_GET_RTC_HSE_PRESCALER</a>()&#160;&#160;&#160;(READ_BIT(<a class="el" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;CFGR, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gad7c067c52ecd135252c691aad32c0b83">RCC_CFGR_RTCPRE</a>) | <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gabe30dbd38f6456990ee641648bc05d40">RCC_BDCR_RTCSEL</a>)</td></tr>
 <tr class="memdesc:ga85dc62f0fcb14981c47d7f7da25e26d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RTC and HSE clock divider (RTCPRE).  <br /></td></tr>
 <tr class="separator:ga85dc62f0fcb14981c47d7f7da25e26d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3bf7da608ff985873ca8e248fb1dc4f0" id="r_ga3bf7da608ff985873ca8e248fb1dc4f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d20/group__RCC__Internal__RTC__Clock__Configuration.html#ga3bf7da608ff985873ca8e248fb1dc4f0">__HAL_RCC_BACKUPRESET_FORCE</a>()&#160;&#160;&#160;(*(__IO uint32_t *) <a class="el" href="../../d4/df4/group__RCC__BitAddress__AliasRegion.html#ga5e5805d3c5b9ad3ebc13e030e5fdd86c">RCC_BDCR_BDRST_BB</a> = ENABLE)</td></tr>
@@ -172,7 +172,7 @@ The BKPSRAM is not affected by this reset. </dd></dl>
           <td class="memname">#define __HAL_RCC_GET_RTC_HSE_PRESCALER</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;(READ_BIT(RCC-&gt;CFGR, RCC_CFGR_RTCPRE) | RCC_BDCR_RTCSEL)</td>
+          <td>&#160;&#160;&#160;(READ_BIT(<a class="el" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;CFGR, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gad7c067c52ecd135252c691aad32c0b83">RCC_CFGR_RTCPRE</a>) | <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gabe30dbd38f6456990ee641648bc05d40">RCC_BDCR_RTCSEL</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -200,7 +200,7 @@ The BKPSRAM is not affected by this reset. </dd></dl>
           <td class="memname">#define __HAL_RCC_GET_RTC_SOURCE</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;(READ_BIT(RCC-&gt;BDCR, RCC_BDCR_RTCSEL))</td>
+          <td>&#160;&#160;&#160;(READ_BIT(<a class="el" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;BDCR, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gabe30dbd38f6456990ee641648bc05d40">RCC_BDCR_RTCSEL</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -236,8 +236,11 @@ The BKPSRAM is not affected by this reset. </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  (((__RTCCLKSource__) &amp; RCC_BDCR_RTCSEL) == RCC_BDCR_RTCSEL) ?    \</div>
-<div class="line">  MODIFY_REG(RCC-&gt;CFGR, RCC_CFGR_RTCPRE, ((__RTCCLKSource__) &amp; 0xFFFFCFFU)) : CLEAR_BIT(RCC-&gt;CFGR, RCC_CFGR_RTCPRE)</div>
+<b>Value:</b><div class="fragment"><div class="line">  (((__RTCCLKSource__) &amp; <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gabe30dbd38f6456990ee641648bc05d40">RCC_BDCR_RTCSEL</a>) == <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gabe30dbd38f6456990ee641648bc05d40">RCC_BDCR_RTCSEL</a>) ?    \</div>
+<div class="line">  MODIFY_REG(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;CFGR, <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gad7c067c52ecd135252c691aad32c0b83">RCC_CFGR_RTCPRE</a>, ((__RTCCLKSource__) &amp; 0xFFFFCFFU)) : CLEAR_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;CFGR, <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gad7c067c52ecd135252c691aad32c0b83">RCC_CFGR_RTCPRE</a>)</div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_gabe30dbd38f6456990ee641648bc05d40"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gabe30dbd38f6456990ee641648bc05d40">RCC_BDCR_RTCSEL</a></div><div class="ttdeci">#define RCC_BDCR_RTCSEL</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:10376</div></div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_gad7c067c52ecd135252c691aad32c0b83"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#gad7c067c52ecd135252c691aad32c0b83">RCC_CFGR_RTCPRE</a></div><div class="ttdeci">#define RCC_CFGR_RTCPRE</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:9650</div></div>
+<div class="ttc" id="agroup__Peripheral__declaration_html_ga74944438a086975793d26ae48d5882d4"><div class="ttname"><a href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a></div><div class="ttdeci">#define RCC</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:1164</div></div>
 </div><!-- fragment -->
 <p>Macros to configure the RTC clock (RTCCLK). </p>
 <dl class="section note"><dt>Note</dt><dd>As the RTC clock configuration bits are in the Backup domain and write access is denied to this domain after reset, you have to enable write access using the Power Backup Access macro before to configure the RTC clock source (to be done once after reset). </dd>
@@ -277,7 +280,7 @@ The maximum input clock frequency for RTC is 1MHz (when using HSE as RTC clock s
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                                                    <span class="keywordflow">do</span> { <a class="code hl_define" href="../../d7/d20/group__RCC__Internal__RTC__Clock__Configuration.html#ga7e10e306e7d9f3cd59d30dcb2c9cf61d">__HAL_RCC_RTC_CLKPRESCALER</a>(__RTCCLKSource__);    \</div>
-<div class="line">                                                    RCC-&gt;BDCR |= ((__RTCCLKSource__) &amp; 0x00000FFFU);  \</div>
+<div class="line">                                                    <a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;BDCR |= ((__RTCCLKSource__) &amp; 0x00000FFFU);  \</div>
 <div class="line">                                                   } <span class="keywordflow">while</span>(0U)</div>
 <div class="ttc" id="agroup__RCC__Internal__RTC__Clock__Configuration_html_ga7e10e306e7d9f3cd59d30dcb2c9cf61d"><div class="ttname"><a href="../../d7/d20/group__RCC__Internal__RTC__Clock__Configuration.html#ga7e10e306e7d9f3cd59d30dcb2c9cf61d">__HAL_RCC_RTC_CLKPRESCALER</a></div><div class="ttdeci">#define __HAL_RCC_RTC_CLKPRESCALER(__RTCCLKSource__)</div><div class="ttdoc">Macros to configure the RTC clock (RTCCLK).</div><div class="ttdef"><b>Definition</b> stm32f4xx_hal_rcc.h:985</div></div>
 </div><!-- fragment -->

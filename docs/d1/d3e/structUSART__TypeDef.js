@@ -1,10 +1,10 @@
 var structUSART__TypeDef =
 [
-    [ "BRR", "d1/d3e/structUSART__TypeDef.html#a23e9cc623ff647c5070725e3384d1af9", null ],
-    [ "CR1", "d1/d3e/structUSART__TypeDef.html#a84d3acd304e2a20b40418cc91d10ceef", null ],
-    [ "CR2", "d1/d3e/structUSART__TypeDef.html#a11620ccca91137cd9c952f947a506c1e", null ],
-    [ "CR3", "d1/d3e/structUSART__TypeDef.html#a5b1ccf36c0fd23640a1ebe1f4ab700a3", null ],
-    [ "DR", "d1/d3e/structUSART__TypeDef.html#af685c090b6cf36329b32de098feeea76", null ],
-    [ "GTPR", "d1/d3e/structUSART__TypeDef.html#a87687e3f77b398a57d1e253c7c657d1d", null ],
-    [ "SR", "d1/d3e/structUSART__TypeDef.html#a5752c93233a33e9b5e5b6de7acd47cc9", null ]
+    [ "BRR", "d1/d3e/structUSART__TypeDef.html#a6ef06ba9d8dc2dc2a0855766369fa7c9", null ],
+    [ "CR1", "d1/d3e/structUSART__TypeDef.html#a6d7dcd3972a162627bc3470cbf992ec4", null ],
+    [ "CR2", "d1/d3e/structUSART__TypeDef.html#aa7ede2de6204c3fc4bd9fb328801c99a", null ],
+    [ "CR3", "d1/d3e/structUSART__TypeDef.html#af2991da9a4e1539530cd6b7b327199cc", null ],
+    [ "DR", "d1/d3e/structUSART__TypeDef.html#a1db25b74d47af33dc4f4fe2177fc5da0", null ],
+    [ "GTPR", "d1/d3e/structUSART__TypeDef.html#ae23acff49b4ff96fd29093e80fc7d72e", null ],
+    [ "SR", "d1/d3e/structUSART__TypeDef.html#a706005f59139b9ff8ee5755677e12bc7", null ]
 ];

@@ -19,9 +19,10 @@ var searchData=
   ['handler_20fault_20type_16',['Handler Fault type',['../df/d31/group__CORTEX__LL__EC__FAULT.html',1,'']]],
   ['handler_20management_17',['TIM IRQ handler management',['../d1/dc5/group__TIM__Exported__Functions__Group7.html',1,'']]],
   ['hardware_20flow_20control_18',['UART Hardware Flow Control',['../d8/d8b/group__UART__Hardware__Flow__Control.html',1,'']]],
-  ['hse_20bypass_20activation_19',['HSE Bypass activation',['../de/db6/group__UTILS__EC__HSE__BYPASS.html',1,'']]],
-  ['hse_20config_20',['HSE Config',['../df/d6e/group__RCC__HSE__Config.html',1,'']]],
-  ['hse_20configuration_21',['HSE Configuration',['../d5/dc9/group__RCC__HSE__Configuration.html',1,'']]],
-  ['hsi_20config_22',['HSI Config',['../de/dd7/group__RCC__HSI__Config.html',1,'']]],
-  ['hsi_20configuration_23',['HSI Configuration',['../da/d71/group__RCC__HSI__Configuration.html',1,'']]]
+  ['hardware_5fconstant_5fdefinition_19',['Hardware_Constant_Definition',['../de/dff/group__Hardware__Constant__Definition.html',1,'']]],
+  ['hse_20bypass_20activation_20',['HSE Bypass activation',['../de/db6/group__UTILS__EC__HSE__BYPASS.html',1,'']]],
+  ['hse_20config_21',['HSE Config',['../df/d6e/group__RCC__HSE__Config.html',1,'']]],
+  ['hse_20configuration_22',['HSE Configuration',['../d5/dc9/group__RCC__HSE__Configuration.html',1,'']]],
+  ['hsi_20config_23',['HSI Config',['../de/dd7/group__RCC__HSI__Config.html',1,'']]],
+  ['hsi_20configuration_24',['HSI Configuration',['../da/d71/group__RCC__HSI__Configuration.html',1,'']]]
 ];

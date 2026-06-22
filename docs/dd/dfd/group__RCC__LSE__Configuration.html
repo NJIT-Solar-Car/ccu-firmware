@@ -123,19 +123,22 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                       \</div>
 <div class="line">    if((__STATE__) == <a class="code hl_define" href="../../da/dec/group__RCC__LSE__Config.html#gac981ea636c2f215e4473901e0912f55a">RCC_LSE_ON</a>)            \</div>
 <div class="line">    {                                        \</div>
-<div class="line">      SET_BIT(RCC-&gt;BDCR, RCC_BDCR_LSEON);    \</div>
+<div class="line">      SET_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;BDCR, <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga00145f8814cb9a5b180d76499d97aead">RCC_BDCR_LSEON</a>);    \</div>
 <div class="line">    }                                        \</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span>((__STATE__) == <a class="code hl_define" href="../../da/dec/group__RCC__LSE__Config.html#gaad580157edbae878edbcc83c5a68e767">RCC_LSE_BYPASS</a>)   \</div>
 <div class="line">    {                                        \</div>
-<div class="line">      SET_BIT(RCC-&gt;BDCR, RCC_BDCR_LSEBYP);   \</div>
-<div class="line">      SET_BIT(RCC-&gt;BDCR, RCC_BDCR_LSEON);    \</div>
+<div class="line">      SET_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;BDCR, <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga542dffd7f8dc4da5401b54d822a22af0">RCC_BDCR_LSEBYP</a>);   \</div>
+<div class="line">      SET_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;BDCR, <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga00145f8814cb9a5b180d76499d97aead">RCC_BDCR_LSEON</a>);    \</div>
 <div class="line">    }                                        \</div>
 <div class="line">    <span class="keywordflow">else</span>                                     \</div>
 <div class="line">    {                                        \</div>
-<div class="line">      CLEAR_BIT(RCC-&gt;BDCR, RCC_BDCR_LSEON);  \</div>
-<div class="line">      CLEAR_BIT(RCC-&gt;BDCR, RCC_BDCR_LSEBYP); \</div>
+<div class="line">      CLEAR_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;BDCR, <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga00145f8814cb9a5b180d76499d97aead">RCC_BDCR_LSEON</a>);  \</div>
+<div class="line">      CLEAR_BIT(<a class="code hl_define" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;BDCR, <a class="code hl_define" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga542dffd7f8dc4da5401b54d822a22af0">RCC_BDCR_LSEBYP</a>); \</div>
 <div class="line">    }                                        \</div>
 <div class="line">  } <span class="keywordflow">while</span>(0U)</div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_ga00145f8814cb9a5b180d76499d97aead"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga00145f8814cb9a5b180d76499d97aead">RCC_BDCR_LSEON</a></div><div class="ttdeci">#define RCC_BDCR_LSEON</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:10363</div></div>
+<div class="ttc" id="agroup__Peripheral__Registers__Bits__Definition_html_ga542dffd7f8dc4da5401b54d822a22af0"><div class="ttname"><a href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga542dffd7f8dc4da5401b54d822a22af0">RCC_BDCR_LSEBYP</a></div><div class="ttdeci">#define RCC_BDCR_LSEBYP</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:10369</div></div>
+<div class="ttc" id="agroup__Peripheral__declaration_html_ga74944438a086975793d26ae48d5882d4"><div class="ttname"><a href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a></div><div class="ttdeci">#define RCC</div><div class="ttdef"><b>Definition</b> stm32f413xx.h:1164</div></div>
 <div class="ttc" id="agroup__RCC__LSE__Config_html_gaad580157edbae878edbcc83c5a68e767"><div class="ttname"><a href="../../da/dec/group__RCC__LSE__Config.html#gaad580157edbae878edbcc83c5a68e767">RCC_LSE_BYPASS</a></div><div class="ttdeci">#define RCC_LSE_BYPASS</div><div class="ttdef"><b>Definition</b> stm32f4xx_hal_rcc.h:130</div></div>
 <div class="ttc" id="agroup__RCC__LSE__Config_html_gac981ea636c2f215e4473901e0912f55a"><div class="ttname"><a href="../../da/dec/group__RCC__LSE__Config.html#gac981ea636c2f215e4473901e0912f55a">RCC_LSE_ON</a></div><div class="ttdeci">#define RCC_LSE_ON</div><div class="ttdef"><b>Definition</b> stm32f4xx_hal_rcc.h:129</div></div>
 </div><!-- fragment -->

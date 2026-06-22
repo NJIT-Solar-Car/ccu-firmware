@@ -99,13 +99,13 @@ $(document).ready(function(){initNavTree('dd/d2c/group__RCC__Get__Clock__source.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga32f72b8c5b7e97b415867c57f9fafed6" id="r_ga32f72b8c5b7e97b415867c57f9fafed6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2c/group__RCC__Get__Clock__source.html#ga32f72b8c5b7e97b415867c57f9fafed6">__HAL_RCC_SYSCLK_CONFIG</a>(__RCC_SYSCLKSOURCE__)&#160;&#160;&#160;MODIFY_REG(RCC-&gt;CFGR, RCC_CFGR_SW, (__RCC_SYSCLKSOURCE__))</td></tr>
+<tr class="memitem:ga32f72b8c5b7e97b415867c57f9fafed6" id="r_ga32f72b8c5b7e97b415867c57f9fafed6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2c/group__RCC__Get__Clock__source.html#ga32f72b8c5b7e97b415867c57f9fafed6">__HAL_RCC_SYSCLK_CONFIG</a>(__RCC_SYSCLKSOURCE__)&#160;&#160;&#160;MODIFY_REG(<a class="el" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;CFGR, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga0eea5e5f7743a7e8995b8beeb18355c1">RCC_CFGR_SW</a>, (__RCC_SYSCLKSOURCE__))</td></tr>
 <tr class="memdesc:ga32f72b8c5b7e97b415867c57f9fafed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to configure the system clock source.  <br /></td></tr>
 <tr class="separator:ga32f72b8c5b7e97b415867c57f9fafed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac99c2453d9e77c8b457acc0210e754c2" id="r_gac99c2453d9e77c8b457acc0210e754c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2c/group__RCC__Get__Clock__source.html#gac99c2453d9e77c8b457acc0210e754c2">__HAL_RCC_GET_SYSCLK_SOURCE</a>()&#160;&#160;&#160;(RCC-&gt;CFGR &amp; RCC_CFGR_SWS)</td></tr>
+<tr class="memitem:gac99c2453d9e77c8b457acc0210e754c2" id="r_gac99c2453d9e77c8b457acc0210e754c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2c/group__RCC__Get__Clock__source.html#gac99c2453d9e77c8b457acc0210e754c2">__HAL_RCC_GET_SYSCLK_SOURCE</a>()&#160;&#160;&#160;(<a class="el" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;CFGR &amp; <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga15bf2269500dc97e137315f44aa015c9">RCC_CFGR_SWS</a>)</td></tr>
 <tr class="memdesc:gac99c2453d9e77c8b457acc0210e754c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to get the clock source used as system clock.  <br /></td></tr>
 <tr class="separator:gac99c2453d9e77c8b457acc0210e754c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ea1390f8124e2b3b8d53e95541d6e53" id="r_ga3ea1390f8124e2b3b8d53e95541d6e53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2c/group__RCC__Get__Clock__source.html#ga3ea1390f8124e2b3b8d53e95541d6e53">__HAL_RCC_GET_PLL_OSCSOURCE</a>()&#160;&#160;&#160;((uint32_t)(RCC-&gt;PLLCFGR &amp; RCC_PLLCFGR_PLLSRC))</td></tr>
+<tr class="memitem:ga3ea1390f8124e2b3b8d53e95541d6e53" id="r_ga3ea1390f8124e2b3b8d53e95541d6e53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2c/group__RCC__Get__Clock__source.html#ga3ea1390f8124e2b3b8d53e95541d6e53">__HAL_RCC_GET_PLL_OSCSOURCE</a>()&#160;&#160;&#160;((uint32_t)(<a class="el" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;PLLCFGR &amp; <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga92cb53ea81d2c47537eb217cc6659a2e">RCC_PLLCFGR_PLLSRC</a>))</td></tr>
 <tr class="memdesc:ga3ea1390f8124e2b3b8d53e95541d6e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to get the oscillator used as PLL clock source.  <br /></td></tr>
 <tr class="separator:ga3ea1390f8124e2b3b8d53e95541d6e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -121,7 +121,7 @@ Macros</h2></td></tr>
           <td class="memname">#define __HAL_RCC_GET_PLL_OSCSOURCE</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;((uint32_t)(RCC-&gt;PLLCFGR &amp; RCC_PLLCFGR_PLLSRC))</td>
+          <td>&#160;&#160;&#160;((uint32_t)(<a class="el" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;PLLCFGR &amp; <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga92cb53ea81d2c47537eb217cc6659a2e">RCC_PLLCFGR_PLLSRC</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -150,7 +150,7 @@ Macros</h2></td></tr>
           <td class="memname">#define __HAL_RCC_GET_SYSCLK_SOURCE</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;(RCC-&gt;CFGR &amp; RCC_CFGR_SWS)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;CFGR &amp; <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga15bf2269500dc97e137315f44aa015c9">RCC_CFGR_SWS</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -182,7 +182,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__RCC_SYSCLKSOURCE__</td><td>)</td>
-          <td>&#160;&#160;&#160;MODIFY_REG(RCC-&gt;CFGR, RCC_CFGR_SW, (__RCC_SYSCLKSOURCE__))</td>
+          <td>&#160;&#160;&#160;MODIFY_REG(<a class="el" href="../../d9/d74/group__Peripheral__declaration.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;CFGR, <a class="el" href="../../dc/de1/group__Peripheral__Registers__Bits__Definition.html#ga0eea5e5f7743a7e8995b8beeb18355c1">RCC_CFGR_SW</a>, (__RCC_SYSCLKSOURCE__))</td>
         </tr>
       </table>
 </div><div class="memdoc">
