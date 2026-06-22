@@ -112,6 +112,11 @@ VehicleState_t CurrentVehicleState = Vehicle_Boot;
 CommandType LastCommandSent_M1 = NONE; //Left motor command memory
 CommandType LastCommandSent_M2 = NONE; //Right motor command memory
 
+MotorPacketInfo Motor1_Data; // Left Motor 
+MotorPacketInfo Motor2_Data; // Right Motor
+
+MPPT1_Data_t MPPT1_Data;
+
 //Counts number of dropped packets
 uint8_t FaultCounter_M1 = 0;
 uint8_t FaultCounter_M2 = 0;
