@@ -32,7 +32,13 @@ FROM alpine:3.19
 
 RUN apk update && apk add --no-cache \
     graphviz \
-    ttf-freefont
+    git \
+    python3 \
+    make cmake \
+    bzip2 \
+    ttf-freefont \
+    gcc-arm-none-eabi \
+    newlib-arm-none-eabi
 
 COPY --from=builder /doxygen/build/bin/doxygen /usr/local/bin/doxygen
 
