@@ -20,14 +20,13 @@ Put all software notes/changelog stuff here. Try to format something like below 
 
 This format is adopted from [keepachangelog.com](https://keepachangelog.com).
 
-## 3a5c5f0
+## 211a7c5
 
 ### Added
 
-- Added the skeleton of a function that runs A2D\_BATCH\_READ1. It, and all other functions in this family, will have the following characteristics:
+- Added a function that runs A2D\_BATCH\_READ1. It, and all other functions in this family, will have the following characteristics:
     - In main.c, there are two Task Handles called `xLeftMotorWaiting` and `xRightMotorWaiting`. When a task calls the function `A2D_BATCH_READ1_Func()`, the function will organize and send a message over the CAN bus to the corresponding controller. Then, it will call `xTaskNotifyWait`, which will *block* the parent task's execution entirely. The task will restart after a CAN message matching the description pops into the FIFO and the ISR callback discovers it. Waking the task from ISR uses the vTaskNotifyGiveFromISR function. At this point, the re-woken function will process the buffer as it needs to, and return `HAL_OK`.
     - In the case that the function is blocked for longer than `CAN_MOTOR_TIMEOUT` milliseconds, it will return `HAL_TIMEOUT`.
-- So far, the ISR portion and much of the `A2D_BATCH_READ1_Func` body is yet to be done. In the body there's a whole if block for the left motor alone; much of that common code can be extracted from the block, and then the extra code for the right motor controller can be added.
 - I believe much of this is just boilerplate; the real code is just making transmitting the CAN message, and parsing the controller's response. Once this function is complete it should be easy to port over to the other functions.
 
 ## 98df7c9
