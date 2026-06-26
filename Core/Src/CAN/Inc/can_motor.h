@@ -64,7 +64,7 @@ typedef enum CommandType {
  * @brief Specifies the status of the motor. Accelerating, braking, and/or reversing.
  */
 typedef enum MotorStatus {
-	STATUS_NONE = 0x00		/**< No status */
+	STATUS_NONE = 0x00,		/**< No status */
 	ACC			= (1 << 0),	/**< Accelerator being pressed */
 	BRK			= (1 << 1),	/**< Brake being pressed */
 	REV			= (1 << 2)	/**< Motor is reversing */

@@ -109,14 +109,14 @@ typedef enum {
 VehicleState_t CurrentVehicleState = Vehicle_Boot; 
 
 //Motor Command Memory
-CommandType LastCommandSent_M1 = NONE; //Left motor command memory
-CommandType LastCommandSent_M2 = NONE; //Right motor command memory
+CommandType LastCommandSent_M1 = COMMAND_NONE; //Left motor command memory
+CommandType LastCommandSent_M2 = COMMAND_NONE; //Right motor command memory
 
 MotorPacketInfo Motor1_Data; // Left Motor 
 MotorPacketInfo Motor2_Data; // Right Motor
 
-volatile TaskHandle_t xLeftMotorWaiting;
-volatile TaskHandle_t xRightMotorWaiting;
+volatile TaskHandle_t xLeftMotorWaiting = NULL;
+volatile TaskHandle_t xRightMotorWaiting = NULL;
 
 uint8_t LeftMotorRxBuffer[8];
 uint8_t RightMotorRxBuffer[8];
@@ -714,6 +714,42 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+/**
+ * @brief Our implementation of the HAL CAN's interrupt callback function, overrides the weak version in
+ * \ref stm32f4xx_hal_can.c. This function should be modified if **ANY** function is designed to be blocked
+ * until woken up by a CAN interrupt.
+ * @param hcan: a pointer to a \ref CAN_HandleTypeDef struct. Probably hcan1 or hcan2.
+ */
+void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
+	CAN_RxHeaderTypeDef rxHeader;
+	TaskHandle_t * TaskToNotify;
+	uint8_t * dataFinalDest;
+	uint8_t data[8];
+	
+	/* Pop the actual message out of the fifo, select motor, and wake up task */
+	if (HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &rxHeader, data) == HAL_OK) {
+		/* Switch block to select the correct motor */
+		switch (rxHeader.StdId) {
+			case CAN_ID_MOTOR_LEFT_RSP:
+				*TaskToNotify = xLeftMotorWaiting;
+				dataFinalDest = &LeftMotorRxBuffer[0];
+			case CAN_ID_MOTOR_RIGHT_RSP:
+				*TaskToNotify = xRightMotorWaiting;
+				dataFinalDest = &RightMotorRxBuffer[0];
+		}
+
+		/* Copy 8 bytes from data array to the final dest */
+		memcpy(dataFinalDest, data, 8);
+
+		/* Wake up the task and force context switch */
+		BaseType_t taskwoken = pdFALSE;
+		vTaskNotifyGiveFromISR(*TaskToNotify, &taskwoken);
+		portYIELD_FROM_ISR(taskwoken);
+	} else {
+		return;
+	}
+}
 
 /**
  * @}
