@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['hal_5fuart_5frxeventtypetypedef_0',['HAL_UART_RxEventTypeTypeDef',['../df/d66/group__UART__Exported__Types.html#gadddf3d5480235c945dc8eec58f961203',1,'stm32f4xx_hal_uart.h']]],
-  ['hal_5fuart_5frxtypetypedef_1',['HAL_UART_RxTypeTypeDef',['../df/d66/group__UART__Exported__Types.html#ga9f272475ea543a68fd8cb19f03a9bce9',1,'stm32f4xx_hal_uart.h']]]
+  ['dma_5fhandletypedef_0',['DMA_HandleTypeDef',['../d0/dd6/group__DMA__Exported__Types.html#ga41b754a906b86bce54dc79938970138b',1,'stm32f4xx_hal_dma.h']]]
 ];

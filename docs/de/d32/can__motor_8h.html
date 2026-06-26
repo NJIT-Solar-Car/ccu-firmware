@@ -93,10 +93,10 @@ $(document).ready(function(){initNavTree('de/d32/can__motor_8h.html','../../'); 
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">can_motor.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -104,6 +104,8 @@ $(document).ready(function(){initNavTree('de/d32/can__motor_8h.html','../../'); 
 <p>Holds function and struct definitions which pertain to the Kelly KBL motor controller <em>and</em> CAN bus functions in general.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;FreeRTOS.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d59/stm32f4xx__hal_8h_source.html">stm32f4xx_hal.h</a>&quot;</code><br />
 </div>
 <p><a href="../../de/d32/can__motor_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -116,8 +118,21 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct holding information about a received packet. By default, this has all the data you can acquire from the motor controller. The <code>Command</code> byte (with knowledge of CommandType enum) can let one decipher which commands have been run. This struct is also optimized for padding.  <a href="../../da/ddc/structMotorPacketInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga8c494979ae5d2818e4c86f61a0b25f71" id="r_ga8c494979ae5d2818e4c86f61a0b25f71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4e/group__CAN__Defines.html#ga8c494979ae5d2818e4c86f61a0b25f71">CCU_CAN_RINGBUFFER_SIZE</a>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:ga8c494979ae5d2818e4c86f61a0b25f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafadf72e93518fa07dfaca4983575de50" id="r_gafadf72e93518fa07dfaca4983575de50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4e/group__CAN__Defines.html#gafadf72e93518fa07dfaca4983575de50">CCU_MOTOR_TIMEOUT</a>&#160;&#160;&#160;500</td></tr>
+<tr class="separator:gafadf72e93518fa07dfaca4983575de50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:gaa6a770b5c7d15a31d87c4651e313397d" id="r_gaa6a770b5c7d15a31d87c4651e313397d"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d04/group__CAN__Structs.html#gaa6a770b5c7d15a31d87c4651e313397d">CommandType</a></td></tr>
+<tr class="memdesc:gaa6a770b5c7d15a31d87c4651e313397d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies which commands have been run. Only members filled in by those commands are valid. Check individual command functions for more details.  <br /></td></tr>
+<tr class="separator:gaa6a770b5c7d15a31d87c4651e313397d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a3314c035227495a4a2dbc2c298297f" id="r_ga4a3314c035227495a4a2dbc2c298297f"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga44639ecc24a17157a56d5f189239095c">MotorStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga4a3314c035227495a4a2dbc2c298297f">MotorStatus</a></td></tr>
+<tr class="memdesc:ga4a3314c035227495a4a2dbc2c298297f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the status of the motor. Accelerating, braking, and/or reversing.  <br /></td></tr>
+<tr class="separator:ga4a3314c035227495a4a2dbc2c298297f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac52caddfa83873c8a5d76019720f853b" id="r_gac52caddfa83873c8a5d76019720f853b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../dd/dd2/structMotorControllerInfo.html">MotorControllerInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d04/group__CAN__Structs.html#gac52caddfa83873c8a5d76019720f853b">MotorControllerInfo</a></td></tr>
 <tr class="memdesc:gac52caddfa83873c8a5d76019720f853b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct holding general, static info about a motor controller. Order is optimized for <a href="https://www.geeksforgeeks.org/c/structure-member-alignment-padding-and-data-packing/">struct size</a> which is currently 20 bytes, when tested with GCC.  <br /></td></tr>
 <tr class="separator:gac52caddfa83873c8a5d76019720f853b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,224 +142,65 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga21e038f5b8958e203d28bc4f18472352" id="r_ga21e038f5b8958e203d28bc4f18472352"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a> </td></tr>
+<tr class="memitem:ga21e038f5b8958e203d28bc4f18472352" id="r_ga21e038f5b8958e203d28bc4f18472352"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a> { <br />
+&#160;&#160;<a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a6f301c6494992e4afe516f0fef34e7cd">COMMAND_NONE</a> = 0x00
+, <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a30fc05ae68a408f142f0a91f7de033d8">A2D_BATCH_READ1</a> = (1 &lt;&lt; 0)
+, <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352aecfb1fc0c85cde6c96e6a868bf9d7a4f">A2D_BATCH_READ2</a> = (1 &lt;&lt; 1)
+, <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352ac16c2018890e5f0a70be372d80c606a8">MONITOR1</a> = (1 &lt;&lt; 2)
+, <br />
+&#160;&#160;<a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352ac3d7ddf0e5eed2625311d21089f3a615">MONITOR2</a> = (1 &lt;&lt; 3)
+, <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352aee7bde77e6ae55ed354276bc3c156584">SW_ACC</a> = (1 &lt;&lt; 4)
+, <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a7b0d343477db671e0cd10465027e5ab7">SW_BRAKE</a> = (1 &lt;&lt; 5)
+, <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a9163b7461220b200457c2d63c8db8000">SW_REV</a> = (1 &lt;&lt; 6)
+<br />
+ }</td></tr>
 <tr class="memdesc:ga21e038f5b8958e203d28bc4f18472352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies which commands have been run. Only members filled in by those commands are valid. Check individual command functions for more details.  <a href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">More...</a><br /></td></tr>
 <tr class="separator:ga21e038f5b8958e203d28bc4f18472352"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga44639ecc24a17157a56d5f189239095c" id="r_ga44639ecc24a17157a56d5f189239095c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga44639ecc24a17157a56d5f189239095c">MotorStatus</a> </td></tr>
+<tr class="memitem:ga44639ecc24a17157a56d5f189239095c" id="r_ga44639ecc24a17157a56d5f189239095c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga44639ecc24a17157a56d5f189239095c">MotorStatus</a> { <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga44639ecc24a17157a56d5f189239095caa7ff6fbf30c889d48bea1d98b74dc408">STATUS_NONE</a> = 0x00
+, <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga44639ecc24a17157a56d5f189239095caa6cd1d230aaca43e44f87cd2aab71c83">ACC</a> = (1 &lt;&lt; 0)
+, <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga44639ecc24a17157a56d5f189239095ca6c7c9b4759bddb193c27f0421e718044">BRK</a> = (1 &lt;&lt; 1)
+, <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga44639ecc24a17157a56d5f189239095ca8b209f5ffbac4635f21eb0d452a99ad8">REV</a> = (1 &lt;&lt; 2)
+ }</td></tr>
 <tr class="memdesc:ga44639ecc24a17157a56d5f189239095c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the status of the motor. Accelerating, braking, and/or reversing.  <a href="../../d9/d04/group__CAN__Structs.html#ga44639ecc24a17157a56d5f189239095c">More...</a><br /></td></tr>
 <tr class="separator:ga44639ecc24a17157a56d5f189239095c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga5e507f3828f12cac6119e6c1c98d6849" id="r_ga5e507f3828f12cac6119e6c1c98d6849"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga5e507f3828f12cac6119e6c1c98d6849">__attribute__</a> ((packed)) <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a></td></tr>
-<tr class="memdesc:ga5e507f3828f12cac6119e6c1c98d6849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies which commands have been run. Only members filled in by those commands are valid. Check individual command functions for more details.  <br /></td></tr>
-<tr class="separator:ga5e507f3828f12cac6119e6c1c98d6849"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga545f0a4aac743c9bf73af07491a269e3" id="r_ga545f0a4aac743c9bf73af07491a269e3"><td class="memItemLeft" align="right" valign="top">BaseType_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc5/group__CAN__Funcs.html#ga545f0a4aac743c9bf73af07491a269e3">CCU_CAN_Init</a> (void)</td></tr>
 <tr class="memdesc:ga545f0a4aac743c9bf73af07491a269e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the global CAN mutex variable (in <a class="el" href="../../d3/d03/CCU__CAN_8c.html">CCU_CAN.c</a>)  <br /></td></tr>
 <tr class="separator:ga545f0a4aac743c9bf73af07491a269e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga26d239dbb3e322e958243872747ad4b8" id="r_ga26d239dbb3e322e958243872747ad4b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc5/group__CAN__Funcs.html#ga26d239dbb3e322e958243872747ad4b8">CCU_CAN_FilterConfig</a> (<a class="el" href="../../da/d27/structCAN__FilterTypeDef.html">CAN_FilterTypeDef</a> *phcan1, <a class="el" href="../../da/d27/structCAN__FilterTypeDef.html">CAN_FilterTypeDef</a> *phcan2)</td></tr>
-<tr class="memdesc:ga26d239dbb3e322e958243872747ad4b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the filters for the CAN peripheral. Assumes that MX_CAN1_Init() has been called. Ideally place after USER CODE BEGIN 2.  <br /></td></tr>
-<tr class="separator:ga26d239dbb3e322e958243872747ad4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd53b0e39d503ccc226dc4fea22baf92" id="r_gadd53b0e39d503ccc226dc4fea22baf92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc5/group__CAN__Funcs.html#gadd53b0e39d503ccc226dc4fea22baf92">CCU_CAN_FilterConfig</a> (<a class="el" href="../../d9/dbb/structCAN__HandleTypeDef.html">CAN_HandleTypeDef</a> *phcan1, <a class="el" href="../../d9/dbb/structCAN__HandleTypeDef.html">CAN_HandleTypeDef</a> *phcan2)</td></tr>
+<tr class="memdesc:gadd53b0e39d503ccc226dc4fea22baf92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the filters for the CAN peripheral. Assumes that MX_CAN1_Init() has been called. Ideally place after USER CODE BEGIN 2.  <br /></td></tr>
+<tr class="separator:gadd53b0e39d503ccc226dc4fea22baf92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2bd17c32983010e9292658e2fd2a94ab" id="r_ga2bd17c32983010e9292658e2fd2a94ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc5/group__CAN__Funcs.html#ga2bd17c32983010e9292658e2fd2a94ab">CCU_CAN_Tx</a> (<a class="el" href="../../d9/dbb/structCAN__HandleTypeDef.html">CAN_HandleTypeDef</a> *hcan, <a class="el" href="../../d1/d85/structCAN__TxHeaderTypeDef.html">CAN_TxHeaderTypeDef</a> *pHeader, uint8_t aData[], uint32_t *pTxMailbox, TickType_t xTicksToWait)</td></tr>
 <tr class="memdesc:ga2bd17c32983010e9292658e2fd2a94ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread-safe wrapper for HAL_CAN_AddTxMessage. Blocks until a hardware mailbox is available and transmits safely.  <br /></td></tr>
 <tr class="separator:ga2bd17c32983010e9292658e2fd2a94ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a899caa602e4fff675b17cdbab33607ec" id="r_a899caa602e4fff675b17cdbab33607ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d32/can__motor_8h.html#a899caa602e4fff675b17cdbab33607ec">NONE</a> = 0x00</td></tr>
-<tr class="separator:a899caa602e4fff675b17cdbab33607ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37047c30994e2b448b3a3a6203801201" id="r_a37047c30994e2b448b3a3a6203801201"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d32/can__motor_8h.html#a37047c30994e2b448b3a3a6203801201">A2D_BATCH_READ1</a> = (1 &lt;&lt; 0)</td></tr>
-<tr class="separator:a37047c30994e2b448b3a3a6203801201"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a05a4378833d941e1ce14eae3b4899f" id="r_a3a05a4378833d941e1ce14eae3b4899f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d32/can__motor_8h.html#a3a05a4378833d941e1ce14eae3b4899f">A2D_BATCH_READ2</a> = (1 &lt;&lt; 1)</td></tr>
-<tr class="separator:a3a05a4378833d941e1ce14eae3b4899f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a807359141907fe78f65813b88942f824" id="r_a807359141907fe78f65813b88942f824"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d32/can__motor_8h.html#a807359141907fe78f65813b88942f824">MONITOR1</a> = (1 &lt;&lt; 2)</td></tr>
-<tr class="separator:a807359141907fe78f65813b88942f824"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c40b05221ee08ec134315128d804a8b" id="r_a4c40b05221ee08ec134315128d804a8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d32/can__motor_8h.html#a4c40b05221ee08ec134315128d804a8b">MONITOR2</a> = (1 &lt;&lt; 3)</td></tr>
-<tr class="separator:a4c40b05221ee08ec134315128d804a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7b76571a42623a0e48672ee6e3d2a30" id="r_af7b76571a42623a0e48672ee6e3d2a30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d32/can__motor_8h.html#af7b76571a42623a0e48672ee6e3d2a30">SW_ACC</a> = (1 &lt;&lt; 4)</td></tr>
-<tr class="separator:af7b76571a42623a0e48672ee6e3d2a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaae18b7b50fc7a536edf4eb5fbc702b4" id="r_aaae18b7b50fc7a536edf4eb5fbc702b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d32/can__motor_8h.html#aaae18b7b50fc7a536edf4eb5fbc702b4">SW_BRAKE</a> = (1 &lt;&lt; 5)</td></tr>
-<tr class="separator:aaae18b7b50fc7a536edf4eb5fbc702b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec63b20de18700f008d313e37edc188f" id="r_aec63b20de18700f008d313e37edc188f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d32/can__motor_8h.html#aec63b20de18700f008d313e37edc188f">SW_REV</a> = (1 &lt;&lt; 6)</td></tr>
-<tr class="separator:aec63b20de18700f008d313e37edc188f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6793c946fae9288c29db548097ebe795" id="r_a6793c946fae9288c29db548097ebe795"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d32/can__motor_8h.html#a6793c946fae9288c29db548097ebe795">ACC</a> = (1 &lt;&lt; 0)</td></tr>
-<tr class="separator:a6793c946fae9288c29db548097ebe795"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73cf58d3b70048f7ee6be579abeef0e5" id="r_a73cf58d3b70048f7ee6be579abeef0e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d32/can__motor_8h.html#a73cf58d3b70048f7ee6be579abeef0e5">BRK</a> = (1 &lt;&lt; 1)</td></tr>
-<tr class="separator:a73cf58d3b70048f7ee6be579abeef0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a12dc90d5cd3b85736e10dbf8bf0221" id="r_a4a12dc90d5cd3b85736e10dbf8bf0221"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d32/can__motor_8h.html#a4a12dc90d5cd3b85736e10dbf8bf0221">REV</a> = (1 &lt;&lt; 2)</td></tr>
-<tr class="separator:a4a12dc90d5cd3b85736e10dbf8bf0221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d97733393a6b3e7f5469931d8a5a001" id="r_ga1d97733393a6b3e7f5469931d8a5a001"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd6/group__CAN__Motor__Funcs.html#ga1d97733393a6b3e7f5469931d8a5a001">A2D_BATCH_READ1_Func</a> (<a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *pmpi)</td></tr>
+<tr class="memdesc:ga1d97733393a6b3e7f5469931d8a5a001"><td class="mdescLeft">&#160;</td><td class="mdescRight">A2D Batch Read1. Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a30fc05ae68a408f142f0a91f7de033d8">A2D_BATCH_READ1</a>.  <br /></td></tr>
+<tr class="separator:ga1d97733393a6b3e7f5469931d8a5a001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7779e5cefd44ea380bd07a41fb21ab68" id="r_ga7779e5cefd44ea380bd07a41fb21ab68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd6/group__CAN__Motor__Funcs.html#ga7779e5cefd44ea380bd07a41fb21ab68">A2D_BATCH_READ2_Func</a> (<a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *pmpi)</td></tr>
+<tr class="memdesc:ga7779e5cefd44ea380bd07a41fb21ab68"><td class="mdescLeft">&#160;</td><td class="mdescRight">A2D Batch Read2. Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352aecfb1fc0c85cde6c96e6a868bf9d7a4f">A2D_BATCH_READ2</a>.  <br /></td></tr>
+<tr class="separator:ga7779e5cefd44ea380bd07a41fb21ab68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6840b2c2015055ffd91cf395d2968592" id="r_ga6840b2c2015055ffd91cf395d2968592"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd6/group__CAN__Motor__Funcs.html#ga6840b2c2015055ffd91cf395d2968592">MONITOR1_Func</a> (<a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *pmpi)</td></tr>
+<tr class="memdesc:ga6840b2c2015055ffd91cf395d2968592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Monitor1. Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352ac16c2018890e5f0a70be372d80c606a8">MONITOR1</a>.  <br /></td></tr>
+<tr class="separator:ga6840b2c2015055ffd91cf395d2968592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad43018fb957a8f8d697dea0bd8c2b04c" id="r_gad43018fb957a8f8d697dea0bd8c2b04c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd6/group__CAN__Motor__Funcs.html#gad43018fb957a8f8d697dea0bd8c2b04c">MONITOR2_Func</a> (<a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *pmpi)</td></tr>
+<tr class="memdesc:gad43018fb957a8f8d697dea0bd8c2b04c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Monitor2. Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352ac3d7ddf0e5eed2625311d21089f3a615">MONITOR2</a>.  <br /></td></tr>
+<tr class="separator:gad43018fb957a8f8d697dea0bd8c2b04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb87fbf619d040ac9cbbfc8d76e4f054" id="r_gafb87fbf619d040ac9cbbfc8d76e4f054"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd6/group__CAN__Motor__Funcs.html#gafb87fbf619d040ac9cbbfc8d76e4f054">SW_ACC_Func</a> (<a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *pmpi)</td></tr>
+<tr class="memdesc:gafb87fbf619d040ac9cbbfc8d76e4f054"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352aee7bde77e6ae55ed354276bc3c156584">SW_ACC</a>.  <br /></td></tr>
+<tr class="separator:gafb87fbf619d040ac9cbbfc8d76e4f054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada78adb77f4ddaf51c98d6cfc4fca6d1" id="r_gada78adb77f4ddaf51c98d6cfc4fca6d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd6/group__CAN__Motor__Funcs.html#gada78adb77f4ddaf51c98d6cfc4fca6d1">SW_BRAKE_Func</a> (<a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *pmpi)</td></tr>
+<tr class="memdesc:gada78adb77f4ddaf51c98d6cfc4fca6d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a7b0d343477db671e0cd10465027e5ab7">SW_BRAKE</a>.  <br /></td></tr>
+<tr class="separator:gada78adb77f4ddaf51c98d6cfc4fca6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63605d56b80e72ebae8dd9613d5a5fb7" id="r_ga63605d56b80e72ebae8dd9613d5a5fb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd6/group__CAN__Motor__Funcs.html#ga63605d56b80e72ebae8dd9613d5a5fb7">SW_REV_Func</a> (<a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *pmpi)</td></tr>
+<tr class="memdesc:ga63605d56b80e72ebae8dd9613d5a5fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a9163b7461220b200457c2d63c8db8000">SW_REV</a>.  <br /></td></tr>
+<tr class="separator:ga63605d56b80e72ebae8dd9613d5a5fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Holds function and struct definitions which pertain to the Kelly KBL motor controller <em>and</em> CAN bus functions in general. </p>
 <dl class="section author"><dt>Author</dt><dd>Arnav Revankar </dd></dl>
-</div><h2 class="groupheader">Variable Documentation</h2>
-<a id="a37047c30994e2b448b3a3a6203801201" name="a37047c30994e2b448b3a3a6203801201"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37047c30994e2b448b3a3a6203801201">&#9670;&#160;</a></span>A2D_BATCH_READ1</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">A2D_BATCH_READ1 = (1 &lt;&lt; 0)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A2D Batch Read1. Provides brake and throttle position, and battery voltage </p>
-
-</div>
-</div>
-<a id="a3a05a4378833d941e1ce14eae3b4899f" name="a3a05a4378833d941e1ce14eae3b4899f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a05a4378833d941e1ce14eae3b4899f">&#9670;&#160;</a></span>A2D_BATCH_READ2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">A2D_BATCH_READ2 = (1 &lt;&lt; 1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A2D Batch Read2. Provides 3 phase voltage and current readings. <em>CURRENTLY UNUSED!!!</em> </p>
-
-</div>
-</div>
-<a id="a6793c946fae9288c29db548097ebe795" name="a6793c946fae9288c29db548097ebe795"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6793c946fae9288c29db548097ebe795">&#9670;&#160;</a></span>ACC</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ACC = (1 &lt;&lt; 0)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Accelerator being pressed </p>
-
-</div>
-</div>
-<a id="a73cf58d3b70048f7ee6be579abeef0e5" name="a73cf58d3b70048f7ee6be579abeef0e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73cf58d3b70048f7ee6be579abeef0e5">&#9670;&#160;</a></span>BRK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BRK = (1 &lt;&lt; 1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Brake being pressed </p>
-
-</div>
-</div>
-<a id="a807359141907fe78f65813b88942f824" name="a807359141907fe78f65813b88942f824"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a807359141907fe78f65813b88942f824">&#9670;&#160;</a></span>MONITOR1</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MONITOR1 = (1 &lt;&lt; 2)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Monitor1. Provides PWM, as well as motor and controller temp, and low/high side mosfet temp </p>
-
-</div>
-</div>
-<a id="a4c40b05221ee08ec134315128d804a8b" name="a4c40b05221ee08ec134315128d804a8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c40b05221ee08ec134315128d804a8b">&#9670;&#160;</a></span>MONITOR2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MONITOR2 = (1 &lt;&lt; 3)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Monitor2. Provides motor RPM </p>
-
-</div>
-</div>
-<a id="a899caa602e4fff675b17cdbab33607ec" name="a899caa602e4fff675b17cdbab33607ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a899caa602e4fff675b17cdbab33607ec">&#9670;&#160;</a></span>NONE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NONE = 0x00</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>No command</p>
-<p>No motor state :( </p>
-
-</div>
-</div>
-<a id="a4a12dc90d5cd3b85736e10dbf8bf0221" name="a4a12dc90d5cd3b85736e10dbf8bf0221"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a12dc90d5cd3b85736e10dbf8bf0221">&#9670;&#160;</a></span>REV</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">REV = (1 &lt;&lt; 2)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Motor is reversing </p>
-
-</div>
-</div>
-<a id="af7b76571a42623a0e48672ee6e3d2a30" name="af7b76571a42623a0e48672ee6e3d2a30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7b76571a42623a0e48672ee6e3d2a30">&#9670;&#160;</a></span>SW_ACC</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SW_ACC = (1 &lt;&lt; 4)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Provides ACC field of <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga44639ecc24a17157a56d5f189239095c" title="Specifies the status of the motor. Accelerating, braking, and/or reversing.">MotorStatus</a> </p>
-
-</div>
-</div>
-<a id="aaae18b7b50fc7a536edf4eb5fbc702b4" name="aaae18b7b50fc7a536edf4eb5fbc702b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaae18b7b50fc7a536edf4eb5fbc702b4">&#9670;&#160;</a></span>SW_BRAKE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SW_BRAKE = (1 &lt;&lt; 5)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Provides BRK field of <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga44639ecc24a17157a56d5f189239095c" title="Specifies the status of the motor. Accelerating, braking, and/or reversing.">MotorStatus</a> </p>
-
-</div>
-</div>
-<a id="aec63b20de18700f008d313e37edc188f" name="aec63b20de18700f008d313e37edc188f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec63b20de18700f008d313e37edc188f">&#9670;&#160;</a></span>SW_REV</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SW_REV = (1 &lt;&lt; 6)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Provides REV field of <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga44639ecc24a17157a56d5f189239095c" title="Specifies the status of the motor. Accelerating, braking, and/or reversing.">MotorStatus</a> </p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -18,10 +18,11 @@ var searchData=
   ['mode_15',['mode',['../dd/ddc/structUART__InitTypeDef.html#ab2ee6ea5a5d4ca5ee6b759be197bcfcb',1,'UART_InitTypeDef::Mode'],['../de/dd4/structCAN__InitTypeDef.html#a5ba53204dfde47974b5173967c338790',1,'CAN_InitTypeDef::Mode'],['../d2/dc3/structSPI__InitTypeDef.html#a5247eb0463437c9980a9d4a5300b50a5',1,'SPI_InitTypeDef::Mode'],['../d8/d48/structPWR__PVDTypeDef.html#af692d691f0cb5871b319fd371fab34d8',1,'PWR_PVDTypeDef::Mode'],['../dd/d39/structI2C__HandleTypeDef.html#a97b1beafd59ed47be4b742562d100278',1,'I2C_HandleTypeDef::Mode'],['../db/d19/structGPIO__InitTypeDef.html#a3731d84343e65a98fdf51056a8d30321',1,'GPIO_InitTypeDef::Mode'],['../dd/def/structEXTI__ConfigTypeDef.html#a6393a89a8cd198b19e10876e6f12cf5b',1,'EXTI_ConfigTypeDef::Mode'],['../d6/d5b/structDMA__InitTypeDef.html#adbbca090b53d32ac93cc7359b7994db2',1,'DMA_InitTypeDef::Mode'],['../d7/d9e/structMPPT1__Data__t.html#a0e137760fb1e1ad8bde6d9eb6e1ad7e5',1,'MPPT1_Data_t::Mode']]],
   ['model_16',['Model',['../dd/dd2/structMotorControllerInfo.html#a8712e33960cf328254dad69499aeccf8',1,'MotorControllerInfo']]],
   ['moder_17',['MODER',['../d0/d6b/structGPIO__TypeDef.html#ac2505d096b6b650f1647b8e0ff8b196b',1,'GPIO_TypeDef']]],
-  ['monitor1_18',['MONITOR1',['../de/d32/can__motor_8h.html#a807359141907fe78f65813b88942f824',1,'can_motor.h']]],
-  ['monitor2_19',['MONITOR2',['../de/d32/can__motor_8h.html#a4c40b05221ee08ec134315128d804a8b',1,'can_motor.h']]],
-  ['mosfettemp_20',['MosfetTemp',['../d7/d9e/structMPPT1__Data__t.html#a00e0a0ef81e8e5c6386ba21316c3dc5c',1,'MPPT1_Data_t']]],
+  ['mosfettemp_18',['MosfetTemp',['../d7/d9e/structMPPT1__Data__t.html#a00e0a0ef81e8e5c6386ba21316c3dc5c',1,'MPPT1_Data_t']]],
+  ['motor1_5fdata_19',['Motor1_Data',['../d7/dbd/group__Main.html#ga4773039e147d4ec72193d47f8468c72e',1,'main.c']]],
+  ['motor2_5fdata_20',['Motor2_Data',['../d7/dbd/group__Main.html#ga7f25dee2e1229f279933c4ef24e027c5',1,'main.c']]],
   ['motorrpm_21',['MotorRPM',['../da/ddc/structMotorPacketInfo.html#a44f037dba7e10066e2193c0474b28c2a',1,'MotorPacketInfo']]],
   ['motortemp_22',['MotorTemp',['../da/ddc/structMotorPacketInfo.html#ae7fc8b54ccd4b1a6c518409f3581419b',1,'MotorPacketInfo']]],
-  ['msr_23',['MSR',['../de/d31/structCAN__TypeDef.html#af98b957a4e887751fbd407d3e2cf93b5',1,'CAN_TypeDef']]]
+  ['mppt1_5fdata_23',['MPPT1_Data',['../d7/dbd/group__Main.html#ga911dc2e1206864f9f5dc58e8fe43869a',1,'main.c']]],
+  ['msr_24',['MSR',['../de/d31/structCAN__TypeDef.html#af98b957a4e887751fbd407d3e2cf93b5',1,'CAN_TypeDef']]]
 ];

@@ -11,6 +11,8 @@ var group__STM32F4xx__HAL__Driver =
     [ "GPIO", "de/d2b/group__GPIO.html", "de/d2b/group__GPIO" ],
     [ "I2C", "d6/d08/group__I2C.html", "d6/d08/group__I2C" ],
     [ "I2CEx", "dd/d11/group__I2CEx.html", null ],
+    [ "PCD", "d1/d7c/group__PCD.html", null ],
+    [ "PCDEx", "de/d1e/group__PCDEx.html", null ],
     [ "PWR", "d0/dd5/group__PWR.html", "d0/dd5/group__PWR" ],
     [ "PWREx", "de/da7/group__PWREx.html", "de/da7/group__PWREx" ],
     [ "RCC", "d6/d1a/group__RCC.html", "d6/d1a/group__RCC" ],

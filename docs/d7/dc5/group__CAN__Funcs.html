@@ -105,9 +105,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga545f0a4aac743c9bf73af07491a269e3" id="r_ga545f0a4aac743c9bf73af07491a269e3"><td class="memItemLeft" align="right" valign="top">BaseType_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc5/group__CAN__Funcs.html#ga545f0a4aac743c9bf73af07491a269e3">CCU_CAN_Init</a> (void)</td></tr>
 <tr class="memdesc:ga545f0a4aac743c9bf73af07491a269e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the global CAN mutex variable (in <a class="el" href="../../d3/d03/CCU__CAN_8c.html">CCU_CAN.c</a>)  <br /></td></tr>
 <tr class="separator:ga545f0a4aac743c9bf73af07491a269e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga26d239dbb3e322e958243872747ad4b8" id="r_ga26d239dbb3e322e958243872747ad4b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc5/group__CAN__Funcs.html#ga26d239dbb3e322e958243872747ad4b8">CCU_CAN_FilterConfig</a> (<a class="el" href="../../da/d27/structCAN__FilterTypeDef.html">CAN_FilterTypeDef</a> *phcan1, <a class="el" href="../../da/d27/structCAN__FilterTypeDef.html">CAN_FilterTypeDef</a> *phcan2)</td></tr>
-<tr class="memdesc:ga26d239dbb3e322e958243872747ad4b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the filters for the CAN peripheral. Assumes that MX_CAN1_Init() has been called. Ideally place after USER CODE BEGIN 2.  <br /></td></tr>
-<tr class="separator:ga26d239dbb3e322e958243872747ad4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd53b0e39d503ccc226dc4fea22baf92" id="r_gadd53b0e39d503ccc226dc4fea22baf92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc5/group__CAN__Funcs.html#gadd53b0e39d503ccc226dc4fea22baf92">CCU_CAN_FilterConfig</a> (<a class="el" href="../../d9/dbb/structCAN__HandleTypeDef.html">CAN_HandleTypeDef</a> *phcan1, <a class="el" href="../../d9/dbb/structCAN__HandleTypeDef.html">CAN_HandleTypeDef</a> *phcan2)</td></tr>
+<tr class="memdesc:gadd53b0e39d503ccc226dc4fea22baf92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the filters for the CAN peripheral. Assumes that MX_CAN1_Init() has been called. Ideally place after USER CODE BEGIN 2.  <br /></td></tr>
+<tr class="separator:gadd53b0e39d503ccc226dc4fea22baf92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2bd17c32983010e9292658e2fd2a94ab" id="r_ga2bd17c32983010e9292658e2fd2a94ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc5/group__CAN__Funcs.html#ga2bd17c32983010e9292658e2fd2a94ab">CCU_CAN_Tx</a> (<a class="el" href="../../d9/dbb/structCAN__HandleTypeDef.html">CAN_HandleTypeDef</a> *hcan, <a class="el" href="../../d1/d85/structCAN__TxHeaderTypeDef.html">CAN_TxHeaderTypeDef</a> *pHeader, uint8_t aData[], uint32_t *pTxMailbox, TickType_t xTicksToWait)</td></tr>
 <tr class="memdesc:ga2bd17c32983010e9292658e2fd2a94ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread-safe wrapper for HAL_CAN_AddTxMessage. Blocks until a hardware mailbox is available and transmits safely.  <br /></td></tr>
 <tr class="separator:ga2bd17c32983010e9292658e2fd2a94ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,8 +115,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p><em>User defined</em> functions for interacting with CAN bus. These effectively wrap the HAL functions and use FreeRTOS mutexes to guarantee no race conditions. <b>CAN Function docs begin on page 87 of UM1725!!</b> </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga26d239dbb3e322e958243872747ad4b8" name="ga26d239dbb3e322e958243872747ad4b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga26d239dbb3e322e958243872747ad4b8">&#9670;&#160;</a></span>CCU_CAN_FilterConfig()</h2>
+<a id="gadd53b0e39d503ccc226dc4fea22baf92" name="gadd53b0e39d503ccc226dc4fea22baf92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd53b0e39d503ccc226dc4fea22baf92">&#9670;&#160;</a></span>CCU_CAN_FilterConfig()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -124,13 +124,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void CCU_CAN_FilterConfig </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d27/structCAN__FilterTypeDef.html">CAN_FilterTypeDef</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d9/dbb/structCAN__HandleTypeDef.html">CAN_HandleTypeDef</a> *&#160;</td>
           <td class="paramname"><em>phcan1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d27/structCAN__FilterTypeDef.html">CAN_FilterTypeDef</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d9/dbb/structCAN__HandleTypeDef.html">CAN_HandleTypeDef</a> *&#160;</td>
           <td class="paramname"><em>phcan2</em>&#160;</td>
         </tr>
         <tr>

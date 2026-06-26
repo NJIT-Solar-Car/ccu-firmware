@@ -14,6 +14,8 @@ var dir_fe70c8ad9f7ab4724b63ce89acbfa189 =
     [ "stm32f4xx_hal_gpio_ex.h", "da/d1f/stm32f4xx__hal__gpio__ex_8h.html", null ],
     [ "stm32f4xx_hal_i2c.h", "d2/d63/stm32f4xx__hal__i2c_8h.html", "d2/d63/stm32f4xx__hal__i2c_8h" ],
     [ "stm32f4xx_hal_i2c_ex.h", "d3/d38/stm32f4xx__hal__i2c__ex_8h.html", null ],
+    [ "stm32f4xx_hal_pcd.h", "d9/d61/stm32f4xx__hal__pcd_8h.html", null ],
+    [ "stm32f4xx_hal_pcd_ex.h", "d8/d46/stm32f4xx__hal__pcd__ex_8h.html", null ],
     [ "stm32f4xx_hal_pwr.h", "d0/d2d/stm32f4xx__hal__pwr_8h.html", "d0/d2d/stm32f4xx__hal__pwr_8h" ],
     [ "stm32f4xx_hal_pwr_ex.h", "dd/dad/stm32f4xx__hal__pwr__ex_8h.html", "dd/dad/stm32f4xx__hal__pwr__ex_8h" ],
     [ "stm32f4xx_hal_rcc.h", "d9/d13/stm32f4xx__hal__rcc_8h.html", "d9/d13/stm32f4xx__hal__rcc_8h" ],
@@ -32,6 +34,8 @@ var dir_fe70c8ad9f7ab4724b63ce89acbfa189 =
     [ "stm32f4xx_ll_rcc.h", "d7/d43/stm32f4xx__ll__rcc_8h.html", null ],
     [ "stm32f4xx_ll_spi.h", "d6/d9b/stm32f4xx__ll__spi_8h.html", null ],
     [ "stm32f4xx_ll_system.h", "d9/d3f/stm32f4xx__ll__system_8h.html", null ],
+    [ "stm32f4xx_ll_tim.h", "d9/d87/stm32f4xx__ll__tim_8h.html", null ],
     [ "stm32f4xx_ll_usart.h", "de/d40/stm32f4xx__ll__usart_8h.html", null ],
+    [ "stm32f4xx_ll_usb.h", "da/d0a/stm32f4xx__ll__usb_8h.html", null ],
     [ "stm32f4xx_ll_utils.h", "d4/d22/stm32f4xx__ll__utils_8h.html", "d4/d22/stm32f4xx__ll__utils_8h" ]
 ];

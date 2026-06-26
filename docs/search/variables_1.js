@@ -34,10 +34,9 @@ var searchData=
   ['breakfilter_31',['BreakFilter',['../d8/d16/structTIM__BreakDeadTimeConfigTypeDef.html#aad8158e694a62f6c071975ee4c2e5b6a',1,'TIM_BreakDeadTimeConfigTypeDef']]],
   ['breakpolarity_32',['BreakPolarity',['../d8/d16/structTIM__BreakDeadTimeConfigTypeDef.html#ae15ddbf3087f9a2129a52a1317339ea7',1,'TIM_BreakDeadTimeConfigTypeDef']]],
   ['breakstate_33',['BreakState',['../d8/d16/structTIM__BreakDeadTimeConfigTypeDef.html#a8962430194b43ac28a14c96dd9cc44e6',1,'TIM_BreakDeadTimeConfigTypeDef']]],
-  ['brk_34',['BRK',['../de/d32/can__motor_8h.html#a73cf58d3b70048f7ee6be579abeef0e5',1,'can_motor.h']]],
-  ['brr_35',['BRR',['../d1/d3e/structUSART__TypeDef.html#a6ef06ba9d8dc2dc2a0855766369fa7c9',1,'USART_TypeDef']]],
-  ['bsrr_36',['BSRR',['../d0/d6b/structGPIO__TypeDef.html#acd6f21e08912b484c030ca8b18e11cd6',1,'GPIO_TypeDef']]],
-  ['btcr_37',['BTCR',['../d9/d32/structFSMC__Bank1__TypeDef.html#a6d3aefd66a99e71ae4a22444a507a720',1,'FSMC_Bank1_TypeDef']]],
-  ['btr_38',['BTR',['../de/d31/structCAN__TypeDef.html#accad1e4155459a13369f5ad0e7c6da29',1,'CAN_TypeDef']]],
-  ['bwtr_39',['BWTR',['../d3/de8/structFSMC__Bank1E__TypeDef.html#afe650877ca972faff9c61fcb364c7b66',1,'FSMC_Bank1E_TypeDef']]]
+  ['brr_34',['BRR',['../d1/d3e/structUSART__TypeDef.html#a6ef06ba9d8dc2dc2a0855766369fa7c9',1,'USART_TypeDef']]],
+  ['bsrr_35',['BSRR',['../d0/d6b/structGPIO__TypeDef.html#acd6f21e08912b484c030ca8b18e11cd6',1,'GPIO_TypeDef']]],
+  ['btcr_36',['BTCR',['../d9/d32/structFSMC__Bank1__TypeDef.html#a6d3aefd66a99e71ae4a22444a507a720',1,'FSMC_Bank1_TypeDef']]],
+  ['btr_37',['BTR',['../de/d31/structCAN__TypeDef.html#accad1e4155459a13369f5ad0e7c6da29',1,'CAN_TypeDef']]],
+  ['bwtr_38',['BWTR',['../d3/de8/structFSMC__Bank1E__TypeDef.html#afe650877ca972faff9c61fcb364c7b66',1,'FSMC_Bank1E_TypeDef']]]
 ];

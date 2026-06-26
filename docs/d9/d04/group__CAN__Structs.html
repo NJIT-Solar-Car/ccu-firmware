@@ -94,8 +94,7 @@ $(document).ready(function(){initNavTree('d9/d04/group__CAN__Structs.html','../.
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">CAN_Structs<div class="ingroups"><a class="el" href="../../d2/d66/group__CCU__Firmware.html">CCU_Firmware</a> &raquo; <a class="el" href="../../d5/d5b/group__CAN__Firmware.html">CAN_Firmware</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -114,6 +113,12 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:gaa6a770b5c7d15a31d87c4651e313397d" id="r_gaa6a770b5c7d15a31d87c4651e313397d"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d04/group__CAN__Structs.html#gaa6a770b5c7d15a31d87c4651e313397d">CommandType</a></td></tr>
+<tr class="memdesc:gaa6a770b5c7d15a31d87c4651e313397d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies which commands have been run. Only members filled in by those commands are valid. Check individual command functions for more details.  <br /></td></tr>
+<tr class="separator:gaa6a770b5c7d15a31d87c4651e313397d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a3314c035227495a4a2dbc2c298297f" id="r_ga4a3314c035227495a4a2dbc2c298297f"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga44639ecc24a17157a56d5f189239095c">MotorStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga4a3314c035227495a4a2dbc2c298297f">MotorStatus</a></td></tr>
+<tr class="memdesc:ga4a3314c035227495a4a2dbc2c298297f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the status of the motor. Accelerating, braking, and/or reversing.  <br /></td></tr>
+<tr class="separator:ga4a3314c035227495a4a2dbc2c298297f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac52caddfa83873c8a5d76019720f853b" id="r_gac52caddfa83873c8a5d76019720f853b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../dd/dd2/structMotorControllerInfo.html">MotorControllerInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d04/group__CAN__Structs.html#gac52caddfa83873c8a5d76019720f853b">MotorControllerInfo</a></td></tr>
 <tr class="memdesc:gac52caddfa83873c8a5d76019720f853b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct holding general, static info about a motor controller. Order is optimized for <a href="https://www.geeksforgeeks.org/c/structure-member-alignment-padding-and-data-packing/">struct size</a> which is currently 20 bytes, when tested with GCC.  <br /></td></tr>
 <tr class="separator:gac52caddfa83873c8a5d76019720f853b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,22 +128,47 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga21e038f5b8958e203d28bc4f18472352" id="r_ga21e038f5b8958e203d28bc4f18472352"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a> </td></tr>
+<tr class="memitem:ga21e038f5b8958e203d28bc4f18472352" id="r_ga21e038f5b8958e203d28bc4f18472352"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a> { <br />
+&#160;&#160;<a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a6f301c6494992e4afe516f0fef34e7cd">COMMAND_NONE</a> = 0x00
+, <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a30fc05ae68a408f142f0a91f7de033d8">A2D_BATCH_READ1</a> = (1 &lt;&lt; 0)
+, <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352aecfb1fc0c85cde6c96e6a868bf9d7a4f">A2D_BATCH_READ2</a> = (1 &lt;&lt; 1)
+, <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352ac16c2018890e5f0a70be372d80c606a8">MONITOR1</a> = (1 &lt;&lt; 2)
+, <br />
+&#160;&#160;<a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352ac3d7ddf0e5eed2625311d21089f3a615">MONITOR2</a> = (1 &lt;&lt; 3)
+, <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352aee7bde77e6ae55ed354276bc3c156584">SW_ACC</a> = (1 &lt;&lt; 4)
+, <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a7b0d343477db671e0cd10465027e5ab7">SW_BRAKE</a> = (1 &lt;&lt; 5)
+, <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a9163b7461220b200457c2d63c8db8000">SW_REV</a> = (1 &lt;&lt; 6)
+<br />
+ }</td></tr>
 <tr class="memdesc:ga21e038f5b8958e203d28bc4f18472352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies which commands have been run. Only members filled in by those commands are valid. Check individual command functions for more details.  <a href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">More...</a><br /></td></tr>
 <tr class="separator:ga21e038f5b8958e203d28bc4f18472352"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga44639ecc24a17157a56d5f189239095c" id="r_ga44639ecc24a17157a56d5f189239095c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga44639ecc24a17157a56d5f189239095c">MotorStatus</a> </td></tr>
+<tr class="memitem:ga44639ecc24a17157a56d5f189239095c" id="r_ga44639ecc24a17157a56d5f189239095c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga44639ecc24a17157a56d5f189239095c">MotorStatus</a> { <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga44639ecc24a17157a56d5f189239095caa7ff6fbf30c889d48bea1d98b74dc408">STATUS_NONE</a> = 0x00
+, <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga44639ecc24a17157a56d5f189239095caa6cd1d230aaca43e44f87cd2aab71c83">ACC</a> = (1 &lt;&lt; 0)
+, <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga44639ecc24a17157a56d5f189239095ca6c7c9b4759bddb193c27f0421e718044">BRK</a> = (1 &lt;&lt; 1)
+, <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga44639ecc24a17157a56d5f189239095ca8b209f5ffbac4635f21eb0d452a99ad8">REV</a> = (1 &lt;&lt; 2)
+ }</td></tr>
 <tr class="memdesc:ga44639ecc24a17157a56d5f189239095c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the status of the motor. Accelerating, braking, and/or reversing.  <a href="../../d9/d04/group__CAN__Structs.html#ga44639ecc24a17157a56d5f189239095c">More...</a><br /></td></tr>
 <tr class="separator:ga44639ecc24a17157a56d5f189239095c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga5e507f3828f12cac6119e6c1c98d6849" id="r_ga5e507f3828f12cac6119e6c1c98d6849"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga5e507f3828f12cac6119e6c1c98d6849">__attribute__</a> ((packed)) <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a></td></tr>
-<tr class="memdesc:ga5e507f3828f12cac6119e6c1c98d6849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies which commands have been run. Only members filled in by those commands are valid. Check individual command functions for more details.  <br /></td></tr>
-<tr class="separator:ga5e507f3828f12cac6119e6c1c98d6849"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Data structures to be used for CAN communication. This includes motor controller state, state of the CAN-logic on CCU side, and possibly more. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="gaa6a770b5c7d15a31d87c4651e313397d" name="gaa6a770b5c7d15a31d87c4651e313397d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa6a770b5c7d15a31d87c4651e313397d">&#9670;&#160;</a></span>CommandType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a> <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies which commands have been run. Only members filled in by those commands are valid. Check individual command functions for more details. </p>
+
+</div>
+</div>
 <a id="gac52caddfa83873c8a5d76019720f853b" name="gac52caddfa83873c8a5d76019720f853b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac52caddfa83873c8a5d76019720f853b">&#9670;&#160;</a></span>MotorControllerInfo</h2>
 
@@ -171,6 +201,22 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga4a3314c035227495a4a2dbc2c298297f" name="ga4a3314c035227495a4a2dbc2c298297f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4a3314c035227495a4a2dbc2c298297f">&#9670;&#160;</a></span>MotorStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga44639ecc24a17157a56d5f189239095c">MotorStatus</a> <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga44639ecc24a17157a56d5f189239095c">MotorStatus</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies the status of the motor. Accelerating, braking, and/or reversing. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga21e038f5b8958e203d28bc4f18472352" name="ga21e038f5b8958e203d28bc4f18472352"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga21e038f5b8958e203d28bc4f18472352">&#9670;&#160;</a></span>CommandType</h2>
@@ -185,6 +231,24 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Specifies which commands have been run. Only members filled in by those commands are valid. Check individual command functions for more details. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga21e038f5b8958e203d28bc4f18472352a6f301c6494992e4afe516f0fef34e7cd" name="gga21e038f5b8958e203d28bc4f18472352a6f301c6494992e4afe516f0fef34e7cd"></a>COMMAND_NONE&#160;</td><td class="fielddoc"><p>No command </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga21e038f5b8958e203d28bc4f18472352a30fc05ae68a408f142f0a91f7de033d8" name="gga21e038f5b8958e203d28bc4f18472352a30fc05ae68a408f142f0a91f7de033d8"></a>A2D_BATCH_READ1&#160;</td><td class="fielddoc"><p>A2D Batch Read1. Provides brake and throttle position, and battery voltage </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga21e038f5b8958e203d28bc4f18472352aecfb1fc0c85cde6c96e6a868bf9d7a4f" name="gga21e038f5b8958e203d28bc4f18472352aecfb1fc0c85cde6c96e6a868bf9d7a4f"></a>A2D_BATCH_READ2&#160;</td><td class="fielddoc"><p>A2D Batch Read2. Provides 3 phase voltage and current readings. <em>CURRENTLY UNUSED!!!</em> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga21e038f5b8958e203d28bc4f18472352ac16c2018890e5f0a70be372d80c606a8" name="gga21e038f5b8958e203d28bc4f18472352ac16c2018890e5f0a70be372d80c606a8"></a>MONITOR1&#160;</td><td class="fielddoc"><p>Monitor1. Provides PWM, as well as motor and controller temp, and low/high side mosfet temp </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga21e038f5b8958e203d28bc4f18472352ac3d7ddf0e5eed2625311d21089f3a615" name="gga21e038f5b8958e203d28bc4f18472352ac3d7ddf0e5eed2625311d21089f3a615"></a>MONITOR2&#160;</td><td class="fielddoc"><p>Monitor2. Provides motor RPM </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga21e038f5b8958e203d28bc4f18472352aee7bde77e6ae55ed354276bc3c156584" name="gga21e038f5b8958e203d28bc4f18472352aee7bde77e6ae55ed354276bc3c156584"></a>SW_ACC&#160;</td><td class="fielddoc"><p>Provides ACC field of <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga44639ecc24a17157a56d5f189239095c" title="Specifies the status of the motor. Accelerating, braking, and/or reversing.">MotorStatus</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga21e038f5b8958e203d28bc4f18472352a7b0d343477db671e0cd10465027e5ab7" name="gga21e038f5b8958e203d28bc4f18472352a7b0d343477db671e0cd10465027e5ab7"></a>SW_BRAKE&#160;</td><td class="fielddoc"><p>Provides BRK field of <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga44639ecc24a17157a56d5f189239095c" title="Specifies the status of the motor. Accelerating, braking, and/or reversing.">MotorStatus</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga21e038f5b8958e203d28bc4f18472352a9163b7461220b200457c2d63c8db8000" name="gga21e038f5b8958e203d28bc4f18472352a9163b7461220b200457c2d63c8db8000"></a>SW_REV&#160;</td><td class="fielddoc"><p>Provides REV field of <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga44639ecc24a17157a56d5f189239095c" title="Specifies the status of the motor. Accelerating, braking, and/or reversing.">MotorStatus</a> </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -201,28 +265,16 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Specifies the status of the motor. Accelerating, braking, and/or reversing. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ga5e507f3828f12cac6119e6c1c98d6849" name="ga5e507f3828f12cac6119e6c1c98d6849"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5e507f3828f12cac6119e6c1c98d6849">&#9670;&#160;</a></span>__attribute__()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="../../d9/d04/group__CAN__Structs.html#ga44639ecc24a17157a56d5f189239095c">MotorStatus</a> __attribute__ </td>
-          <td>(</td>
-          <td class="paramtype">(packed)&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Specifies which commands have been run. Only members filled in by those commands are valid. Check individual command functions for more details. </p>
-<p>Specifies the status of the motor. Accelerating, braking, and/or reversing. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga44639ecc24a17157a56d5f189239095caa7ff6fbf30c889d48bea1d98b74dc408" name="gga44639ecc24a17157a56d5f189239095caa7ff6fbf30c889d48bea1d98b74dc408"></a>STATUS_NONE&#160;</td><td class="fielddoc"><p>No status </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga44639ecc24a17157a56d5f189239095caa6cd1d230aaca43e44f87cd2aab71c83" name="gga44639ecc24a17157a56d5f189239095caa6cd1d230aaca43e44f87cd2aab71c83"></a>ACC&#160;</td><td class="fielddoc"><p>Accelerator being pressed </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga44639ecc24a17157a56d5f189239095ca6c7c9b4759bddb193c27f0421e718044" name="gga44639ecc24a17157a56d5f189239095ca6c7c9b4759bddb193c27f0421e718044"></a>BRK&#160;</td><td class="fielddoc"><p>Brake being pressed </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga44639ecc24a17157a56d5f189239095ca8b209f5ffbac4635f21eb0d452a99ad8" name="gga44639ecc24a17157a56d5f189239095ca8b209f5ffbac4635f21eb0d452a99ad8"></a>REV&#160;</td><td class="fielddoc"><p>Motor is reversing </p>
+</td></tr>
+</table>
 
 </div>
 </div>

@@ -28,7 +28,6 @@ var FreeRTOSConfig_8h =
     [ "configUSE_COUNTING_SEMAPHORES", "db/dc7/FreeRTOSConfig_8h.html#a55778995203c57369d2fbfb10224943d", null ],
     [ "configUSE_IDLE_HOOK", "db/dc7/FreeRTOSConfig_8h.html#ac637ae45863c19fa2e919db0ed49301f", null ],
     [ "configUSE_MUTEXES", "db/dc7/FreeRTOSConfig_8h.html#a543bf3c79008974cc1d36bab51d94fbf", null ],
-    [ "configUSE_NEWLIB_REENTRANT", "db/dc7/FreeRTOSConfig_8h.html#acf3616a8cbe15687f6000cefcca84bbd", null ],
     [ "configUSE_OS2_EVENTFLAGS_FROM_ISR", "db/dc7/FreeRTOSConfig_8h.html#ae217959706025f308b1183b3a0b017e5", null ],
     [ "configUSE_OS2_MUTEX", "db/dc7/FreeRTOSConfig_8h.html#acb45e61b0f68cbdbf209bc35e20f51ce", null ],
     [ "configUSE_OS2_THREAD_ENUMERATE", "db/dc7/FreeRTOSConfig_8h.html#a9db98d1311073d45fafae4604bfe95a8", null ],

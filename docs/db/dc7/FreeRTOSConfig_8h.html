@@ -157,8 +157,6 @@ Macros</h2></td></tr>
 <tr class="separator:abb9aa0f31c1f3b14a15083a3c6120918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed7c7ebcdee603583a55e8ce04e55841" id="r_aed7c7ebcdee603583a55e8ce04e55841"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc7/FreeRTOSConfig_8h.html#aed7c7ebcdee603583a55e8ce04e55841">configTIMER_TASK_STACK_DEPTH</a>&#160;&#160;&#160;256</td></tr>
 <tr class="separator:aed7c7ebcdee603583a55e8ce04e55841"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf3616a8cbe15687f6000cefcca84bbd" id="r_acf3616a8cbe15687f6000cefcca84bbd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc7/FreeRTOSConfig_8h.html#acf3616a8cbe15687f6000cefcca84bbd">configUSE_NEWLIB_REENTRANT</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:acf3616a8cbe15687f6000cefcca84bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29c5de2bca09fa23f66452549f3ff448" id="r_a29c5de2bca09fa23f66452549f3ff448"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc7/FreeRTOSConfig_8h.html#a29c5de2bca09fa23f66452549f3ff448">configUSE_OS2_THREAD_SUSPEND_RESUME</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a29c5de2bca09fa23f66452549f3ff448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9db98d1311073d45fafae4604bfe95a8" id="r_a9db98d1311073d45fafae4604bfe95a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc7/FreeRTOSConfig_8h.html#a9db98d1311073d45fafae4604bfe95a8">configUSE_OS2_THREAD_ENUMERATE</a>&#160;&#160;&#160;1</td></tr>
@@ -215,7 +213,7 @@ Macros</h2></td></tr>
 <tr class="separator:ad43047b3ea0a146673e30637488bf754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f30022da7d797dd31f1b8a11cae9a35" id="r_a6f30022da7d797dd31f1b8a11cae9a35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc7/FreeRTOSConfig_8h.html#a6f30022da7d797dd31f1b8a11cae9a35">xPortPendSVHandler</a>&#160;&#160;&#160;PendSV_Handler</td></tr>
 <tr class="separator:a6f30022da7d797dd31f1b8a11cae9a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb38886ec26ede3e81782a04a1735259" id="r_acb38886ec26ede3e81782a04a1735259"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc7/FreeRTOSConfig_8h.html#acb38886ec26ede3e81782a04a1735259">USE_CUSTOM_SYSTICK_HANDLER_IMPLEMENTATION</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:acb38886ec26ede3e81782a04a1735259" id="r_acb38886ec26ede3e81782a04a1735259"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc7/FreeRTOSConfig_8h.html#acb38886ec26ede3e81782a04a1735259">USE_CUSTOM_SYSTICK_HANDLER_IMPLEMENTATION</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:acb38886ec26ede3e81782a04a1735259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -615,20 +613,6 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="acf3616a8cbe15687f6000cefcca84bbd" name="acf3616a8cbe15687f6000cefcca84bbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf3616a8cbe15687f6000cefcca84bbd">&#9670;&#160;</a></span>configUSE_NEWLIB_REENTRANT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define configUSE_NEWLIB_REENTRANT&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ae217959706025f308b1183b3a0b017e5" name="ae217959706025f308b1183b3a0b017e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae217959706025f308b1183b3a0b017e5">&#9670;&#160;</a></span>configUSE_OS2_EVENTFLAGS_FROM_ISR</h2>
 
@@ -986,7 +970,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define USE_CUSTOM_SYSTICK_HANDLER_IMPLEMENTATION&#160;&#160;&#160;0</td>
+          <td class="memname">#define USE_CUSTOM_SYSTICK_HANDLER_IMPLEMENTATION&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">

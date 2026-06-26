@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dma_5fhandletypedef_0',['DMA_HandleTypeDef',['../d0/dd6/group__DMA__Exported__Types.html#ga41b754a906b86bce54dc79938970138b',1,'stm32f4xx_hal_dma.h']]]
+  ['commandtype_0',['CommandType',['../d9/d04/group__CAN__Structs.html#gaa6a770b5c7d15a31d87c4651e313397d',1,'can_motor.h']]]
 ];

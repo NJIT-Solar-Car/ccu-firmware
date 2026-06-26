@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['eth_5frx_5fbuf_5fsize_0',['ETH_RX_BUF_SIZE',['../d7/d74/stm32f4xx__hal__conf_8h.html#a0cdaf687f7a7f2dba570d5a722990786',1,'stm32f4xx_hal_conf.h']]],
-  ['eth_5frxbufnb_1',['ETH_RXBUFNB',['../d7/d74/stm32f4xx__hal__conf_8h.html#a62b0f224fa9c4f2e5574c9e52526f751',1,'stm32f4xx_hal_conf.h']]],
-  ['eth_5ftx_5fbuf_5fsize_2',['ETH_TX_BUF_SIZE',['../d7/d74/stm32f4xx__hal__conf_8h.html#af83956dfc1b135c3c92ac409758b6cf4',1,'stm32f4xx_hal_conf.h']]],
-  ['eth_5ftxbufnb_3',['ETH_TXBUFNB',['../d7/d74/stm32f4xx__hal__conf_8h.html#a4ad07ad8fa6f8639ab8ef362390d86c7',1,'stm32f4xx_hal_conf.h']]],
-  ['external_5fclock_5fvalue_4',['EXTERNAL_CLOCK_VALUE',['../d7/d74/stm32f4xx__hal__conf_8h.html#a8c47c935e91e70569098b41718558648',1,'stm32f4xx_hal_conf.h']]]
+  ['data_5fcache_5fenable_0',['DATA_CACHE_ENABLE',['../d7/d74/stm32f4xx__hal__conf_8h.html#a5b4c32a40cf49b06c0d761e385949a6b',1,'stm32f4xx_hal_conf.h']]],
+  ['dp83848_5fphy_5faddress_1',['DP83848_PHY_ADDRESS',['../d7/d74/stm32f4xx__hal__conf_8h.html#a25f014091aaba92bdd9d95d0b2f00503',1,'stm32f4xx_hal_conf.h']]]
 ];

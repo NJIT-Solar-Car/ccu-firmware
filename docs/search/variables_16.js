@@ -9,5 +9,7 @@ var searchData=
   ['xferm1cpltcallback_6',['XferM1CpltCallback',['../d0/d7d/struct____DMA__HandleTypeDef.html#adec909b8921ddf15872ebd569cdb5f8e',1,'__DMA_HandleTypeDef']]],
   ['xferm1halfcpltcallback_7',['XferM1HalfCpltCallback',['../d0/d7d/struct____DMA__HandleTypeDef.html#ac9c9b7344813ff7cc64c5f3d201afb7a',1,'__DMA_HandleTypeDef']]],
   ['xferoptions_8',['XferOptions',['../dd/d39/structI2C__HandleTypeDef.html#af8de60af8242279e8a65e22bf53fad81',1,'I2C_HandleTypeDef']]],
-  ['xfersize_9',['XferSize',['../dd/d39/structI2C__HandleTypeDef.html#a47afa75961930ab1743f47245fdf6e85',1,'I2C_HandleTypeDef']]]
+  ['xfersize_9',['XferSize',['../dd/d39/structI2C__HandleTypeDef.html#a47afa75961930ab1743f47245fdf6e85',1,'I2C_HandleTypeDef']]],
+  ['xleftmotorwaiting_10',['xleftmotorwaiting',['../d7/dbd/group__Main.html#gac075efbd9f8dced556f0ddee397ed76e',1,'xLeftMotorWaiting:&#160;main.c'],['../d7/dbd/group__Main.html#gac075efbd9f8dced556f0ddee397ed76e',1,'xLeftMotorWaiting:&#160;main.c']]],
+  ['xrightmotorwaiting_11',['xrightmotorwaiting',['../d7/dbd/group__Main.html#gabb687085a609409c184bbc4de8fa20d3',1,'xRightMotorWaiting:&#160;main.c'],['../d7/dbd/group__Main.html#gabb687085a609409c184bbc4de8fa20d3',1,'xRightMotorWaiting:&#160;main.c']]]
 ];

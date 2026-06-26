@@ -91,13 +91,227 @@ $(document).ready(function(){initNavTree('da/dd6/group__CAN__Motor__Funcs.html',
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">CAN_Motor_Funcs<div class="ingroups"><a class="el" href="../../d2/d66/group__CCU__Firmware.html">CCU_Firmware</a> &raquo; <a class="el" href="../../d5/d5b/group__CAN__Firmware.html">CAN_Firmware</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Functions for interacting with motor controllers via the CAN bus.  
-</p>
-<p>Functions for interacting with motor controllers via the CAN bus. </p>
+<p>Functions for interacting with motor controllers via the CAN bus. Each function's parameter is a pointer to a motor packet info struct, and the functions assume they've been initialized to a default. It is from here (pmpi-&gt;ControllerInfo-&gt;ID) that the motor controller's CAN ID will be obtained. Additionally, all functions will be blocking until either the controller responds, or the <a class="el" href="../../de/d4e/group__CAN__Defines.html#gafadf72e93518fa07dfaca4983575de50">CCU_MOTOR_TIMEOUT</a> times out.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga1d97733393a6b3e7f5469931d8a5a001" id="r_ga1d97733393a6b3e7f5469931d8a5a001"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd6/group__CAN__Motor__Funcs.html#ga1d97733393a6b3e7f5469931d8a5a001">A2D_BATCH_READ1_Func</a> (<a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *pmpi)</td></tr>
+<tr class="memdesc:ga1d97733393a6b3e7f5469931d8a5a001"><td class="mdescLeft">&#160;</td><td class="mdescRight">A2D Batch Read1. Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a30fc05ae68a408f142f0a91f7de033d8">A2D_BATCH_READ1</a>.  <br /></td></tr>
+<tr class="separator:ga1d97733393a6b3e7f5469931d8a5a001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7779e5cefd44ea380bd07a41fb21ab68" id="r_ga7779e5cefd44ea380bd07a41fb21ab68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd6/group__CAN__Motor__Funcs.html#ga7779e5cefd44ea380bd07a41fb21ab68">A2D_BATCH_READ2_Func</a> (<a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *pmpi)</td></tr>
+<tr class="memdesc:ga7779e5cefd44ea380bd07a41fb21ab68"><td class="mdescLeft">&#160;</td><td class="mdescRight">A2D Batch Read2. Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352aecfb1fc0c85cde6c96e6a868bf9d7a4f">A2D_BATCH_READ2</a>.  <br /></td></tr>
+<tr class="separator:ga7779e5cefd44ea380bd07a41fb21ab68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6840b2c2015055ffd91cf395d2968592" id="r_ga6840b2c2015055ffd91cf395d2968592"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd6/group__CAN__Motor__Funcs.html#ga6840b2c2015055ffd91cf395d2968592">MONITOR1_Func</a> (<a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *pmpi)</td></tr>
+<tr class="memdesc:ga6840b2c2015055ffd91cf395d2968592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Monitor1. Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352ac16c2018890e5f0a70be372d80c606a8">MONITOR1</a>.  <br /></td></tr>
+<tr class="separator:ga6840b2c2015055ffd91cf395d2968592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad43018fb957a8f8d697dea0bd8c2b04c" id="r_gad43018fb957a8f8d697dea0bd8c2b04c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd6/group__CAN__Motor__Funcs.html#gad43018fb957a8f8d697dea0bd8c2b04c">MONITOR2_Func</a> (<a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *pmpi)</td></tr>
+<tr class="memdesc:gad43018fb957a8f8d697dea0bd8c2b04c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Monitor2. Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352ac3d7ddf0e5eed2625311d21089f3a615">MONITOR2</a>.  <br /></td></tr>
+<tr class="separator:gad43018fb957a8f8d697dea0bd8c2b04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb87fbf619d040ac9cbbfc8d76e4f054" id="r_gafb87fbf619d040ac9cbbfc8d76e4f054"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd6/group__CAN__Motor__Funcs.html#gafb87fbf619d040ac9cbbfc8d76e4f054">SW_ACC_Func</a> (<a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *pmpi)</td></tr>
+<tr class="memdesc:gafb87fbf619d040ac9cbbfc8d76e4f054"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352aee7bde77e6ae55ed354276bc3c156584">SW_ACC</a>.  <br /></td></tr>
+<tr class="separator:gafb87fbf619d040ac9cbbfc8d76e4f054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada78adb77f4ddaf51c98d6cfc4fca6d1" id="r_gada78adb77f4ddaf51c98d6cfc4fca6d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd6/group__CAN__Motor__Funcs.html#gada78adb77f4ddaf51c98d6cfc4fca6d1">SW_BRAKE_Func</a> (<a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *pmpi)</td></tr>
+<tr class="memdesc:gada78adb77f4ddaf51c98d6cfc4fca6d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a7b0d343477db671e0cd10465027e5ab7">SW_BRAKE</a>.  <br /></td></tr>
+<tr class="separator:gada78adb77f4ddaf51c98d6cfc4fca6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63605d56b80e72ebae8dd9613d5a5fb7" id="r_ga63605d56b80e72ebae8dd9613d5a5fb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd6/group__CAN__Motor__Funcs.html#ga63605d56b80e72ebae8dd9613d5a5fb7">SW_REV_Func</a> (<a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *pmpi)</td></tr>
+<tr class="memdesc:ga63605d56b80e72ebae8dd9613d5a5fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a9163b7461220b200457c2d63c8db8000">SW_REV</a>.  <br /></td></tr>
+<tr class="separator:ga63605d56b80e72ebae8dd9613d5a5fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Functions for interacting with motor controllers via the CAN bus. Each function's parameter is a pointer to a motor packet info struct, and the functions assume they've been initialized to a default. It is from here (pmpi-&gt;ControllerInfo-&gt;ID) that the motor controller's CAN ID will be obtained. Additionally, all functions will be blocking until either the controller responds, or the <a class="el" href="../../de/d4e/group__CAN__Defines.html#gafadf72e93518fa07dfaca4983575de50">CCU_MOTOR_TIMEOUT</a> times out. </p>
+<p>Overall procedure for each function is: Send a command to the motor controller. Then, use xTaskNotifyWait to block until either the call times out, or a message is received.</p>
+<p>A recieved message is processed by the ISR callback function <a class="el" href="../../d7/dbd/group__Main.html#ga7368d39e78009c017d6f81ccf33b9b2c">HAL_CAN_RxFifo0MsgPendingCallback</a>. This function will GLOBALLY handle all received messages, categorize them based on its ID and/or data, and accordingly pipe the message along. Same applies here.</p>
+<p>In <a class="el" href="../../d0/d29/main_8c.html" title=": Main program body">main.c</a> there are two global volatile variables of TaskHandle_t named xLeftMotorWaiting and xRightMotorWaiting. According to which motor controller we're communicating with, the corresponding task handle will be set to the current task handle with xTaskGetCurrentTaskHandle. Then, when a received message is categorized within the ISR callback function, it will accordingly wake the task back up. </p>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga1d97733393a6b3e7f5469931d8a5a001" name="ga1d97733393a6b3e7f5469931d8a5a001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1d97733393a6b3e7f5469931d8a5a001">&#9670;&#160;</a></span>A2D_BATCH_READ1_Func()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a> A2D_BATCH_READ1_Func </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *&#160;</td>
+          <td class="paramname"><em>pmpi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A2D Batch Read1. Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a30fc05ae68a408f142f0a91f7de033d8">A2D_BATCH_READ1</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmpi</td><td>Pointer to <a class="el" href="../../da/ddc/structMotorPacketInfo.html" title="Struct holding information about a received packet. By default, this has all the data you can acquire...">MotorPacketInfo</a> struct. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga7779e5cefd44ea380bd07a41fb21ab68" name="ga7779e5cefd44ea380bd07a41fb21ab68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7779e5cefd44ea380bd07a41fb21ab68">&#9670;&#160;</a></span>A2D_BATCH_READ2_Func()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a> A2D_BATCH_READ2_Func </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *&#160;</td>
+          <td class="paramname"><em>pmpi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A2D Batch Read2. Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352aecfb1fc0c85cde6c96e6a868bf9d7a4f">A2D_BATCH_READ2</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmpi</td><td>Pointer to <a class="el" href="../../da/ddc/structMotorPacketInfo.html" title="Struct holding information about a received packet. By default, this has all the data you can acquire...">MotorPacketInfo</a> struct. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga6840b2c2015055ffd91cf395d2968592" name="ga6840b2c2015055ffd91cf395d2968592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6840b2c2015055ffd91cf395d2968592">&#9670;&#160;</a></span>MONITOR1_Func()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a> MONITOR1_Func </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *&#160;</td>
+          <td class="paramname"><em>pmpi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Monitor1. Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352ac16c2018890e5f0a70be372d80c606a8">MONITOR1</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmpi</td><td>Pointer to <a class="el" href="../../da/ddc/structMotorPacketInfo.html" title="Struct holding information about a received packet. By default, this has all the data you can acquire...">MotorPacketInfo</a> struct. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gad43018fb957a8f8d697dea0bd8c2b04c" name="gad43018fb957a8f8d697dea0bd8c2b04c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad43018fb957a8f8d697dea0bd8c2b04c">&#9670;&#160;</a></span>MONITOR2_Func()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a> MONITOR2_Func </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *&#160;</td>
+          <td class="paramname"><em>pmpi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Monitor2. Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352ac3d7ddf0e5eed2625311d21089f3a615">MONITOR2</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmpi</td><td>Pointer to <a class="el" href="../../da/ddc/structMotorPacketInfo.html" title="Struct holding information about a received packet. By default, this has all the data you can acquire...">MotorPacketInfo</a> struct. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gafb87fbf619d040ac9cbbfc8d76e4f054" name="gafb87fbf619d040ac9cbbfc8d76e4f054"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafb87fbf619d040ac9cbbfc8d76e4f054">&#9670;&#160;</a></span>SW_ACC_Func()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a> SW_ACC_Func </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *&#160;</td>
+          <td class="paramname"><em>pmpi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352aee7bde77e6ae55ed354276bc3c156584">SW_ACC</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmpi</td><td>Pointer to <a class="el" href="../../da/ddc/structMotorPacketInfo.html" title="Struct holding information about a received packet. By default, this has all the data you can acquire...">MotorPacketInfo</a> struct. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gada78adb77f4ddaf51c98d6cfc4fca6d1" name="gada78adb77f4ddaf51c98d6cfc4fca6d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gada78adb77f4ddaf51c98d6cfc4fca6d1">&#9670;&#160;</a></span>SW_BRAKE_Func()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a> SW_BRAKE_Func </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *&#160;</td>
+          <td class="paramname"><em>pmpi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a7b0d343477db671e0cd10465027e5ab7">SW_BRAKE</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmpi</td><td>Pointer to <a class="el" href="../../da/ddc/structMotorPacketInfo.html" title="Struct holding information about a received packet. By default, this has all the data you can acquire...">MotorPacketInfo</a> struct. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga63605d56b80e72ebae8dd9613d5a5fb7" name="ga63605d56b80e72ebae8dd9613d5a5fb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga63605d56b80e72ebae8dd9613d5a5fb7">&#9670;&#160;</a></span>SW_REV_Func()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a> SW_REV_Func </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> *&#160;</td>
+          <td class="paramname"><em>pmpi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a9163b7461220b200457c2d63c8db8000">SW_REV</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmpi</td><td>Pointer to <a class="el" href="../../da/ddc/structMotorPacketInfo.html" title="Struct holding information about a received packet. By default, this has all the data you can acquire...">MotorPacketInfo</a> struct. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

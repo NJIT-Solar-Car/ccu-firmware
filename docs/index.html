@@ -110,8 +110,20 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="line">...</div>
 </div><!-- fragment --><p>This format is adopted from <a href="https://keepachangelog.com">keepachangelog.com</a>.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
-98df7c9</h1>
+211a7c5</h1>
 <h2><a class="anchor" id="autotoc_md2"></a>
+Added</h2>
+<ul>
+<li>Added a function that runs A2D_BATCH_READ1. It, and all other functions in this family, will have the following characteristics:<ul>
+<li>In <a class="el" href="d0/d29/main_8c.html" title=": Main program body">main.c</a>, there are two Task Handles called <code>xLeftMotorWaiting</code> and <code>xRightMotorWaiting</code>. When a task calls the function <code><a class="el" href="da/dd6/group__CAN__Motor__Funcs.html#ga1d97733393a6b3e7f5469931d8a5a001" title="A2D Batch Read1. Check A2D_BATCH_READ1.">A2D_BATCH_READ1_Func()</a></code>, the function will organize and send a message over the CAN bus to the corresponding controller. Then, it will call <code>xTaskNotifyWait</code>, which will <em>block</em> the parent task's execution entirely. The task will restart after a CAN message matching the description pops into the FIFO and the ISR callback discovers it. Waking the task from ISR uses the vTaskNotifyGiveFromISR function. At this point, the re-woken function will process the buffer as it needs to, and return <code>HAL_OK</code>.</li>
+<li>In the case that the function is blocked for longer than <code>CAN_MOTOR_TIMEOUT</code> milliseconds, it will return <code>HAL_TIMEOUT</code>.</li>
+</ul>
+</li>
+<li>I believe much of this is just boilerplate; the real code is just making transmitting the CAN message, and parsing the controller's response. Once this function is complete it should be easy to port over to the other functions.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md3"></a>
+98df7c9</h1>
+<h2><a class="anchor" id="autotoc_md4"></a>
 Added</h2>
 <ul>
 <li>Kelly KBL controller datasheet</li>
@@ -119,22 +131,22 @@ Added</h2>
 <li>Yet to add functions which will communicate with the controllers over CAN bus</li>
 <li>Once functions are written, they can most likely be called periodically using a timer, and have the outputs fill up a buffer which the LoRA code will pop from.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md5"></a>
 28696b2</h1>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md6"></a>
 Added</h2>
 <ul>
 <li>As of commit 54235db, JP added the CAN_Dictionary, which holds all the motor controller and MPPT charge controller addresses and IDs.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md5"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 Changed</h2>
 <ul>
 <li>Moved Doxygen output to docs folder. This will allow a gh pages deployment. Possibly implement the doxygen running thing with gh actions in the future.</li>
 <li>Moved the CAN_Dictionary.h file to <code>Core/Src/CAN/Inc</code>. Other CAN .h files can go in the same place, and .c files can go in <code>Core/Src/CAN/</code>.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md6"></a>
+<h1><a class="anchor" id="autotoc_md8"></a>
 80da62c</h1>
-<h2><a class="anchor" id="autotoc_md7"></a>
+<h2><a class="anchor" id="autotoc_md9"></a>
 Added</h2>
 <ul>
 <li>Added this changelog, and an initial Doxygen doxyfile</li>
@@ -143,9 +155,9 @@ Added</h2>
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md8"></a>
+<h1><a class="anchor" id="autotoc_md10"></a>
 2e22da2</h1>
-<h2><a class="anchor" id="autotoc_md9"></a>
+<h2><a class="anchor" id="autotoc_md11"></a>
 Added</h2>
 <ul>
 <li>Created the initial CubeMX configuration. Not complete! It's a temporary configuration that will change once the CCU is finalized.</li>

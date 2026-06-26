@@ -97,7 +97,12 @@ $(document).ready(function(){initNavTree('d3/d03/CCU__CAN_8c.html','../../'); in
   <div class="headertitle"><div class="title">CCU_CAN.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Holds function definitions for general CAN functions. <em>Not</em> motor- or MPPT-specific functions.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="../../de/d32/can__motor_8h_source.html">CAN/Inc/can_motor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d4c/can__dictionary_8h_source.html">CAN/Inc/can_dictionary.h</a>&quot;</code><br />
+<code>#include &quot;semphr.h&quot;</code><br />
 <code>#include &quot;cmsis_os.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d7/d59/stm32f4xx__hal_8h_source.html">stm32f4xx_hal.h</a>&quot;</code><br />
 </div><table class="memberdecls">
@@ -106,9 +111,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga545f0a4aac743c9bf73af07491a269e3" id="r_ga545f0a4aac743c9bf73af07491a269e3"><td class="memItemLeft" align="right" valign="top">BaseType_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc5/group__CAN__Funcs.html#ga545f0a4aac743c9bf73af07491a269e3">CCU_CAN_Init</a> ()</td></tr>
 <tr class="memdesc:ga545f0a4aac743c9bf73af07491a269e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the global CAN mutex variable (in <a class="el" href="../../d3/d03/CCU__CAN_8c.html">CCU_CAN.c</a>)  <br /></td></tr>
 <tr class="separator:ga545f0a4aac743c9bf73af07491a269e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga26d239dbb3e322e958243872747ad4b8" id="r_ga26d239dbb3e322e958243872747ad4b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc5/group__CAN__Funcs.html#ga26d239dbb3e322e958243872747ad4b8">CCU_CAN_FilterConfig</a> (<a class="el" href="../../da/d27/structCAN__FilterTypeDef.html">CAN_FilterTypeDef</a> *phcan1, <a class="el" href="../../da/d27/structCAN__FilterTypeDef.html">CAN_FilterTypeDef</a> *phcan2)</td></tr>
-<tr class="memdesc:ga26d239dbb3e322e958243872747ad4b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the filters for the CAN peripheral. Assumes that MX_CAN1_Init() has been called. Ideally place after USER CODE BEGIN 2.  <br /></td></tr>
-<tr class="separator:ga26d239dbb3e322e958243872747ad4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd53b0e39d503ccc226dc4fea22baf92" id="r_gadd53b0e39d503ccc226dc4fea22baf92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc5/group__CAN__Funcs.html#gadd53b0e39d503ccc226dc4fea22baf92">CCU_CAN_FilterConfig</a> (<a class="el" href="../../d9/dbb/structCAN__HandleTypeDef.html">CAN_HandleTypeDef</a> *phcan1, <a class="el" href="../../d9/dbb/structCAN__HandleTypeDef.html">CAN_HandleTypeDef</a> *phcan2)</td></tr>
+<tr class="memdesc:gadd53b0e39d503ccc226dc4fea22baf92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the filters for the CAN peripheral. Assumes that MX_CAN1_Init() has been called. Ideally place after USER CODE BEGIN 2.  <br /></td></tr>
+<tr class="separator:gadd53b0e39d503ccc226dc4fea22baf92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2bd17c32983010e9292658e2fd2a94ab" id="r_ga2bd17c32983010e9292658e2fd2a94ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d04/stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478f">HAL_StatusTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc5/group__CAN__Funcs.html#ga2bd17c32983010e9292658e2fd2a94ab">CCU_CAN_Tx</a> (<a class="el" href="../../d9/dbb/structCAN__HandleTypeDef.html">CAN_HandleTypeDef</a> *hcan, <a class="el" href="../../d1/d85/structCAN__TxHeaderTypeDef.html">CAN_TxHeaderTypeDef</a> *pHeader, uint8_t aData[], uint32_t *pTxMailbox, TickType_t xTicksToWait)</td></tr>
 <tr class="memdesc:ga2bd17c32983010e9292658e2fd2a94ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread-safe wrapper for HAL_CAN_AddTxMessage. Blocks until a hardware mailbox is available and transmits safely.  <br /></td></tr>
 <tr class="separator:ga2bd17c32983010e9292658e2fd2a94ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,7 +123,10 @@ Variables</h2></td></tr>
 <tr class="memitem:a47c6696f89bdf409fd6b13174383b2aa" id="r_a47c6696f89bdf409fd6b13174383b2aa"><td class="memItemLeft" align="right" valign="top">SemaphoreHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d03/CCU__CAN_8c.html#a47c6696f89bdf409fd6b13174383b2aa">xCanTxMutex</a> = NULL</td></tr>
 <tr class="separator:a47c6696f89bdf409fd6b13174383b2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Variable Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Holds function definitions for general CAN functions. <em>Not</em> motor- or MPPT-specific functions. </p>
+<dl class="section author"><dt>Author</dt><dd>Arnav Revankar </dd></dl>
+</div><h2 class="groupheader">Variable Documentation</h2>
 <a id="a47c6696f89bdf409fd6b13174383b2aa" name="a47c6696f89bdf409fd6b13174383b2aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a47c6696f89bdf409fd6b13174383b2aa">&#9670;&#160;</a></span>xCanTxMutex</h2>
 

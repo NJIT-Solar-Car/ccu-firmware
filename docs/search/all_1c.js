@@ -12,5 +12,7 @@ var searchData=
   ['xferoptions_9',['XferOptions',['../dd/d39/structI2C__HandleTypeDef.html#af8de60af8242279e8a65e22bf53fad81',1,'I2C_HandleTypeDef']]],
   ['xferoptions_20definition_10',['I2C XferOptions definition',['../de/de7/group__I2C__XferOptions__definition.html',1,'']]],
   ['xfersize_11',['XferSize',['../dd/d39/structI2C__HandleTypeDef.html#a47afa75961930ab1743f47245fdf6e85',1,'I2C_HandleTypeDef']]],
-  ['xportpendsvhandler_12',['xPortPendSVHandler',['../db/dc7/FreeRTOSConfig_8h.html#a6f30022da7d797dd31f1b8a11cae9a35',1,'FreeRTOSConfig.h']]]
+  ['xleftmotorwaiting_12',['xleftmotorwaiting',['../d7/dbd/group__Main.html#gac075efbd9f8dced556f0ddee397ed76e',1,'xLeftMotorWaiting:&#160;main.c'],['../d7/dbd/group__Main.html#gac075efbd9f8dced556f0ddee397ed76e',1,'xLeftMotorWaiting:&#160;main.c']]],
+  ['xportpendsvhandler_13',['xPortPendSVHandler',['../db/dc7/FreeRTOSConfig_8h.html#a6f30022da7d797dd31f1b8a11cae9a35',1,'FreeRTOSConfig.h']]],
+  ['xrightmotorwaiting_14',['xrightmotorwaiting',['../d7/dbd/group__Main.html#gabb687085a609409c184bbc4de8fa20d3',1,'xRightMotorWaiting:&#160;main.c'],['../d7/dbd/group__Main.html#gabb687085a609409c184bbc4de8fa20d3',1,'xRightMotorWaiting:&#160;main.c']]]
 ];

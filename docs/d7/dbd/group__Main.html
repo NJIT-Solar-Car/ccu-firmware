@@ -132,6 +132,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga840291bc02cba5474a4cb46a9b9566fe" id="r_ga840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dbd/group__Main.html#ga840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
 <tr class="memdesc:ga840291bc02cba5474a4cb46a9b9566fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The application entry point.  <br /></td></tr>
 <tr class="separator:ga840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7368d39e78009c017d6f81ccf33b9b2c" id="r_ga7368d39e78009c017d6f81ccf33b9b2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dbd/group__Main.html#ga7368d39e78009c017d6f81ccf33b9b2c">HAL_CAN_RxFifo0MsgPendingCallback</a> (<a class="el" href="../../d9/dbb/structCAN__HandleTypeDef.html">CAN_HandleTypeDef</a> *hcan)</td></tr>
+<tr class="memdesc:ga7368d39e78009c017d6f81ccf33b9b2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Our implementation of the HAL CAN's interrupt callback function, overrides the weak version in <a class="el" href="../../d2/db0/stm32f4xx__hal__can_8c.html">stm32f4xx_hal_can.c</a>. This function should be modified if <b>ANY</b> function is designed to be blocked until woken up by a CAN interrupt.  <br /></td></tr>
+<tr class="separator:ga7368d39e78009c017d6f81ccf33b9b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -157,10 +160,24 @@ Variables</h2></td></tr>
 <tr class="separator:ga25fbb54afdba71c24ba51ed50166ac8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6758111b5e7c7e711e6b7f8c63c3bcf3" id="r_ga6758111b5e7c7e711e6b7f8c63c3bcf3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/dbd/group__Main.html#ga2f886412d098c9b35d64465d7f131afe">VehicleState_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dbd/group__Main.html#ga6758111b5e7c7e711e6b7f8c63c3bcf3">CurrentVehicleState</a> = <a class="el" href="../../d7/dbd/group__Main.html#gga2f886412d098c9b35d64465d7f131afeaae48ae6d9cd93f3cdaeed901925122bb">Vehicle_Boot</a></td></tr>
 <tr class="separator:ga6758111b5e7c7e711e6b7f8c63c3bcf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6e628f52c58fe089561a9aa321ae5fde" id="r_ga6e628f52c58fe089561a9aa321ae5fde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dbd/group__Main.html#ga6e628f52c58fe089561a9aa321ae5fde">LastCommandSent_M1</a> = <a class="el" href="../../de/d32/can__motor_8h.html#a899caa602e4fff675b17cdbab33607ec">NONE</a></td></tr>
+<tr class="memitem:ga6e628f52c58fe089561a9aa321ae5fde" id="r_ga6e628f52c58fe089561a9aa321ae5fde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dbd/group__Main.html#ga6e628f52c58fe089561a9aa321ae5fde">LastCommandSent_M1</a> = <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a6f301c6494992e4afe516f0fef34e7cd">COMMAND_NONE</a></td></tr>
 <tr class="separator:ga6e628f52c58fe089561a9aa321ae5fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaefbcf5c240778563b06010c839340c75" id="r_gaefbcf5c240778563b06010c839340c75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dbd/group__Main.html#gaefbcf5c240778563b06010c839340c75">LastCommandSent_M2</a> = <a class="el" href="../../de/d32/can__motor_8h.html#a899caa602e4fff675b17cdbab33607ec">NONE</a></td></tr>
+<tr class="memitem:gaefbcf5c240778563b06010c839340c75" id="r_gaefbcf5c240778563b06010c839340c75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dbd/group__Main.html#gaefbcf5c240778563b06010c839340c75">LastCommandSent_M2</a> = <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a6f301c6494992e4afe516f0fef34e7cd">COMMAND_NONE</a></td></tr>
 <tr class="separator:gaefbcf5c240778563b06010c839340c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4773039e147d4ec72193d47f8468c72e" id="r_ga4773039e147d4ec72193d47f8468c72e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dbd/group__Main.html#ga4773039e147d4ec72193d47f8468c72e">Motor1_Data</a></td></tr>
+<tr class="separator:ga4773039e147d4ec72193d47f8468c72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f25dee2e1229f279933c4ef24e027c5" id="r_ga7f25dee2e1229f279933c4ef24e027c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dbd/group__Main.html#ga7f25dee2e1229f279933c4ef24e027c5">Motor2_Data</a></td></tr>
+<tr class="separator:ga7f25dee2e1229f279933c4ef24e027c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac075efbd9f8dced556f0ddee397ed76e" id="r_gac075efbd9f8dced556f0ddee397ed76e"><td class="memItemLeft" align="right" valign="top">volatile TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dbd/group__Main.html#gac075efbd9f8dced556f0ddee397ed76e">xLeftMotorWaiting</a> = NULL</td></tr>
+<tr class="separator:gac075efbd9f8dced556f0ddee397ed76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb687085a609409c184bbc4de8fa20d3" id="r_gabb687085a609409c184bbc4de8fa20d3"><td class="memItemLeft" align="right" valign="top">volatile TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dbd/group__Main.html#gabb687085a609409c184bbc4de8fa20d3">xRightMotorWaiting</a> = NULL</td></tr>
+<tr class="separator:gabb687085a609409c184bbc4de8fa20d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37a72e281fbfe37e8c28240c227feceb" id="r_ga37a72e281fbfe37e8c28240c227feceb"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dbd/group__Main.html#ga37a72e281fbfe37e8c28240c227feceb">LeftMotorRxBuffer</a> [8]</td></tr>
+<tr class="separator:ga37a72e281fbfe37e8c28240c227feceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3170bc3d779c37ebe1478488a7fe9cde" id="r_ga3170bc3d779c37ebe1478488a7fe9cde"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dbd/group__Main.html#ga3170bc3d779c37ebe1478488a7fe9cde">RightMotorRxBuffer</a> [8]</td></tr>
+<tr class="separator:ga3170bc3d779c37ebe1478488a7fe9cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga911dc2e1206864f9f5dc58e8fe43869a" id="r_ga911dc2e1206864f9f5dc58e8fe43869a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d9e/structMPPT1__Data__t.html">MPPT1_Data_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dbd/group__Main.html#ga911dc2e1206864f9f5dc58e8fe43869a">MPPT1_Data</a></td></tr>
+<tr class="separator:ga911dc2e1206864f9f5dc58e8fe43869a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga857b5bbb3d41c996976a53d7cacd97a0" id="r_ga857b5bbb3d41c996976a53d7cacd97a0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dbd/group__Main.html#ga857b5bbb3d41c996976a53d7cacd97a0">FaultCounter_M1</a> = 0</td></tr>
 <tr class="separator:ga857b5bbb3d41c996976a53d7cacd97a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0f409f8395d56021a9bdab8543465f39" id="r_ga0f409f8395d56021a9bdab8543465f39"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dbd/group__Main.html#ga0f409f8395d56021a9bdab8543465f39">FaultCounter_M2</a> = 0</td></tr>
@@ -190,6 +207,32 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga7368d39e78009c017d6f81ccf33b9b2c" name="ga7368d39e78009c017d6f81ccf33b9b2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7368d39e78009c017d6f81ccf33b9b2c">&#9670;&#160;</a></span>HAL_CAN_RxFifo0MsgPendingCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_CAN_RxFifo0MsgPendingCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/dbb/structCAN__HandleTypeDef.html">CAN_HandleTypeDef</a> *&#160;</td>
+          <td class="paramname"><em>hcan</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Our implementation of the HAL CAN's interrupt callback function, overrides the weak version in <a class="el" href="../../d2/db0/stm32f4xx__hal__can_8c.html">stm32f4xx_hal_can.c</a>. This function should be modified if <b>ANY</b> function is designed to be blocked until woken up by a CAN interrupt. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hcan</td><td>a pointer to a <a class="el" href="../../d9/dbb/structCAN__HandleTypeDef.html">CAN_HandleTypeDef</a> struct. Probably hcan1 or hcan2. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga840291bc02cba5474a4cb46a9b9566fe" name="ga840291bc02cba5474a4cb46a9b9566fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga840291bc02cba5474a4cb46a9b9566fe">&#9670;&#160;</a></span>main()</h2>
 
@@ -472,7 +515,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a> LastCommandSent_M1 = <a class="el" href="../../de/d32/can__motor_8h.html#a899caa602e4fff675b17cdbab33607ec">NONE</a></td>
+          <td class="memname"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a> LastCommandSent_M1 = <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a6f301c6494992e4afe516f0fef34e7cd">COMMAND_NONE</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -486,7 +529,105 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a> LastCommandSent_M2 = <a class="el" href="../../de/d32/can__motor_8h.html#a899caa602e4fff675b17cdbab33607ec">NONE</a></td>
+          <td class="memname"><a class="el" href="../../d9/d04/group__CAN__Structs.html#ga21e038f5b8958e203d28bc4f18472352">CommandType</a> LastCommandSent_M2 = <a class="el" href="../../d9/d04/group__CAN__Structs.html#gga21e038f5b8958e203d28bc4f18472352a6f301c6494992e4afe516f0fef34e7cd">COMMAND_NONE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga37a72e281fbfe37e8c28240c227feceb" name="ga37a72e281fbfe37e8c28240c227feceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga37a72e281fbfe37e8c28240c227feceb">&#9670;&#160;</a></span>LeftMotorRxBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t LeftMotorRxBuffer[8]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4773039e147d4ec72193d47f8468c72e" name="ga4773039e147d4ec72193d47f8468c72e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4773039e147d4ec72193d47f8468c72e">&#9670;&#160;</a></span>Motor1_Data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> Motor1_Data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7f25dee2e1229f279933c4ef24e027c5" name="ga7f25dee2e1229f279933c4ef24e027c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7f25dee2e1229f279933c4ef24e027c5">&#9670;&#160;</a></span>Motor2_Data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/ddc/structMotorPacketInfo.html">MotorPacketInfo</a> Motor2_Data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga911dc2e1206864f9f5dc58e8fe43869a" name="ga911dc2e1206864f9f5dc58e8fe43869a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga911dc2e1206864f9f5dc58e8fe43869a">&#9670;&#160;</a></span>MPPT1_Data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d9e/structMPPT1__Data__t.html">MPPT1_Data_t</a> MPPT1_Data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3170bc3d779c37ebe1478488a7fe9cde" name="ga3170bc3d779c37ebe1478488a7fe9cde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3170bc3d779c37ebe1478488a7fe9cde">&#9670;&#160;</a></span>RightMotorRxBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t RightMotorRxBuffer[8]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac075efbd9f8dced556f0ddee397ed76e" name="gac075efbd9f8dced556f0ddee397ed76e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac075efbd9f8dced556f0ddee397ed76e">&#9670;&#160;</a></span>xLeftMotorWaiting</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile TaskHandle_t xLeftMotorWaiting = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabb687085a609409c184bbc4de8fa20d3" name="gabb687085a609409c184bbc4de8fa20d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabb687085a609409c184bbc4de8fa20d3">&#9670;&#160;</a></span>xRightMotorWaiting</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile TaskHandle_t xRightMotorWaiting = NULL</td>
         </tr>
       </table>
 </div><div class="memdoc">

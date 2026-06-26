@@ -14,6 +14,7 @@ var group__Main =
       [ "Vehicle_Drive", "d7/dbd/group__Main.html#gga2f886412d098c9b35d64465d7f131afea5c601d9b68de25d47449490d32166062", null ],
       [ "Vehicle_Fault", "d7/dbd/group__Main.html#gga2f886412d098c9b35d64465d7f131afea4c373ac932dab45646c663fd89fd6074", null ]
     ] ],
+    [ "HAL_CAN_RxFifo0MsgPendingCallback", "d7/dbd/group__Main.html#ga7368d39e78009c017d6f81ccf33b9b2c", null ],
     [ "main", "d7/dbd/group__Main.html#ga840291bc02cba5474a4cb46a9b9566fe", null ],
     [ "StartDefaultTask", "d7/dbd/group__Main.html#ga99d0fdb0434092bcb24d9c9af917e4e9", null ],
     [ "SystemClock_Config", "d7/dbd/group__Main.html#ga70af21c671abfcc773614a9a4f63d920", null ],
@@ -31,5 +32,12 @@ var group__Main =
     [ "huart1", "d7/dbd/group__Main.html#ga2cf715bef37f7e8ef385a30974a5f0d5", null ],
     [ "huart2", "d7/dbd/group__Main.html#gaa9479c261d65eecedd3d9582f7f0f89c", null ],
     [ "LastCommandSent_M1", "d7/dbd/group__Main.html#ga6e628f52c58fe089561a9aa321ae5fde", null ],
-    [ "LastCommandSent_M2", "d7/dbd/group__Main.html#gaefbcf5c240778563b06010c839340c75", null ]
+    [ "LastCommandSent_M2", "d7/dbd/group__Main.html#gaefbcf5c240778563b06010c839340c75", null ],
+    [ "LeftMotorRxBuffer", "d7/dbd/group__Main.html#ga37a72e281fbfe37e8c28240c227feceb", null ],
+    [ "Motor1_Data", "d7/dbd/group__Main.html#ga4773039e147d4ec72193d47f8468c72e", null ],
+    [ "Motor2_Data", "d7/dbd/group__Main.html#ga7f25dee2e1229f279933c4ef24e027c5", null ],
+    [ "MPPT1_Data", "d7/dbd/group__Main.html#ga911dc2e1206864f9f5dc58e8fe43869a", null ],
+    [ "RightMotorRxBuffer", "d7/dbd/group__Main.html#ga3170bc3d779c37ebe1478488a7fe9cde", null ],
+    [ "xLeftMotorWaiting", "d7/dbd/group__Main.html#gac075efbd9f8dced556f0ddee397ed76e", null ],
+    [ "xRightMotorWaiting", "d7/dbd/group__Main.html#gabb687085a609409c184bbc4de8fa20d3", null ]
 ];

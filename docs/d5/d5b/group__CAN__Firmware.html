@@ -111,6 +111,9 @@ Modules</h2></td></tr>
 <tr class="memitem:d4/d57/group__MPPT1__IDs" id="r_d4/d57/group__MPPT1__IDs"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d57/group__MPPT1__IDs.html">MPPT1_IDs</a></td></tr>
 <tr class="memdesc:d4/d57/group__MPPT1__IDs"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base IDs for the Elmar MPPT1 controller. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:de/d4e/group__CAN__Defines" id="r_de/d4e/group__CAN__Defines"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4e/group__CAN__Defines.html">CAN_Defines</a></td></tr>
+<tr class="memdesc:de/d4e/group__CAN__Defines"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define macros to be used <em>by us</em> for CAN communication. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d9/d04/group__CAN__Structs" id="r_d9/d04/group__CAN__Structs"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d04/group__CAN__Structs.html">CAN_Structs</a></td></tr>
 <tr class="memdesc:d9/d04/group__CAN__Structs"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data structures to be used for CAN communication. This includes motor controller state, state of the CAN-logic on CCU side, and possibly more. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,7 +121,7 @@ Modules</h2></td></tr>
 <tr class="memdesc:d7/dc5/group__CAN__Funcs"><td class="mdescLeft">&#160;</td><td class="mdescRight"><em>User defined</em> functions for interacting with CAN bus. These effectively wrap the HAL functions and use FreeRTOS mutexes to guarantee no race conditions. <b>CAN Function docs begin on page 87 of UM1725!!</b> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:da/dd6/group__CAN__Motor__Funcs" id="r_da/dd6/group__CAN__Motor__Funcs"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd6/group__CAN__Motor__Funcs.html">CAN_Motor_Funcs</a></td></tr>
-<tr class="memdesc:da/dd6/group__CAN__Motor__Funcs"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for interacting with motor controllers via the CAN bus. <br /></td></tr>
+<tr class="memdesc:da/dd6/group__CAN__Motor__Funcs"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for interacting with motor controllers via the CAN bus. Each function's parameter is a pointer to a motor packet info struct, and the functions assume they've been initialized to a default. It is from here (pmpi-&gt;ControllerInfo-&gt;ID) that the motor controller's CAN ID will be obtained. Additionally, all functions will be blocking until either the controller responds, or the <a class="el" href="../../de/d4e/group__CAN__Defines.html#gafadf72e93518fa07dfaca4983575de50">CCU_MOTOR_TIMEOUT</a> times out. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
