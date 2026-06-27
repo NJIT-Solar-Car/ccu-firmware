@@ -99,14 +99,14 @@ const osThreadAttr_t defaultTask_attributes = {
 
 //Vehicle States
 typedef enum {
-  Vehicle_Boot, //Start Car
-  Vehicle_Neutral, //Idle State
+  Vehicle_Init, //Start Car
+  Vehicle_Booting, //Boot Car
   Vehicle_Drive, //Drive Car
   Vehicle_Fault //Error Car
 } VehicleState_t;
 
 //When the vehicle is started, it is initialized to its Boot mode
-VehicleState_t CurrentVehicleState = Vehicle_Boot; 
+VehicleState_t CurrentVehicleState = Vehicle_Init; 
 
 //Motor Command Memory
 CommandType LastCommandSent_M1 = COMMAND_NONE; //Left motor command memory
