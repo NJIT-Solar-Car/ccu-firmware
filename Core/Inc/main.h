@@ -132,6 +132,56 @@ void Error_Handler(void);
 
 /* USER CODE BEGIN Private defines */
 
+/*This code is technically not accurate and needs to be checked and corrected by the wiring team once
+their task is complete. When it does get checked, all that needs to be done is switch the relay # pins
+to its correct function.*/
+
+//Ports and Pins
+#define Neg_Main_Port GPIOA
+#define Neg_Main_Pin  relay1_Pin
+
+#define Motor_Relays_Port  GPIOA
+#define Motor_Relays_Pin   (relay2_Pin | relay3_Pin)
+
+#define Pos_Main_Port GPIOA
+#define Pos_Main_Pin  relay4_Pin
+
+#define Charge_Relay_Port GPIOC
+#define Charge_Relay_Pin  relay5_Pin
+
+#define LV_Relay_Port GPIOC
+#define LV_Relay_Pin  relay6_Pin
+
+#define Supp_Battery_Port GPIOB
+#define Supp_Battery_Pin  relay7_Pin
+
+/*Need to know what the start button and estop button is routed to*/
+
+//On/Off Macros
+#define Neg_Main_OFF() HAL_GPIO_WritePin(Neg_Main_Port, Neg_Main_Pin, GPIO_PIN_RESET)
+#define Neg_Main_ON()  HAL_GPIO_WritePin(Neg_Main_Port, Neg_Main_Pin, GPIO_PIN_SET)
+
+#define Motor_Relays_OFF()  HAL_GPIO_WritePin(Motor_Relays_Port, Motor_Relays_Pin, GPIO_PIN_RESET)
+#define Motor_Relays_ON()   HAL_GPIO_WritePin(Motor_Relays_Port, Motor_Relays_Pin, GPIO_PIN_SET)
+
+#define Pos_Main_OFF() HAL_GPIO_WritePin(Pos_Main_Port, Pos_Main_Pin, GPIO_PIN_RESET)
+#define Pos_Main_ON()  HAL_GPIO_WritePin(Pos_Main_Port, Pos_Main_Pin, GPIO_PIN_SET)
+
+#define Charge_Relay_OFF() HAL_GPIO_WritePin(Charge_Relay_Port, Charge_Relay_Pin, GPIO_PIN_RESET)
+#define Charge_Relay_ON()  HAL_GPIO_WritePin(Charge_Relay_Port, Charge_Relay_Pin, GPIO_PIN_SET)
+
+#define LV_Relay_OFF() HAL_GPIO_WritePin(LV_Relay_Port, LV_Relay_Pin, GPIO_PIN_RESET)
+#define LV_Relay_ON()  HAL_GPIO_WritePin(LV_Relay_Port, LV_Relay_Pin, GPIO_PIN_SET)
+
+#define Supp_Battery_OFF() HAL_GPIO_WritePin(Supp_Battery_Port, Supp_Battery_Pin, GPIO_PIN_RESET)
+#define Supp_Battery_ON()  HAL_GPIO_WritePin(Supp_Battery_Port, Supp_Battery_Pin, GPIO_PIN_SET)
+
+#define LED_Heartbeat_OFF() HAL_GPIO_WritePin(LED_Heartbeat_GPIO_Port, LED_Heartbeat_Pin, GPIO_PIN_RESET)
+#define LED_Heartbeat_ON() HAL_GPIO_WritePin(LED_Heartbeat_GPIO_Port, LED_Heartbeat_Pin, GPIO_PIN_SET)
+#define LED_Heartbeat_TOGGLE() HAL_GPIO_TogglePin(LED_Heartbeat_GPIO_Port, LED_Heartbeat_Pin)
+
+uint8_t ReadyFlag = 0;
+
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
