@@ -775,24 +775,87 @@ void StartDefaultTask(void *argument)
   /* Infinite loop */
   for(;;) {
     switch (CurrentVehicleState) {
-	case Vehicle_Boot:
-	  	HAL_GPIO_WritePin(GPIOC, LED_Heartbeat_Pin, GPIO_PIN_SET);
-		//add code dealing with charging (relays)
-	  	CurrentVehicleState = Vehicle_Neutral;
+	case Vehicle_Init:
+		Neg_Main_OFF();
+        Pos_Main_OFF();
+        Supp_Battery_OFF();
+        LV_Relay_OFF();
+        Motor_Relays_OFF();
+        Charge_Relay_OFF();
+        ReadyFlag = 0;
+		//if(pushtostart == 1)
+	  	CurrentVehicleState = Vehicle_Booting;
 	  	break;
-	case Vehicle_Neutral:
-	  	//add code: motors are at 0 rpm.
-	  	CurrentVehicleState = Vehicle_Drive;
+	case Vehicle_Booting:
+		{
+	  	static uint32_t bootTimer = 0;
+		
+			if (bootTimer == 0) {
+                Neg_Main_ON();
+            }
+            //T = 1000ms
+            else if (bootTimer == 1000) {
+                Pos_Main_ON();
+            }
+            //T = 2000ms
+            else if (bootTimer == 2000) {
+                Supp_Battery_ON();
+            }
+            //T = 7000ms
+            else if (bootTimer == 7000) {
+                Motor_Relays_ON();
+            }
+            //T = 17000ms
+            else if (bootTimer >= 17000) {
+                Charge_Relay_ON();
+                ReadyFlag = 1;
+                CurrentVehicleState = Vehicle_Drive;
+                bootTimer = 0; // Reset timer for the next time the car starts
+                break; 
+            }
+            
+            //Same value as master loop
+            bootTimer += 20; 
+		}
 	  	break;
 	case Vehicle_Drive:
-	  	//add code
+	  	/*add code regarding temp safety and lost packets that would warrant switching
+		to the fault state*/
+		//if(estopswtich == 1)
 	  	CurrentVehicleState = Vehicle_Fault;
 	  	break;
 	case Vehicle_Fault:
-	  	//if the fault counter reaches certain value, end up here.
+	  	Neg_Main_OFF();
+        Pos_Main_OFF();
+        Supp_Battery_OFF();
+        LV_Relay_OFF();
+        Motor_Relays_OFF();
+        Charge_Relay_OFF();
+
+		ReadyFlag = 0;
 	  	break;
+	default:
+		//Safety in case state is unknown
+		CurrentVehicleState = Vehicle_Fault;
+		break;
 	}
-    osDelay(1);
+	//LED Feedback
+	if (ReadyFlag == 1) {
+		LED_Heartbeat_ON();
+	}
+	else if (CurrentVehicleState == Vehicle_Booting) {
+        static uint8_t blinkCounter = 0;
+        blinkCounter++;
+        // 25 loops * 20ms = 500ms
+        if (blinkCounter >= 25) { 
+            LED_Heartbeat_TOGGLE();
+            blinkCounter = 0;
+        }
+    }
+    else {
+        LED_Heartbeat_OFF();
+    }
+    osDelay(20);
   }
   /* USER CODE END 5 */
 }
