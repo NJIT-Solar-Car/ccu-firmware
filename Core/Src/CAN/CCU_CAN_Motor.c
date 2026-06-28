@@ -29,8 +29,8 @@ CommandType RightMotorState = COMMAND_NONE;
 
 HAL_StatusTypeDef A2D_BATCH_READ1_Func(MotorPacketInfo * pmpi) {
 	/* Check if already run for current packet */
-	if (pmpi->Command & A2D_BATCH_READ1 > 0) {
-		return HAL_OK
+	if ((pmpi->Command) & (A2D_BATCH_READ1 > 0)) {
+		return HAL_OK;
 	}
 
 	TaskHandle_t 	*xWaitingMotor;
@@ -50,7 +50,7 @@ HAL_StatusTypeDef A2D_BATCH_READ1_Func(MotorPacketInfo * pmpi) {
 
 	/* Set motor state, and get task handle */
 	*MotorState = A2D_BATCH_READ1;
-	*xWaitingMotor = xTaskGetCurrentHandle();
+	*xWaitingMotor = xTaskGetCurrentTaskHandle();
 
 	/* Prepare and send message */
 	uint32_t 				assignedMailbox;

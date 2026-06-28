@@ -20,6 +20,8 @@
 #ifndef CAN_DICTIONARY_H
 #define CAN_DICTIONARY_H
 
+#include <stdint.h>
+
 /**
  * @defgroup CAN_Addresses
  * @brief Addresses of CAN devices (controller and CCU).
