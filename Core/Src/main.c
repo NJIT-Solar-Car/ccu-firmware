@@ -40,6 +40,8 @@
 /* USER CODE BEGIN Includes */
 #include "CAN/Inc/can_dictionary.h"
 #include "CAN/Inc/can_motor.h"
+#include "Log/log.h"
+#include "Telemetry/telemetry.h"
 
 /* USER CODE END Includes */
 
@@ -168,6 +170,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
+  log_init();
 
   /* USER CODE END Init */
 
@@ -198,6 +201,10 @@ int main(void)
   HAL_CAN_Start(&hcan2);
   HAL_CAN_ActivateNotification(&hcan2, CAN_IT_RX_FIFO0_MSG_PENDING);
   
+  log_info(LOG_EVENT_BOOT_STARTUP, NULL, 0);
+  telemetry_t t1 = { .timestamp_ms = 1337 };
+  telemetry_publish(&t1);
+
   /* USER CODE END 2 */
 
   /* Init scheduler */

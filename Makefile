@@ -42,6 +42,14 @@ Core/Src/stm32f4xx_it.c \
 Core/Src/stm32f4xx_hal_msp.c \
 Core/Src/CAN/CCU_CAN.c \
 Core/Src/CAN/CCU_CAN_Motor.c \
+Core/Src/Log/log.c \
+Core/Src/Log/log_flash.c \
+Core/Src/Log/dump.c \
+Core/Src/Serial/serial.c \
+Core/Src/Flash/flash_internal.c \
+Core/Src/Flash/flash.c \
+Core/Src/Telemetry/telemetry.c \
+Core/Src/Usb/usb_cdc.c \
 USB_DEVICE/App/usb_device.c \
 USB_DEVICE/App/usbd_desc.c \
 USB_DEVICE/App/usbd_cdc_if.c \
