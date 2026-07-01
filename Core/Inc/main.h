@@ -155,6 +155,9 @@ to its correct function.*/
 #define Supp_Battery_Port GPIOB
 #define Supp_Battery_Pin  relay7_Pin
 
+#define COOLING_FAN_PORT HC0_GPIO_Port
+#define COOLING_FAN_PIN  HC0_Pin
+
 /*Need to know what the start button and estop button is routed to*/
 
 //On/Off Macros
@@ -180,7 +183,11 @@ to its correct function.*/
 #define LED_Heartbeat_ON() HAL_GPIO_WritePin(LED_Heartbeat_GPIO_Port, LED_Heartbeat_Pin, GPIO_PIN_SET)
 #define LED_Heartbeat_TOGGLE() HAL_GPIO_TogglePin(LED_Heartbeat_GPIO_Port, LED_Heartbeat_Pin)
 
-uint8_t ReadyFlag = 0;
+#define Cooling_Fan_ON()  HAL_GPIO_WritePin(COOLING_FAN_PORT, COOLING_FAN_PIN, GPIO_PIN_SET)
+#define Cooling_Fan_OFF() HAL_GPIO_WritePin(COOLING_FAN_PORT, COOLING_FAN_PIN, GPIO_PIN_RESET)
+
+
+extern uint8_t ReadyFlag = 0;
 
 /* USER CODE END Private defines */
 
