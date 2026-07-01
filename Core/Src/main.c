@@ -118,8 +118,8 @@ MotorPacketInfo Motor2_Data; // Right Motor
 volatile TaskHandle_t xLeftMotorWaiting = NULL;
 volatile TaskHandle_t xRightMotorWaiting = NULL;
 
-uint8_t LeftMotorRxBuffer[8];
-uint8_t RightMotorRxBuffer[8];
+uint8_t LeftMotorRxBuffer[8] = {0};
+uint8_t RightMotorRxBuffer[8] = {0};
 
 MPPT1_Data_t MPPT1_Data;
 

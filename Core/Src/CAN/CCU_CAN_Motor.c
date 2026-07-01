@@ -28,15 +28,15 @@ CommandType LeftMotorState  = COMMAND_NONE;
 CommandType RightMotorState = COMMAND_NONE;
 
 /* Does the boilerplate stuff for each function. */
-int setStuff(uint8_t 		Command,
-		CAN_TxHeaderTypeDef *txHeader,
-		MotorPacketInfo 	*pmpi,
-		TaskHandle_t 		*xWaitingMotor, 
-		CommandType 		*MotorState, 
-		uint8_t 			*buffer) {
+int setStuff(uint8_t 			Command,
+		CAN_TxHeaderTypeDef 	*txHeader,
+		MotorPacketInfo 		*pmpi,
+		volatile TaskHandle_t	*xWaitingMotor, 
+		CommandType 			*MotorState, 
+		volatile uint8_t		*buffer) {
 
 	/* Check if already run for current packet */
-	if (pmpi->Command & Command > 0) {
+	if ((pmpi->Command & Command) > 0) {
 		return 1;
 	}
 	
@@ -53,24 +53,25 @@ int setStuff(uint8_t 		Command,
 
 	/* Set motor state, and get task handle */
 	*MotorState = Command;
-	*xWaitingMotor = xTaskGetCurrentHandle();
+	*xWaitingMotor = xTaskGetCurrentTaskHandle();
 
 	/* Prepare and send message */
-	txHeader.StdId 	= (uint32_t)pmpi->ControllerInfo->ID;
-	txHeader.ExtId 	= 0x00;
-	txHeader.IDE 	= CAN_ID_STD;
-	txHeader.RTR 	= CAN_RTR_DATA;
-	txHeader.DLC 	= 8;
-	txHeader.TransmitGlobalTime = DISABLE;
+	txHeader->StdId = (uint32_t)pmpi->ControllerInfo->ID;
+	txHeader->ExtId = 0x00;
+	txHeader->IDE 	= CAN_ID_STD;
+	txHeader->RTR 	= CAN_RTR_DATA;
+	txHeader->DLC 	= 8;
+	txHeader->TransmitGlobalTime = DISABLE;
 
 	return 0;
 }
 
 HAL_StatusTypeDef A2D_BATCH_READ1_Func(MotorPacketInfo * pmpi) {
-	CAN_TxHeaderTypeDef txHeader;
-	TaskHandle_t 		*xWaitingMotor;
-	CommandType 		*MotorState;
-	uint8_t 			*buffer;
+	CAN_TxHeaderTypeDef 	txHeader;
+	volatile TaskHandle_t 	*xWaitingMotor;
+	CommandType 			*MotorState;
+	volatile uint8_t 		*buffer;
+	uint32_t				assignedMailbox;
 
 	if (setStuff(A2D_BATCH_READ1, &txHeader, pmpi, xWaitingMotor, MotorState, buffer) != 0) {
 		/* Command already run for this packet */
@@ -79,7 +80,7 @@ HAL_StatusTypeDef A2D_BATCH_READ1_Func(MotorPacketInfo * pmpi) {
 
 	uint8_t txData[] = {MOTOR_A2D_BATCH_READ1};
 
-	txStatus = CCU_CAN_Tx(&hcan1, &txHeader, txData, &assignedMailbox, pdMS_TO_TICKS(CCU_MOTOR_TIMEOUT));
+	HAL_StatusTypeDef txStatus = CCU_CAN_Tx(&hcan1, &txHeader, txData, &assignedMailbox, pdMS_TO_TICKS(CCU_MOTOR_TIMEOUT));
 	
 	/* Return any error that occurred when transmitting command */
 	if (txStatus != HAL_OK) {
@@ -109,10 +110,11 @@ HAL_StatusTypeDef A2D_BATCH_READ1_Func(MotorPacketInfo * pmpi) {
 }
 
 HAL_StatusTypeDef MONITOR1_Func(MotorPacketInfo * pmpi) {	
-	CAN_TxHeaderTypeDef txHeader;
-	TaskHandle_t 		*xWaitingMotor;
-	CommandType 		*MotorState;
-	uint8_t 			*buffer;
+	CAN_TxHeaderTypeDef 	txHeader;
+	volatile TaskHandle_t 	*xWaitingMotor;
+	CommandType 			*MotorState;
+	volatile uint8_t 		*buffer;
+	uint32_t				assignedMailbox;
 
 	if (setStuff(MONITOR1, &txHeader, pmpi, xWaitingMotor, MotorState, buffer) != 0) {
 		/* Command already run for this packet */
@@ -121,7 +123,7 @@ HAL_StatusTypeDef MONITOR1_Func(MotorPacketInfo * pmpi) {
 
 	uint8_t txData[] = {MOTOR_MONITOR1};
 
-	txStatus = CCU_CAN_Tx(&hcan1, &txHeader, txData, &assignedMailbox, pdMS_TO_TICKS(CCU_MOTOR_TIMEOUT));
+	HAL_StatusTypeDef txStatus = CCU_CAN_Tx(&hcan1, &txHeader, txData, &assignedMailbox, pdMS_TO_TICKS(CCU_MOTOR_TIMEOUT));
 	
 	/* Return any error that occurred when transmitting command */
 	if (txStatus != HAL_OK) {
@@ -153,10 +155,11 @@ HAL_StatusTypeDef MONITOR1_Func(MotorPacketInfo * pmpi) {
 }
 
 HAL_StatusTypeDef MONITOR2_Func(MotorPacketInfo * pmpi) {
-	CAN_TxHeaderTypeDef txHeader;
-	TaskHandle_t 		*xWaitingMotor;
-	CommandType 		*MotorState;
-	uint8_t 			*buffer;
+	CAN_TxHeaderTypeDef 	txHeader;
+	volatile TaskHandle_t 	*xWaitingMotor;
+	CommandType 			*MotorState;
+	volatile uint8_t 		*buffer;
+	uint32_t				assignedMailbox;
 
 	if (setStuff(MONITOR2, &txHeader, pmpi, xWaitingMotor, MotorState, buffer) != 0) {
 		/* Command already run for this packet */
@@ -165,7 +168,7 @@ HAL_StatusTypeDef MONITOR2_Func(MotorPacketInfo * pmpi) {
 
 	uint8_t txData[] = {MOTOR_MONITOR2};
 
-	txStatus = CCU_CAN_Tx(&hcan1, &txHeader, txData, &assignedMailbox, pdMS_TO_TICKS(CCU_MOTOR_TIMEOUT));
+	HAL_StatusTypeDef txStatus = CCU_CAN_Tx(&hcan1, &txHeader, txData, &assignedMailbox, pdMS_TO_TICKS(CCU_MOTOR_TIMEOUT));
 	
 	/* Return any error that occurred when transmitting command */
 	if (txStatus != HAL_OK) {
@@ -193,10 +196,11 @@ HAL_StatusTypeDef MONITOR2_Func(MotorPacketInfo * pmpi) {
 }
 
 HAL_StatusTypeDef SW_ACC_Func(MotorPacketInfo * pmpi) {
-	CAN_TxHeaderTypeDef txHeader;
-	TaskHandle_t 		*xWaitingMotor;
-	CommandType 		*MotorState;
-	uint8_t 			*buffer;
+	CAN_TxHeaderTypeDef 	txHeader;
+	volatile TaskHandle_t 	*xWaitingMotor;
+	CommandType 			*MotorState;
+	volatile uint8_t 		*buffer;
+	uint32_t				assignedMailbox;
 
 	if (setStuff(SW_ACC, &txHeader, pmpi, xWaitingMotor, MotorState, buffer) != 0) {
 		/* Command already run for this packet */
@@ -205,7 +209,7 @@ HAL_StatusTypeDef SW_ACC_Func(MotorPacketInfo * pmpi) {
 
 	uint8_t txData[] = {MOTOR_SW_ACC};
 
-	txStatus = CCU_CAN_Tx(&hcan1, &txHeader, txData, &assignedMailbox, pdMS_TO_TICKS(CCU_MOTOR_TIMEOUT));
+	HAL_StatusTypeDef txStatus = CCU_CAN_Tx(&hcan1, &txHeader, txData, &assignedMailbox, pdMS_TO_TICKS(CCU_MOTOR_TIMEOUT));
 	
 	/* Return any error that occurred when transmitting command */
 	if (txStatus != HAL_OK) {
@@ -238,10 +242,11 @@ HAL_StatusTypeDef SW_ACC_Func(MotorPacketInfo * pmpi) {
 }
 
 HAL_StatusTypeDef SW_BRAKE_Func(MotorPacketInfo * pmpi) {
-	CAN_TxHeaderTypeDef txHeader;
-	TaskHandle_t 		*xWaitingMotor;
-	CommandType 		*MotorState;
-	uint8_t 			*buffer;
+	CAN_TxHeaderTypeDef 	txHeader;
+	volatile TaskHandle_t 	*xWaitingMotor;
+	CommandType 			*MotorState;
+	volatile uint8_t 		*buffer;
+	uint32_t				assignedMailbox;
 
 	if (setStuff(SW_BRAKE, &txHeader, pmpi, xWaitingMotor, MotorState, buffer) != 0) {
 		/* Command already run for this packet */
@@ -250,7 +255,7 @@ HAL_StatusTypeDef SW_BRAKE_Func(MotorPacketInfo * pmpi) {
 
 	uint8_t txData[] = {MOTOR_SW_BRAKE};
 
-	txStatus = CCU_CAN_Tx(&hcan1, &txHeader, txData, &assignedMailbox, pdMS_TO_TICKS(CCU_MOTOR_TIMEOUT));
+	HAL_StatusTypeDef txStatus = CCU_CAN_Tx(&hcan1, &txHeader, txData, &assignedMailbox, pdMS_TO_TICKS(CCU_MOTOR_TIMEOUT));
 	
 	/* Return any error that occurred when transmitting command */
 	if (txStatus != HAL_OK) {
@@ -283,10 +288,11 @@ HAL_StatusTypeDef SW_BRAKE_Func(MotorPacketInfo * pmpi) {
 }
 
 HAL_StatusTypeDef SW_REV_Func(MotorPacketInfo * pmpi) {
-	CAN_TxHeaderTypeDef txHeader;
-	TaskHandle_t 		*xWaitingMotor;
-	CommandType 		*MotorState;
-	uint8_t 			*buffer;
+	CAN_TxHeaderTypeDef 	txHeader;
+	volatile TaskHandle_t 	*xWaitingMotor;
+	CommandType 			*MotorState;
+	volatile uint8_t 		*buffer;
+	uint32_t				assignedMailbox;
 
 	if (setStuff(SW_REV, &txHeader, pmpi, xWaitingMotor, MotorState, buffer) != 0) {
 		/* Command already run for this packet */
@@ -295,7 +301,7 @@ HAL_StatusTypeDef SW_REV_Func(MotorPacketInfo * pmpi) {
 
 	uint8_t txData[] = {MOTOR_SW_REV};
 
-	txStatus = CCU_CAN_Tx(&hcan1, &txHeader, txData, &assignedMailbox, pdMS_TO_TICKS(CCU_MOTOR_TIMEOUT));
+	HAL_StatusTypeDef txStatus = CCU_CAN_Tx(&hcan1, &txHeader, txData, &assignedMailbox, pdMS_TO_TICKS(CCU_MOTOR_TIMEOUT));
 	
 	/* Return any error that occurred when transmitting command */
 	if (txStatus != HAL_OK) {
