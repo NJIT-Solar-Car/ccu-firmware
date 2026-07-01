@@ -109,11 +109,11 @@ typedef enum {
 VehicleState_t CurrentVehicleState = Vehicle_Init; 
 
 //Motor Command Memory
-CommandType LastCommandSent_M1 = COMMAND_NONE; //Left motor command memory
-CommandType LastCommandSent_M2 = COMMAND_NONE; //Right motor command memory
+extern CommandType LastCommandSent_M1 = COMMAND_NONE; //Left motor command memory
+extern CommandType LastCommandSent_M2 = COMMAND_NONE; //Right motor command memory
 
-MotorPacketInfo Motor1_Data; // Left Motor 
-MotorPacketInfo Motor2_Data; // Right Motor
+extern MotorPacketInfo LeftMotor; 
+extern MotorPacketInfo RightMotor;
 
 volatile TaskHandle_t xLeftMotorWaiting = NULL;
 volatile TaskHandle_t xRightMotorWaiting = NULL;
@@ -821,8 +821,20 @@ void StartDefaultTask(void *argument)
 	case Vehicle_Drive:
 	  	/*add code regarding temp safety and lost packets that would warrant switching
 		to the fault state*/
-		//if(estopswtich == 1)
-	  	CurrentVehicleState = Vehicle_Fault;
+		if ((LeftMotor.MotorTemp >= 90 && LeftMotor.MotorTemp != 0xFF) || 
+            (RightMotor.MotorTemp >= 90 && RightMotor.MotorTemp != 0xFF)) {
+            CurrentVehicleState = Vehicle_Fault;
+		}
+
+		if ((LeftMotor.MotorTemp > 60 && LeftMotor.MotorTemp != 0xFF) || 
+            (RightMotor.MotorTemp > 60 && RightMotor.MotorTemp != 0xFF)) {
+            Cooling_Fan_ON(); 
+        } else if (LeftMotor.MotorTemp < 40 && RightMotor.MotorTemp < 40) {
+            Cooling_Fan_OFF();
+        }
+
+		
+		
 	  	break;
 	case Vehicle_Fault:
 	  	Neg_Main_OFF();
