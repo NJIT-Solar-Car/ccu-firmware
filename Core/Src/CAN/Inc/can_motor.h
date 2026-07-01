@@ -174,7 +174,7 @@ HAL_StatusTypeDef CCU_CAN_Tx(CAN_HandleTypeDef *hcan, CAN_TxHeaderTypeDef *pHead
 HAL_StatusTypeDef A2D_BATCH_READ1_Func(MotorPacketInfo * pmpi);
 
 /**
- * @brief A2D Batch Read2. Check \ref A2D_BATCH_READ2
+ * @brief A2D Batch Read2. Check \ref A2D_BATCH_READ2. Currently UNUSED!!! WILL RETURN ABSOLUTELY NOTHING, BE WARNED!!!
  * @param pmpi: Pointer to MotorPacketInfo struct.
  */
 HAL_StatusTypeDef A2D_BATCH_READ2_Func(MotorPacketInfo * pmpi);
